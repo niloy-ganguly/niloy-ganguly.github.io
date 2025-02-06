@@ -1,0 +1,416 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+  <link rel="File-List" href="main_files/filelist.xml">
+  <Title> CS 43001 Compiler Construction Course</Title>   
+  <!--[if !mso]>
+  <style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+  </style>
+  <![endif]--><!--[if gte mso 9]>
+  <xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+  </xml><![endif]-->
+</head>
+
+<body bgcolor="#000000" text="#ffffcc" link="#ffff00" vlink="#ddcc55" alink="#ff9999">
+
+<center>
+<br>
+<br>
+<H1><font size=+2>CS 43009 Compiler Construction</font></H1>
+<H3>(Autumn Semester 2007)</H3>
+<br>  <b>Niloy Ganguly</b> <a href = "mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a><br><br>
+<b>Teaching Assisstant</b><br> 
+<b>Hema Swetha K. </b> <a href = "mailto:hema.swetha@gmail.com">hema.swetha@gmail.com</a><br>
+<b>Joy Deep Nath</b> <a href = "mailto:jd.nath.compiler@gmail.com">jd.nath.compiler@gmail.com</a><br>
+<b>Nitin Bansal</b> <a href = "mailto:n.bansal.iit@gmail.com">n.bansal.iit@gmail.com</a><br>
+<b>Udit Sajjanhar</b> <a href = "mailto:sajjanharudit+compiler@gmail.com">sajjanharudit+compiler@gmail.com</a><br>
+<p>
+</center>
+<hr>
+<a href="#notice"><H3>Notices</H3></a>
+<a href="#myselect"><H3>Theory</H3></a>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lecture">Lectures</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Assessment">Evaluation</a><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#StudentList">Students List</a>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<p><font size="4">&nbsp</font><font size="4"><a href="#Lab-Assign">Lab-Assignments</a>
+<a href="COMPILER%20GROUPS.xls">(Groups and Marks)</a></font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Lab-Assign1">Assignment 1</a><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Tiny-C">Tiny C</a><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Lab-Assign2">Assignment 
+2</a><br>
+
+</p>
+
+<hr>
+
+<hr>
+<center>
+<a name="myselect"><H2>Theory</H2></a>
+</center>
+
+<pre>  Lectures   : 	Mon - 4, Tue - 1,2, Thu -3 
+  Room #     :  CSE 119
+  Units      :	4-0-2
+  Credits    :  4 (Theory) 
+  Instructor :	Niloy Ganguly
+  Contact    : 	Room #313  (CSE), Phone 3460
+
+Text Books:
+
+[1]  Aho, A. V., Sethi, R. and Ullman, J. D.
+     Compilers - Principles, Techniques and Tools
+     Addison-Wesley, 1988 (Indian reprint)
+     - aka Dragon book
+
+[2] Santanu Chattopadhyay
+    Compiler Design
+    PHI, 2005.
+</pre>
+
+<a name="Lecture"><H2>Lectures</H2></a>
+
+
+<a name="Assessment"><H2>Evaluation</H2></a>
+	Teacher's Assessment : 20 <br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Attendance: 10<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class Test 1 : 5<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class Test 2 : 5<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+	Mid-sem :	30<br><br>
+	End-sem :	50<br>
+
+
+<center>
+<a name="Lab-Assign"><H1>Lab Assignments</H1></a>
+</center>
+<h2>General Guidelines</h2>
+<ul>
+<li> 2 person per group. 
+<li> Online assessment will&nbsp; be done.
+<li> Code also need to be submitted. .
+<li> Each member of the group should specify what he/she has done.
+<li> Code Quality -  <a href=template.html>Guidelines</a>
+<li> Checking code <a href="checkGuidelines.c">quality</a></ul>
+
+<a name="Lab-Assign1"><h2> Assignment 1: Assignment on Thompson's Construction</h1></a>
+
+
+<p>
+You have to implement the following two algorithms
+<ul>
+<li> Thompson Construction - Constructing NFA from regular expression
+<li> Constructing DFA from NFA.
+</ul>
+
+<p>
+The input alphabet will be- 
+<ul>
+<li>a-z (small letters)
+<li>+, ., *, (, ),epsilon (Note. + is used in lieu of '|')
+</ul>
+The regular expression will be input with no spaces. The first brackets should be used to show precedence at all times and the scanner must work accordingly.
+eg-
+<ul>
+<li>(a)
+<li>( (b) | (c) )
+<li>( (d)* )
+<li>( ( (a).( ( (c) | (d) )* ) ) | (f) )
+</ul>
+
+<h3>Marking Guidelines</h3>
+<table>
+<tr><td>(A)<td>NFA construction           <td align="right"><b>15</b>
+<tr><td>(B)<td>NFA ouput in proper format <td align="right"><b>5</b>
+<tr><td>(C)<td>Subset construction        <td align="right"><b>15</b>
+<tr><td>(D)<td>DFA ouput in proper format <td align="right"><b>5</b>
+<tr><td>(D)<td>Code Quality                       <td align="right"><b>10</b>
+<tr><td>   <td><i>Total marks</i>         <td align="right"><b><i>50</i></b>
+</table>
+
+<h3> Output formats </h3>
+NFA Output: The Ouptut of NFA will be in a tab separated tabular form.
+<ul>
+<li>All the states would be numbered from 0 onwards and the start state be represented by 0 
+<li>The accepting states would be represented by the state number followed by (-) wherever they are mentioned. say 4- , 5- etc.
+<li>The states for which there are no transitions for a given alphabet would be represented by (=) and for the states to which there are mulitple transitions for a given input, the states would be comma separated without spaces say 3,4  
+</ul>
+
+The output format of for NFA corresponding to the regular expression - ((a)|(b)) would be-
+<table border="1">
+<tr> <td>state</td> <td>a</td> <td>b</td> <td>epsilon</td> </tr>
+<tr> <td>0</td>     <td>=</td> <td>=</td>  <td>1,3</td>    </tr>
+<tr> <td>1</td>     <td>2</td> <td>=</td>  <td>=</td>      </tr>
+<tr> <td>2</td>     <td>=</td> <td>=</td>   <td>5-</td>     </tr>
+<tr> <td>3</td>     <td>=</td> <td>4</td>   <td>=</td>    </tr>
+<tr> <td>4</td>     <td>=</td> <td>=</td>   <td>5-</td> </tr>
+<tr> <td>5-</td>    <td>=</td>  <td>=</td>  <td>=</td>  </tr>
+</table>
+Note. The columns are tab separated.
+<br>
+DFA Output: The Ouptut of DFA will be in a tab separated tabular form.
+<ul>
+<li>All the states would be derived from the corresponding NFA via subset construction and should be given in the starting of the output (see example below).
+<li>All the states would be capitalized Ascii acharacters A-Z and the start state be represented by A 
+<li>The accepting states would be represented by the state letter followed by (-) wherever they are mentioned. say D- , E- etc.
+<li>The states for which there are no transitions for a given alphabet would be represented by (=)    
+</ul>
+
+The output format of for DFA corresponding to the regular expression - ((a)|(b)) using the NFA given above would be-
+<table border="1">
+<tr><td>A</td><td>0,1,3</td></tr>
+<tr><td>B-</td><td>2,5</td></tr>
+<tr><td>C-</td><td>4,5</td></tr>
+<tr><td>state</td><td>a</td><td>b</td></tr>
+<tr><td>A</td><td>B-</td><td>C-</td></tr>
+<tr><td>B-</td><td>=</td><td>=</td></tr>
+<tr><td>C-</td><td>=</td><td>=</td></tr>
+</table>
+Note. The columns are tab separated.
+
+<p>* Evaluation of items (B) and (D) will be done in the lab.
+The output format for the NFA would be-
+<br>
+
+<br>
+</p>
+<p>Please be present on <b><font color="#FF0000">06/08/2007</font></b> to show your code. </p>
+<p>* The overall working of the code will be evaluated based on test cases.</p>
+
+
+<h2>&nbsp;</h2>
+<h2><!--[if gte vml 1]><v:line id="_x0000_s1026"
+ alt="" style='position:absolute;left:0;text-align:left;top:0;flip:y;z-index:2'
+ from="3.75pt,2227.5pt" to="779.25pt,2228.25pt" strokecolor="yellow"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout;position:absolute;z-index:2;left:4px;top:2969px;
+width:1036px;height:3px'><img width=1036 height=3 src="main_files/image001.gif"
+v:shapes="_x0000_s1026"></span><![endif]><!--[if gte vml 1]><v:line id="_x0000_s1025"
+ style='position:absolute;left:0;text-align:left;top:0;z-index:1' from="3.75pt,2229pt"
+ to="865.5pt,2229.75pt"/><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:absolute;z-index:1;left:4px;top:2971px;width:1151px;height:3px'><img
+width=1151 height=3 src="main_files/image002.gif" v:shapes="_x0000_s1025"></span><![endif]><a name="Tiny-C">Tiny-C 
+Specification</a></h2>
+<p>1. Data types: int, char, float <br>
+2. Array Support: only single dimensional as in C <br>
+Ex: int a[10]; <br>
+Multiple variable declarations should be supported. The format is as in C. <br>
+Ex: int a, b; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int a[10],b[5]; <br>
+3. Global variables <br>
+4. Composite statement is enclosed within braces { . . .}. <br>
+5. Assignment operator: = . <br>
+Ex: a = 10;<br>
+Continued assingment should also be supported <br>
+Ex: a = b = 10; <br>
+6. Binary Arithmetic operators. +, -, * <br>
+7. Unary Arithmetic operator. ++, ** (only postfix) <br>
+8. Boolean operators: ==, &gt;, &lt; <br>
+9. Binary Logical operator : &amp;&amp;, || <br>
+10. Unary logical operator : ! <br>
+11. Unary operator: - <br>
+12. Input / Output Constructs:<br>
+1. read(x) - Read into variable x<br>
+2. print(x) - Write variable x to output <br>
+13. Conditional statement: <br>
+if (condition) composite-statement [else composite-statement] <br>
+14. Loops: <br>
+a. For loop as in C <br>
+b. While loop as in C <br>
+15. Program entry point defined by keyword &quot;main&quot; <br>
+Programes written in Tiny-C can use identifiers consisting of any alpha-numeric 
+characters, starting with only _ or [a..z] or [A..Z] <br>
+&nbsp;</p>
+<h3>Example</h3>
+<p>&nbsp;</p>
+<hr>
+<pre>int count;
+main()
+{
+        int i=0;
+        int sum=0;
+              
+        read(count);
+        for(i=0;i&lt;10;i++)
+        {
+               
+               read(x);
+               sum = sum + x;
+
+        }
+        
+        print(sum);
+}
+</pre>
+<hr>
+<h2><a name="Lab-Assign2">Assignment 2: Understanding and working with Lex</a></h2>
+<p>(2) You have to implement a Lexical Analyzer for Tiny-C programming language 
+using LEX tools. The specifications of Tiny-C is given above. <br>
+<br>
+Specifications of Lexical Analyzer: <br>
+(a) The name of the scanner function should be &quot;int yylex()&quot;, it returns the 
+integer as token. <br>
+(b) Each token may have some attributes. For example : If the token corresponds 
+to &quot;integer constant&quot; than yylex() returns an integer corresponding to &quot;integer 
+constant&quot; but the value of &quot;integer constant&quot; is its attribute. Such attributes 
+should be made available to the future stages of compilation through a global 
+variable of C-Union type which holds atleast the following attributes : <br>
+- Value of the integer constant in case of integer token<br>
+- Value of the floating point constant in case of floating point token<br>
+- character string for other cases. Like it will have the name of the identifier 
+in case of identifier token<br>
+(c) Output Format : Print only the token name in a new line, ' &lt;token name&gt;newline 
+'. In case of integer constant and floating point constant print ' &lt;token name&gt;tabspace&lt;value&gt;newline 
+'. In case of identifier or literal constant print ' &lt;token name&gt;tabspace&lt;character 
+string&gt;newline '. Nothing else should be outputed. <br>
+<br>
+Specification of Token Names is as follows: <br>
+&nbsp;</p>
+<table border="1">
+  <tr>
+    <td>Token Name</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>MAIN</td>
+    <td>main</td>
+  </tr>
+  <tr>
+    <td>INT</td>
+    <td>int</td>
+  </tr>
+  <tr>
+    <td>FLOAT</td>
+    <td>float</td>
+  </tr>
+  <tr>
+    <td>CHAR</td>
+    <td>char</td>
+  </tr>
+  <tr>
+    <td>IF</td>
+    <td>if</td>
+  </tr>
+  <tr>
+    <td>ELSE</td>
+    <td>else</td>
+  </tr>
+  <tr>
+    <td>FOR</td>
+    <td>for</td>
+  </tr>
+  <tr>
+    <td>WHILE</td>
+    <td>while</td>
+  </tr>
+  <tr>
+    <td>READ</td>
+    <td>read</td>
+  </tr>
+  <tr>
+    <td>PRINT</td>
+    <td>print</td>
+  </tr>
+  <tr>
+    <td>ID</td>
+    <td>identifier</td>
+  </tr>
+  <tr>
+    <td>INTNUM</td>
+    <td>integer constant</td>
+  </tr>
+  <tr>
+    <td>FLOATNUM</td>
+    <td>floating point constant</td>
+  </tr>
+  <tr>
+    <td>LTE</td>
+    <td>less than equal to</td>
+  </tr>
+  <tr>
+    <td>GTE</td>
+    <td>greater than equal to</td>
+  </tr>
+  <tr>
+    <td>LT</td>
+    <td>lesser than</td>
+  </tr>
+  <tr>
+    <td>GT</td>
+    <td>greater than</td>
+  </tr>
+  <tr>
+    <td>ET</td>
+    <td>equal to</td>
+  </tr>
+  <tr>
+    <td>INCR</td>
+    <td>increment operator, ++</td>
+  </tr>
+  <tr>
+    <td>DECR</td>
+    <td>decrement operator, --</td>
+  </tr>
+  <tr>
+    <td>MINUS</td>
+    <td>minus</td>
+  </tr>
+  <tr>
+    <td>PLUS</td>
+    <td>plus</td>
+  </tr>
+  <tr>
+    <td>DIV</td>
+    <td>divide</td>
+  </tr>
+  <tr>
+    <td>MULT</td>
+    <td>multiply</td>
+  </tr>
+  <tr>
+    <td>ASSIGN</td>
+    <td>assignment operator</td>
+  </tr>
+  <tr>
+    <td>SCOLON</td>
+    <td>semicolon</td>
+  </tr>
+  <tr>
+    <td>OPAREN</td>
+    <td>open parenthesis</td>
+  </tr>
+  <tr>
+    <td>CPAREN</td>
+    <td>close parenthesis</td>
+  </tr>
+  <tr>
+    <td>OBRACE</td>
+    <td>open braces</td>
+  </tr>
+  <tr>
+    <td>CBRACE</td>
+    <td>close braces</td>
+  </tr>
+  <tr>
+    <td>OSQUAR</td>
+    <td>open square bracket</td>
+  </tr>
+  <tr>
+    <td>CSQUAR</td>
+    <td>close square bracket</td>
+  </tr>
+  <tr>
+    <td>LITC</td>
+    <td>literal constant</td>
+  </tr>
+</table>
+
+
+<p>&nbsp;</p>
+
+
+<p>&nbsp;</p>

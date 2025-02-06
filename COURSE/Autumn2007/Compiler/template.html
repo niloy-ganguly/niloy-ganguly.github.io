@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>C Coding Conventions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<style type='text/css'>
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    /* put code in boxes with borders and shading */
+    .correctcode, .noncode, .incorrectcode {
+        width: 82ex; 
+        padding-left: 1ex;
+        padding-top: 1ex;
+        padding-bottom: 1ex;
+        border-width: 2px;
+        border-style: solid;
+        background-color: #f0f0f0;
+    }
+
+    .correctcode { border-color: green; }
+    .noncode { border-color: navy; }
+    .incorrectcode { border-color: red; }
+
+    /* get rid of underlined and purple visited links etc */
+    a:link, a:visited {
+        color: blue;
+        text-decoration: none;
+    }
+
+    /* used for heading text in examples */
+    span.codetitle { font-style: italic; }
+
+
+</style>
+</head>
+<body>
+
+
+<h1>C Coding Conventions</h1>
+
+<p>
+<a name="top"/>
+Written by Udit Sajjanhar and Niloy Ganguly for Compiler Construction Lab. Comments welcome.
+You may redistribute or make copies of this document if you wish.  You
+may also modify it. Some help has been taken from <a href="http://goanna.cs.rmit.edu.au/~nml/conventions.html">here.</a>
+</p>
+
+<h2>Table of Contents</h2>
+<p>
+<a href="#intro">Introduction</a><br/>
+<a href="#indent">Indentation</a><br/>
+<a href="#breaking">Line Breaking</a><br/>
+<a href="#spacing">Whitespace</a><br/>
+<a href="#comments">Comments</a><br/>
+<a href="#braces">Brace Placement</a><br/>
+<a href="#naming">Naming</a><br/>
+<a href="#functions">Function Declarations</a><br/>
+</p>
+
+<h2>Introduction</h2>
+<p>
+<a name="intro"/>
+This document attempts to introduce common conventions. Coding Conventions are imporant becasue a code written in a ligitimate manner is always easy to maintain and debug. This document isn't intended to be an exacting standard that requires everything to be done in a certain way, but to lay down guidelines as to how things would ideally be done.Overall, its meant to promote consistency, both in a single programmers's code and between different programmers.
+</p>
+
+<p>
+Examples have been given to try to clarify the meaning of the authors.  
+Examples of code conforming to these conventions are shown as below.
+</p>
+
+<!-- unfortunately code has to be messy to be presented correctly here -->
+<p class='correctcode'>
+<span class='codetitle'>Example of code encouraged by these guidelines</span><br/><br/>
+<code>
+/**<br/>
+ * returns true when vec is at its end <br/>
+ * @param vec ....descreption about variable 'vec'....<br/>
+ * @returns ....descreption about what the function returns... <br/>
+ */<br/>
+int VecEof(const struct vec *v) {<br/>
+&nbsp;&nbsp;return (v-&gt;pos == v-&gt;len);<br/>
+
+}<br/>
+</code>
+</p>
+
+<p>
+Examples of code not conforming to these conventions are shown as below.
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of code discouraged by these guidelines: the bracing is placed on the next line and indentation required is 2 spaces per level</span><br/><br/>
+<code>
+/* returns true when vec is at its end */<br/>
+int vec_eof(const struct vec *v)<br/>
+{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;return (v-&gt;pos == v-&gt;len);<br/>
+}<br/>
+</code>
+</p>
+
+<h2>Indentation</h2>
+<p>
+<a name="indent"/>
+Whitespace used for formatting code should NEVER CONTAIN TABS, as they are
+subject to variation in interpretation.  There is also no reason to use them,
+as the tab key in good editors can be reconfigured to insert a number of spaces
+instead of inserting a tab.
+</p>
+
+<p>
+Indentation should be 2 spaces for each brace level of code.  2 was chosen
+because it was felt to be approximately the correct amount of indentation per
+level, and 2 is an even number, allowing half-indents for line breaking if
+desired.
+</p>
+
+<p class='correctcode'>
+
+<span class='codetitle'>Example of encouraged indentation</span><br/><br/>
+<code>
+struct vec *VecInit(unsigned long int initsize) {<br/>
+&nbsp;&nbsp;struct vec *v = malloc(sizeof(*v));<br/>
+<br/>
+&nbsp;&nbsp;if (v &amp;&amp; (v-&gt;vector = malloc(initsize))) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;size = initsize;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;pos = v-&gt;len = 0;<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;err = 0;<br/>
+&nbsp;&nbsp;} else if (v) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;free(v);<br/>
+&nbsp;&nbsp;}<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;return v;<br/>
+}<br/>
+</code>
+</p>
+
+<h2>Line Breaking</h2>
+<p>
+<a name="breaking"/>
+Lines should be limited to 80 characters in width, so as to fit into standard
+terminal displays without wrapping.  How you choose to break your lines and
+indent the subsequent continued lines is left up to you.  One method that you
+might like to use is to attempt to break lines before operators (particularly
+the logical boolean operators if the statement contains them) and half-indent
+the subsequent line by an additional two spaces.  Whichever way you choose,
+please try to be consistent.
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of discouraged (no) linebreaking: note that the text wraps on 80 character displays as shown below</span><br/><br/>
+<code>
+&nbsp;&nbsp;&nbsp;&nbsp;/*Set up the map file name*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;snprintf(stats-&gt;tbuf, FILEBUF, "%s.%s.%s", stats-&gt;vocab[stats-&gt;iCurrVoc], INDSUF, MAPSUF);<br/>
+
+</code>
+</p>
+
+<p class='correctcode'>
+<span class='codetitle'>Example of encouraged linebreaking</span><br/><br/>
+<code>
+&nbsp;&nbsp;&nbsp;&nbsp;/* Set up the map file name */<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;snprintf(stats-&gt;tbuf, FILEBUF, "%s.%s.%s", stats-&gt;vocab[stats-&gt;iCurrVoc],<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INDSUF, MAPSUF);<br/>
+</code>
+
+</p>
+
+
+<h2>Whitespace</h2>
+<p>
+<a name="spacing"/>
+Whitespace should be used to form the statement into as close an approximation
+to english as possible.  This means that whitespace should be used between: <br/>
+1. binary operators and operands<br/>
+2. conditionals and their conditions ('if' is not a function)<br/>
+3. after commas used to seperate parameters.<br/> 
+
+This rule can be bent in the interests of shorter lines, as long as the ultimate aim of keeping a line readable is kept in mind. 
+</p>
+
+<p>
+Empty lines should be used to seperate logical sections (like paragraphs in english text).  However overuse of empty lines is discouraged as it makes less code fit on a screen, hence making code more difficult to read.
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of discouraged spacing: not enough space</span><br/><br/>
+<code>
+&nbsp;&nbsp;/* preliminary code ... */<br/>
+&nbsp;&nbsp;for(i=0,eof=0;!eof;i++) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/* do stuff */<br/>
+&nbsp;&nbsp;}<br/><br/>
+&nbsp;&nbsp;/* ... subsequent code */
+</code>
+</p>
+
+<p class='correctcode'>
+<span class='codetitle'>Example of encouraged spacing</span><br/><br/>
+<code>
+&nbsp;&nbsp;/* preliminary code ... */<br/><br/>
+&nbsp;&nbsp;for(i = 0, eof = 0; !eof; i++) {<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;/* do stuff */<br/>
+&nbsp;&nbsp;}<br/><br/>
+&nbsp;&nbsp;/* ... subsequent code */
+</code>
+</p>
+
+<h2>Comments</h2>
+<p>
+<a name="comments"/>
+The decision on when and what to comment is left to the good sense of the
+programmer with the following exceptions:<br/><br/> 
+1. Each file should have a leading comment stating the following things about a file: the name of the file, the programmer's name and the creation date.<br/><br/>
+<p class='correctcode'>
+<span class='codetitle'>Example of Leading comment in the staring of the file.</span><br/><br/>
+<code>
+/**<br/>
+ * Filename: LLParser.c<br/>
+ * Programmer Name: Udit Sajjanhar <br/>
+ * Date of creation : 27/07/07<br/>
+ */<br/>
+</code>
+</p>
+
+2. Each function should be preceded by a comment block describing in a few lines what the function does. It should also have @param, if the functions takes some parameters and @returns, if the function returns some value.<br/><br/>
+
+
+<p class='correctcode'>
+<span class='codetitle'>Example of comment block before functions</span><br/><br/>
+<code>
+/**<br/>
+ * returns true when vec is at its end <br/>
+ * @param vec ....descreption about variable 'vec'....<br/>
+ * @returns ....descreption about what the function returns... <br/>
+ */<br/>
+int VecEof(const struct vec *v) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;return (v-&gt;pos == v-&gt;len);<br/>
+
+}<br/>
+</code>
+</p>
+
+<p>
+Comments, except in the above two cases should be formatted with an opening <code>/*</code> and a closing <code>*/</code>.  Additional asterisks should not be used in multi-line comments. Multiline comments should have the starting word of each line aligned with the first word of the first line (which should be indented to the current level of the code).  Opening and sequences (<code>/*</code>)
+should be on the opening line of text.  Closing sequences (<code>*/</code>) 
+should be on the closing line of text the left hand edge of the code.  Please note that C++ comments (<code>//</code>) are not appropriate in C code, as all ANSI C compilers will complain about them (if your compiler doesn't, you're not using enough warnings).
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of discouraged commenting: two many asterisks</span><br/><br/>
+<code>
+/** Assigning null to the pointer variable **/<br/>
+vec = null;<br/>
+</code>
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of discouraged commenting: use of C++ comment</span><br/><br/>
+<code>
+// Assigning null to the pointer variable<br/>
+vec = null;<br/>
+</code>
+</p>
+
+<p class='correctcode'>
+<span class='codetitle'>Example of encouraged commenting</span><br/><br/>
+
+<code>
+/* Assigning null to the pointer variable */<br/>
+vec = null;<br/>
+</code>
+</p>
+
+<p class='correctcode'>
+<span class='codetitle'>Example of encouraged multiline commenting</span><br/><br/>
+<code>
+/* vec.h declares an interface to create and access bytevectors, which<br/>
+&nbsp;&nbsp; can be dynamically read from, written to and expanded.<br/>
+&nbsp;&nbsp; based very closely on the old vec.[ch] written by Hugh Williams&nbsp;*/<br/>
+</code>
+</p>
+
+<h2>Brace Placement</h2>
+<p>
+
+<a name="braces"/>
+Opening braces should be on the same line as the conditional or declarative
+statement that the brace is a part of.  Closing braces should be on a line by
+themselves.  This style was adopted to try and keep code length to a minimum,
+while retaining reasonable readability.  The authors realise that not everyone
+agrees with this position, but we don't care :o).  Seriously, there is probably
+no objective reasoning to prefer this to a brace-on-next-line style, so we
+chose the one we're most comfortable with.  
+</p>
+
+<p>
+Another issue in brace placement is whether to brace single statements in a
+conditional.  The authors recommend bracing all statements in 
+conditionals, as it makes adding more statements to it later easier and less 
+error-prone.
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of discouraged brace placement: opening braces on seperate lines and unbraced single statement</span><br/><br/>
+<code>
+struct vec *VecInit(unsigned long int initsize)<br/>
+{<br/>
+&nbsp;&nbsp;struct vec *v = malloc(sizeof(*v));<br/>
+
+<br/>
+&nbsp;&nbsp;if (v &amp;&amp; (v-&gt;vector = malloc(initsize)))<br/>
+&nbsp;&nbsp;{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;size = initsize;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;pos = v-&gt;len = 0;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;err = 0;<br/>
+
+&nbsp;&nbsp;}<br/>
+&nbsp;&nbsp;else if (v)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;free(v);<br/>
+<br/>
+&nbsp;&nbsp;return v;<br/>
+}<br/>
+</code>
+</p>
+
+<p class='correctcode'>
+<span class='codetitle'>Example of encouraged brace placement</span><br/><br/>
+
+<code>
+struct vec *VecInit(unsigned long int initsize) {<br/>
+&nbsp;&nbsp;struct vec *v = malloc(sizeof(*v));<br/>
+<br/>
+&nbsp;&nbsp;if (v &amp;&amp; (v-&gt;vector = malloc(initsize))) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;size = initsize;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;pos = v-&gt;len = 0;<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;v-&gt;err = 0;<br/>
+&nbsp;&nbsp;} else if (v) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;free(v);<br/>
+&nbsp;&nbsp;}<br/>
+<br/>
+&nbsp;&nbsp;return v;<br/>
+}<br/>
+</code>
+</p>
+
+<h2>Naming</h2>
+<p>
+<a name="naming"/>
+Naming conventions apply to functions, macros, variables, files and so on.
+This document will not attempt to discuss the semantics of naming schemes,
+merely their format.  The authors suggest using all uppercase names when the 
+language construct is a textual operation, and a mixture of uppercase and lowercase names otherwise. This means that typedefs and macros (including preprocessor constants) should be declared using uppercase letters, and everything else should contain mixture of uppercase and lowercase letters.  Multiword names should have the first word in lowercase and the first character of the subsequent words in uppercase. This convention is merely one of many, but is intended to be consistent and specify the difference between preprocessor operations and proper language operations, while minimising the variation (and hence inconsistencies) between all other names.  
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of discouraged naming method: use of non-capitalised macro and only lower case for multiword variables</span><br/><br/>
+<code>
+#define Min(a, b) (((a) &gt; (b)) ? (b) : (a))<br/>
+
+&nbsp;&nbsp;int isize,<br/>
+&nbsp;&nbsp;inumstrings;<br/>
+&nbsp;&nbsp;char **ppszstrings;<br/>
+</code>
+</p>
+
+<p class='correctcode'>
+<span class='codetitle'>Example of encouraged naming method</span><br/><br/>
+<code>
+#define MIN(a, b) (((a) &gt; (b)) ? (b) : (a))<br/>
+
+&nbsp;&nbsp;int size, numStrings;<br/>
+&nbsp;&nbsp;char **stringArray;<br/>
+</code>
+</p>
+
+<h2>Function Declarations</h2>
+<p>
+<a name="functions"/>
+Each function body should be preceded by an comment block, which has been described avove in the comments section.<br/>
+Each function name should begin with a uppercase character. For multiword function names, the first character of every word should be an upper case character.<br/>
+The opening paranthesis should be on the same line as the function name.<br/>
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of discouraged function declaration method: return type on seperate line</span><br/><br/>
+<code>
+void<br/>
+Sort(char *A, int n, int size, int (*cmp)(char *l, char *r)) {<br/>
+&nbsp;&nbsp;/* some code */<br/>
+}<br/>
+</code>
+</p>
+
+<p class='incorrectcode'>
+<span class='codetitle'>Example of discouraged function declaration method: brace on seperate line and multi word convention not followed.</span><br/><br/>
+<code>
+void Sortcharacters(char *A, int n, int size, int (*cmp)(char *l, char *r))<br/>
+{<br/>
+&nbsp;&nbsp;/* some code */<br/>
+}<br/>
+</code>
+</p>
+
+<p class='correctcode'>
+
+<span class='codetitle'>Example of encouraged function declaration method</span><br/><br/>
+<code>
+/**<br/>
+ * this code sorts blah... blah.. blah...<br/>
+ * @param A .... descreption....<br/>
+ * @param n .... descreption....<br/>
+ * ....<br/>
+ * ....<br/>
+ */<br/>
+void SortCharacters(char *A, int n, int size, int (*cmp)(char *l, char *r)) {<br/>
+&nbsp;&nbsp;/* some code */<br/>
+}<br/>
+</code>
+</p>
+
+
+<p>
+<h3>Please adhere to these conventions, as these will carry some marks in every assignment.</h3>
+</p>
+
+</body>
+</html>
+
