@@ -1,0 +1,215 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\f0\fs20 NAME:ARIJIT GHOSH \par
+ROLL NO:03CS3007\par
+\par
+\par
+a)\par
+\par
+Given Grammar:\par
+\par
+S -> AS | b\par
+S -> SA | a\par
+                       \par
+\par
+\par
+             I)                 S                                               II)                 S     \par
+                              /   \\                                                                /   \\\par
+                           A      S                                                            A    S\par
+                         /   \\        \\                                                         /      /  \\\par
+                      S      A       b                                                     a     A    S\par
+                     /  \\        \\                                                                  /  \\      \\\par
+                   A   S        a                                                              S    A     b\par
+                  /       \\                                                                      /         \\\par
+                a         b                                                                   b           a\par
+\par
+            Two seperate parse tree for the same word (abab) that  belong to the language .\par
+            Hence the language is ambiguous .(proved)\par
+\par
+2)Contructing the SLR parsing table for the given grammer : \par
+\par
+Given Grammar:\par
+\par
+S -> AS | b\par
+A -> SA | a\par
+\par
+Augmented Grammar:\par
+\par
+S' -> S\par
+S -> AS | b\par
+A -> SA | a\par
+\par
+States of the Augmented Grammar :\{ 0,1,2,3,4,5,6,7\}\par
+Start State : 0\par
+\par
+goto(0,a) = 1\par
+goto(0,b) = 2\par
+goto(0,S) = 3\par
+goto(0,A) = 4\par
+\par
+goto(3,a) = 1\par
+goto(3,b) = 2\par
+goto(3,S) = 6\par
+goto(3,A) = 5\par
+\par
+goto(4,a) = 1\par
+goto(4,b) = 2\par
+goto(4,S) = 7\par
+goto(4,A) = 4\par
+\par
+goto(5,a) = 1\par
+goto(5,b) = 2\par
+goto(5,S) = 6\par
+goto(5,A) = 4\par
+\par
+goto(6,a) = 1\par
+goto(6,b) = 2\par
+goto(6,S) = 6\par
+goto(6,A) = 5\par
+\par
+goto(7,a) = 1\par
+goto(7,b) = 2\par
+goto(7,S )= 6\par
+goto(7,A) = 5\par
+\par
+\par
+action[ 0,a ] = shift 1\par
+action[ 0,b ] = shift 2\par
+\par
+action[1 ,a ] = reduce A -> a\par
+action[ 1,b ] = reduce A -> a\par
+\par
+action[ 2,a ] = reduce S -> b\par
+action[ 2,b ] = reduce S -> b\par
+\par
+action[ 3,a ] = shift 1\par
+action[ 3,b ] = shift 2 \par
+action[ 3,a ] = reduce S' -> S\par
+action[ 3,b ] = reduce S' -> S\par
+action[ 3,$ ] = accept\par
+\par
+action[ 4,a ] = shift 1\par
+action[ 4,b ] = shift 2\par
+\par
+action[5 ,a ] = shift 1\par
+action[5 ,b ] = shift 2\par
+action[5 , a] = reduce A -> SA\par
+action[5 , b] = reduce A -> SA\par
+\par
+action[6 ,a ] = shift 1\par
+action[6 ,b ] = shift 2\par
+\par
+action[7 ,a ] = shift 1\par
+action[7 ,b ] = shift 2\par
+action[7 ,a ] = reduce S -> AS\par
+action[7 ,b ] = reduce S -> AS\par
+\par
+The language is not SLR since the transition table has got conflicting action .\par
+\par
+3)Constructing LR(!) parsing table for the given grammar.\par
+\par
+The sates are :\{0,1,2,3,4,5,6,7\}\par
+Where the start state is :0\par
+\par
+goto(0,a) = 1\par
+goto(0,b) = 2\par
+goto(0,S) = 3\par
+goto(0,A) = 4\par
+\par
+goto(3,a) = 1\par
+goto(3,b) = 2\par
+goto(3,S) = 5\par
+goto(3,A) = 4\par
+\par
+\par
+goto(4,a) = 1\par
+goto(4,b) = 2\par
+goto(4,S) = 7\par
+goto(4,A) = 6\par
+\par
+goto(5,a) = 1\par
+goto(5,b) = 2\par
+goto(5,S) = 5\par
+goto(5,A) = 4\par
+\par
+goto(6,a) = 1\par
+goto(6,b) = 2\par
+goto(6,S) = 7\par
+goto(6,A) = 6\par
+\par
+goto(7,a) = 1\par
+goto(7,b) = 2\par
+goto(7,S) = 5\par
+goto(7,A) = 4\par
+\par
+\par
+action[0 ,a ] = shift 1\par
+action[0 ,b ] = shift 2\par
+\par
+action[1 ,a ] = reduce A -> a  \par
+action[1 ,b ] = reduce A -> a \par
+ \par
+\par
+action[2 ,a ] = reduce S -> b\par
+action[2 ,b ] = reduce S -> b\par
+\par
+action[3 ,a ] = shift 1\par
+action[3 ,b ] = shift 2\par
+action[3 ,$ ] = accept \par
+\par
+action[4 ,a ] = shift 1\par
+action[4 ,b ] = shift 2\par
+action[4 ,a ] = reduce A -> SA\par
+action[4 ,b ] = reduce A -> SA \par
+\par
+action[5 ,a ] = shift 1\par
+action[5 ,b ] = shift 2\par
+\par
+action[6 ,a ] = shift 1\par
+action[6 ,b ] = shift 2\par
+\par
+action[7 ,a ] = shift 1\par
+action[7 ,b ] = shift 2\par
+action[7 ,a ] = reduce S -> AS\par
+action[7 ,b ] = reduce S -> AS\par
+\par
+Grammar is not a LR(1) because the transition table has got conflicting entries.\par
+\par
+4) Constructing LALR parsing table for the given grammar ;\par
+\par
+The states are :\{ 0,1,2,3,4,5,6,7\}\par
+Where the start state is :0\par
+\par
+All the states remain same after reduction. Hence the  goto table remain same for both the case . i.e same as the LR(1).\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
