@@ -1,0 +1,1167 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <Title> CS 43001 Compiler Construction Course</Title>   
+</head>
+
+<body bgcolor="#000000" text="#ffffcc" link="#ffff00" vlink="#ddcc55" alink="#ff9999">
+
+<center>
+<br>
+<br>
+<H1><font size=+2>CS 43001 Compiler Construction</font></H1>
+<H3>(Autumn Semester 2005)</H3>
+<b>Theory</b><br>  <b>Niloy Ganguly</b> <a href = "mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a><br><br>
+<b>Laboratory</b><br>  
+<b>Chitta Ranjan Mandal</b> <a href = "mailto:chitta@cse.iitkgp.ernet.in">chitta@cse.iitkgp.ernet.in</a><br>
+<b>Niloy Ganguly</b> <a href = "mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a><br><br>
+<b>Teaching Assisstant</b><br> 
+<b>Subrat Kr. Panda </b> <a href = "mailto:subrat@cse.iitkgp.ernet.in">subrat@cse.iitkgp.ernet.in</a><br>
+<b>Hitashyam Maka</b> <a href = "mailto:hitashyam2@yahoo.com">hitashyam2@yahoo.com</a><br>
+<b>Siva Kumar</b> <a href = "mailto:akkireddisiva@yahoo.co.in">akkireddisiva@yahoo.co.in</a><br>
+<p>
+</center>
+<hr>
+<a href="#notice"><H3>Notices</H3></a>
+<a href="#myselect"><H3>Theory</H3></a>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lecture">Lectures</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Assessment">Evaluation</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Blog">Blog</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#mini-assignment">Mini-Assignments</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Assignment">Assignments</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#StudentList">Students List</a>
+
+<H3><a href = http://sit.iitkgp.ernet.in/~wbcm>Laboratory</a></H3>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign">Lab-Assignments</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign1">Assignment 1</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign2">Assignment 2</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign3">Assignment 3</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign4">Assignment 4</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign5">Assignment 5</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign6">Assignment 6</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign7">Assignment 7</a><br>
+
+<hr>
+
+<center>
+<a name="notice"><H2>Notices</H2></a>
+</center>
+<font color = "red"> 6.12.2005 - <a href="Grade.pdf"> Grades </a> are out. Enjoy!!!</font> <br>
+27.09.2005 - People in serious trouble over attendance (in order of seriousness).<br>
+<table border="1">
+<tr>	<td>	Sl. No.	</td> <td>	Roll No.	</td> <td>	Name	</td>	</tr>
+<tr>	<td>	1.	</td> <td>	02CS1009	</td> <td>	SHAMEEK BAIN KOLKATA/NEHRU	</td>	</tr>
+<tr>	<td>	2.	</td> <td>	03CS3006	</td> <td>	PAWAN SINGH FAUJADAR BEH/AZAD	</td>	</tr>
+<tr>	<td>	3.	</td> <td>	03CS3012	</td> <td>	SHAH RUSHIN NAVNEET AH/RP	</td>	</tr>
+<tr>	<td>	4.	</td> <td>	03CS1033	</td> <td>	SANDEEP BANDELA KAKI/ PATEL	</td>	</tr>
+<tr>	<td>	5.	</td> <td>	03CS1005	</td> <td>	NEERAJ NAGI RAJ/ AZ	</td></tr>
+<tr>	<td>	6.	</td> <td>	03CS1001	</td> <td>	S TEJASWAI UPPULURI AP/ LLR	</td>	</tr>
+<tr>	<td>	7.	</td> <td>	03CS3007	</td> <td>	ARIJIT GHOSH KOL/PATEL	</td>	</tr>
+<tr>	<td>	8.	</td> <td>	03CS1016	</td> <td>	HARI KRISHNA VEMURI VIJAYAWADA/ RP	</td>	</tr>
+<tr>	<td>	9.	</td> <td>	03CS1037	</td> <td>	ANEESH JAIN ND/ AZ	</td>	</tr>
+<tr>	<td>	10.	</td> <td>	03CS3009	</td> <td>	ARPIT JAIN JAIPUR/RP	</td>	</tr>
+<tr>	<td>11.		</td> <td>	02CS1022	</td> <td>	SAMIRSATPATHY SAMBALPUR/PATEL	</td>	</tr>
+<!-- <tr>	<td>	12.	</td> <td>	03CS1006	</td> <td>	HENAL AGRAWAL GUJ/ AZ	</td></tr>
+<tr>	<td>	13.	</td> <td>	03CS1013	</td> <td>	KUNAL SILKU LUCKNOW/ RP	</td></tr>
+<tr>	<td>	14.	</td> <td>	02CS1010	</td> <td>	HRISHIKESH BHATTACHARYA KOLKATA/RP	</td>	</tr>
+<tr>	<td>	15.	</td> <td>	03CS1004	</td> <td>	HARISH DAIYA RAJ/ RP	</td></tr>
+<tr>	<td>	16.	</td> <td>	03CS1031	</td> <td>	BABU PURAN KALAPALA VIS/ LLR	</td>	</tr>
+<tr>	<td>	17.	</td> <td>	03CS1032	</td> <td>	ARITRA SAHA CAL/ NEHRU	</td>	</tr>--!>
+</table>
+
+<font color = "red"> 24.10.2005 </font>- Class Test on 7.11.2005, 2.30 pm<br>
+<font color = "red"> 26.10.2005 </font>- Lab viva on 14.11.2005, 1.30 pm, all group members should come together<br>
+<font color = "red"> 15.11.2005 </font>- Marks (also viva) are out (partially), check your marks. If you have any questions regarding your marks, your questions will be answered after endsem along with your endsem marks. (Appointment time will be 
+announced later.)<br> If you have any questions regarding your lab assignment marks, please mail your <a href=Groups.pdf> respective TA </a>,
+writing clearly the debates you have. If he feels your queries worth addressing , he will give you an appointment.<br> 
+<font color = "red"> MANY OF YOU HAVE NOT SUBMITTED THE NOTES. PLEASE SUBMIT IT BY 17.11.2005. OTHERWISE IT WILL BE DISTRIBUTED TO OTHERS. THIS IS A HARD DEADLINE </font> 
+<hr>
+<center>
+<a name="myselect"><H2>Theory</H2></a>
+</center>
+
+<pre>
+  Lectures   : 	Mon - 4, Tue - 1,2, Thu -3 
+  Room #     :  CSE 107
+  Units      :	4-0-2
+  Credits    :  4 (Theory) 
+  Instructor :	Niloy Ganguly
+  Contact    : 	Room #313  (CSE), Phone 3460
+
+Text Books:
+
+[1]  Aho, A. V., Sethi, R. and Ullman, J. D.
+     Compilers - Principles, Techniques and Tools
+     Addison-Wesley, 1988 (Indian reprint)
+     - aka Dragon book
+
+[2] Santanu Chattopadhyay
+    Compiler Design
+    PHI, 2005.
+</pre>
+
+<a name="Lecture"><H2>Lectures</H2></a>
+The lecture notes are unedited version of student submission.<br> 
+01.08.05 -	<a href=notes/introduction.doc>Introduction,</a> 03CS3012 (03CS3022)<br>
+04.08.05 -	<a href=notes/introduction1.doc>Introduction,</a> 03CS3015<br>
+08.08.05 -	<a href=notes/lexan.doc> Lexical Analyzer,</a> 03CS3006 (03CS3019)<br>
+09.08.05 -	<a href=notes/subsetconst.doc>Thompson Construction, Subset Construction,</a> 03CS1005 (03CS3003) <br>
+09.08.05 -	<a href=notes/subsetconst1.doc>Thompson Construction, Subset Construction,</a> 03CS3014 <br>
+11.08.05 -	<a href=notes/lex.doc>Lex,</a> 03CS1033 (03CS1018)<br>
+16.08.05 -	<a href=notes/syan.doc>Syntax Analysis, Error Recovery,</a> 03CS1035 <br>
+16.08.05 -	<a href=notes/PG.doc>Problems in Grammar,</a> 03CS1002 <br>
+22.08.05 -	<a href=notes/TDP.doc>Top Down Parsing, Recursive Descent, Predictive Parsing</a>, 03CS1021<br>
+25.08.05 -	<a href=notes/LL1.doc>LL(1) Parser,</a> 03CS3008<br>
+29.08.05 -	<a href=notes/LL1.doc>LL(1) Parser,</a> 03CS1014<br>
+29.08.05 -	<a href=notes/LL1.doc>LL(1) Parser,</a> 03CS1011 <br>
+30.08.05 -	<a href=notes/BUP.doc>Bottom-up Parser, Operator Precedence Parser,</a> 03CS3005<br>
+30.08.05 -	<a href=notes/OP.doc>Operator Precedence Parser,</a> 03CS1017<br>
+01.09.05 -	<a href=notes/OP2.doc>Operator Precedence Parser,</a> 03CS1032<br>
+05.09.05 -	<a href=notes/LRP.doc>LR Parser,</a> 02CS1009 (03CS3018)<br>
+06.09.05 -	<a href=notes/LRP.doc>LR Parser,</a> 03CS3021<br>
+06.09.05 -	<a href=notes/LRP.doc>LR Parser,</a> 03CS3020<br>
+12.09.05 -	<a href=notes/LR1P.doc>LR(1) Parser,</a> 03CS1028<br>
+13.09.05 -	<a href=notes/LALRP.doc>LR(1) Parser, LALR Parser,</a> 03CS1036<br>
+13.09.05 -	<a href=notes/LALRP.doc>LR(1) Parser, LALR Parser,</a> 03CS3021<br>
+15.09.05 -	<a href=notes/AG.doc>Ambiguity in Grammar, Error Recovery</a> 03CS1023<br>
+26.09.05 -	<a href=notes/ERSDT.doc>Error Recovery, Syntax Directed Translation</a> 03CS1004(03CS1007)<br>
+27.09.05 -	<a href=notes/TACIntro1.doc>Intermediate Code Generation </a> 03CS1026<br>
+27.09.05 -	<a href=notes/TACintro.doc>Three Address Code Generation, Introduction</a> 03CS1001, 03CS1008 (03CS1012)<br>
+03.10.05 -	<a href=notes/TACARR0.doc>Three Address Code Generation</a> 03CS1016<br>
+04.10.05 -	<a href=notes/TACARR1.doc>Three Address Code Generation - Array</a> 03CS1020<br>
+04.10.05 -	<a href=notes/TACARR1.doc>Three Address Code Generation - Array</a> 03CS1024<br>
+04.10.05 -	<a href=notes/TACARR.doc>Three Address Code Generation - Array</a> 03CS1031(03CS1034)<br>
+17.10.05 -	<a href=notes/TACBool.doc>Three Address Code Generation -Boolean Functions</a> 03CS1037<br>
+18.10.05 -	<a href=notes/TACCS.doc>Three Address Code Generation - Control Statements</a> 03CS3004<br>
+18.10.05 -	<a href=notes/TACBool1.doc>Three Address Code Generation</a> 03CS3009<br>
+20.10.05 -	<a href=notes/TACBP.doc>Three Address Code Generation - Backpatching</a> 03CS3010<br>
+24.10.05 -	<a href=notes/TACTCf.doc>Three Address Code Generation - Translation of Control Flow Statement</a> 02CS1010<br>
+25.10.05 -	<a href=notes/TACBP1.doc>Three Address Code Generation</a> 02CS1022 (03CS1001)<br>
+25.10.05 -	<a href=notes/TCIntro.doc>Target Code Generation</a> 03CS3012 (03CS1006) <br>
+27.10.05 -	<a href=notes/TCBB.doc>Target Code Generation - Basic Blocks</a> 03CS3006 <br>
+31.10.05 -	<a href=notes/TCNU.doc>Target Code Generation - Next Usage</a> 03CS1033 <br>
+3.11.05 -	<a href=notes/TCRA.doc>Target Code Generation - Register Allocation</a> 02CS1022<br>
+7.11.05 -	<a href=notes/TCDAG1.doc>Target Code Generation - DAG</a> 02CS1009 - This note is slightly different from class note. <br>
+8.11.05 -	<a href=notes/TCDAG.doc>Target Code Generation - DAG</a> 03CS1008 <br>
+8.11.05 -	<a href=notes/TCDAG.doc>Target Code Generation - DAG</a> 03CS3006 <br>
+10.11.05 -	<a href=notes/TCLT.doc>Target Code Generation - DAG</a> 03CS1015 <br>
+14.11.05 -	<a href=notes/TCheck.doc>Type Checking</a> 03CS3013<br>
+17.11.05 -	<a href=notes/TCheck1.doc>Type Checking and Peephole Optimization</a> 03CS3013<br>
+
+
+<a name="Assessment"><H2>Evaluation</H2></a>
+	Teacher's Assessment : 20 <br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Miniassignment : 4<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Assignment     : 4<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href=notes/classtest.pdf>Class Test</a>     : 4<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Attendance     : 4<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Extra	       : 4<br><br>
+	<a href=notes/midsem.pdf>Mid-sem </a>:	30<br><br>
+	End-sem :	50<br>
+
+<a name="Blog"><H2>Blog</H2></a>
+<a href=blog.htm>Class Diary before midsem</a> <br>
+03CS3016, 03CS3022, 03CS1010, 03CS3013, 03CS3024<br><br>
+
+<a href="http://its-compiler-blog.blogspot.com/">Class Diary after midsem </a><br>
+03CS3011, 03CS3023, 03CS3025
+
+<a name="mini-assignment"><H2>Mini-Assignments</H2></a>
+<a href=notes/Mini.doc>Answers</a>  - 03CS1003
+<p>
+1. Write the regular expression for variable names. Assume that the variable name can start with alphabets or underscore and can also have digits but _____ is not a variable. (First 2 correct submissions accepted)
+</p>
+
+<p>
+2. Write the regular expression to represent an ip address.
+(First 5 correct submissions accepted)
+</p>
+
+<p>
+3. Given |r| the length of the regular expression,
+and |x| is the length of the input string write down the time and space
+complexity to test whether the string belongs to the regular expression or not
+by an (a) NFA and (b) DFA. (First 7 correct submissions accepted)
+</p>
+
+<p>
+4. Show the two trees produced by the grammar S-> aSbS | bSaS | epsilon. 
+(First 10 correct submissions accepted)
+</p>
+
+<p>
+5. Given the grammar<br>
+E  -> T E' <br>
+E' -> + T E' | epsilon <br>
+T  -> F T' <br>
+T' -> * F T' | epsilon <br>
+F  -> (exp) | id <br>
+Construct for Recursive Predictive Parsing, minimum state transition
+diagram for the rules <br>
+T  -> F T' <br>
+T' -> * F T' | epsilon <br>
+(First 10 correct submissions accepted)
+</p>
+
+<p>
+6. Write down the CFG to detect the following.
+(a). occurence of balanced parentheses  
+(b). strings over alphabet {a,b} such that every 'a' is followed by a 'b'.
+(First 10 correct submissions accepted)
+</p>
+
+<p>
+7. Given the grammar
+S -> iEtSS' | a <br>
+S'-> eS <br>
+E -> b. <br>
+
+Prepare the first and follow list and the LL(1) parsing table. 
+(First 20 correct submissions accepted)
+</p>
+
+<p>
+8. Given the grammar<br> 
+S -> A <br>
+A -> T | A + T | A - T <br>
+T -> F | T * F | T / F <br>
+F -> P | P ^ F <br>
+P -> id | (A) <br>
+Prepare the operator precedence table. 
+(First 23 correct submissions accepted)
+</p>
+
+
+<a name="Assignment"><H2>Assignments</H2></a>
+
+
+Submit the assignments individually.
+<p>
+1. Consider the grammar<br> 
+	S -> A S | b<br>
+	A -> S A | a <br>
+a. Show that the grammar is ambiguous <br>
+b. Construct the corresponding SLR parsing table <br>
+c. Construct the corresponding LR(1) parsing table <br>
+d. Construct the corresponding LALR parsing table <br>
+Opening date - 28.09.2005, Closing Date - 6.10.2005<br>
+<font color = "red"> Persons to submit - <a href=notes/VAssign.doc>03CS1019</a>, <a href=notes/NAssign.doc>03CS1025</a>, <a href=notes/AAssign.rtf>03CS3007</a></font>
+</p>
+
+<p>2. Consider the grammar <br>
+S -> AaAb <br>
+S -> BbBa <br>
+A -> epsilon <br>
+B -> epsilon <br>
+Show that the grammar is not SLR<br>
+Opening Date - 28.09.2005, Closing Date - 6.10.2005<br>
+<font color = "red"> Persons to submit - 03CS1006, <a href=notes/SAssign2.doc>03CS1013</a>, <a href=notes/SAssign1.doc>03CS1027</a> </font>
+</p>
+<a name="StudentList"><H2>Students List</H2></a>
+
+<!--<a href  = marks.xls>Marks</a> <br>--!>
+
+
+<table border="1">
+<tr>	<td>	Sl. No.	</td> <td>	Roll No.	</td> <td>	Name	</td>	<td>MA</td><td> A </td><td>CT</td><td>AT</td><td>Ex</td><td>MS</td><td>ES</td><td>Tot</td><td>Grade</td></tr>
+<tr>	<td>	1.	</td> <td>	03CS1001	</td> <td>	S TEJASWAI UPPULURI AP/ LLR	</td>	<td> 4(8) </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	2.	</td> <td>	03CS1002	</td> <td>	SAURABH AGARWAL CAL/ RP	</td>	<td> 4(7) </td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	3.	</td> <td>	03CS1003	</td> <td>	SHAUNAK CHATTERJEE CAL/ RK	</td>	<td> 4(8) </td>  <td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	4.	</td> <td>	03CS1004	</td> <td>	HARISH DAIYA RAJ/ RP	</td>	<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	5.	</td> <td>	03CS1005	</td> <td>	NEERAJ NAGI RAJ/ AZ	</td>	<td></td><td> 0 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	6.	</td> <td>	03CS1006	</td> <td>	HENAL AGRAWAL GUJ/ AZ	</td>	<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	7.	</td> <td>	03CS1007	</td> <td>	VENUGOPAL KASTURI AP/ PATEL	</td>	<td> 4(4) </td><td> 4 </td><td></td><td>  </td><td> 1(7) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	8.	</td> <td>	03CS1008	</td> <td>	PARANG SARAF RAJGHAT/ RK	</td>	<td> 4(5) </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	    9.	</td> <td>	03CS1010	</td> <td>	SHRAVYA REDDY KONDA AP/ 	</td>	<td> 4(8) </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	10.	</td> <td>	03CS1011	</td> <td>	ARCHISMAN DAS ROUR/ RK	</td>	<td> 4(5) </td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	11.	</td> <td>	03CS1012	</td> <td>	GM RAVI SASTRY VIS/ NEHRU	</td>	<td> 4(8) </td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	12.	</td> <td>	03CS1013	</td> <td>	KUNAL SILKU LUCKNOW/ RP	</td>	<td> 4(6) </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	13.	</td> <td>	03CS1014	</td> <td>	PUSHKAR PRASAD BOMBAY/ RK</td>	<td> 4(5) </td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	14.	</td> <td>	03CS1015	</td> <td>	SURESH SHARMA BIKANER/ NEHRU	</td>	<td> 4(4) </td><td></td><td></td><td> </td><td>3(6,7,8)</td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	15.	</td> <td>	03CS1016	</td> <td>	HARI KRISHNA VEMURI VIJAYAWADA/ RP	</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	16.	</td> <td>	03CS1017	</td> <td>	DEBAPRIYA CHATTERJEE KOLKATA/ RK	</td><td> 4(8) </td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	17.	</td> <td>	03CS1018	</td> <td>	SANJIB KUMAR DAS DHANBAD/ RP	</td><td> 4(5) </td>  <td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	18.	</td> <td>	03CS1019	</td> <td>	VIRENDRA SINGH SHEKHAWAT JAIPUR/ LLR	</td><td> 4(6) </td><td> 4</td><td></td><td> </td><td>1(7) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	19.	</td> <td>	03CS1020	</td> <td>	ADITYA AWASTHI INDORE/ RP	</td><td> 4(6) </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	20.	</td> <td>	03CS1021	</td> <td>	PADURU NAGENDER REDDY AP/ RK	</td><td> 4(3) </td>  <td>4</td><td></td><td></td><td> 1(7) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	21.	</td> <td>	03CS1023	</td> <td>	KAPIL GUPTA KANPUR/ RP	</td><td>4(1)</td><td>4</td><td></td><td></td><td> 4(3,4,7,8) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	22.	</td> <td>	03CS1024	</td> <td>	PIPPARI SURESH CHANDRA HYDERABAD/ LLR	</td><td> 4(3) </td><td></td><td></td><td></td> <td>3(5,6,7) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	23	</td> <td>	03CS1025	</td> <td>	NITIN D MEHTA JODHPUR/ RK	</td><td> 4(8)</td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	24.	</td> <td>	03CS1026	</td> <td>	RAMJI NAGARIYA JHANSI/AZAD	</td><td> 4(2) </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	25.	</td> <td>	03CS1027	</td> <td>	SANDEEP KUMAR MISHRA RCHI/RK	</td><td></td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	26.	</td> <td>	03CS1028	</td> <td>	NEERAJ MEENA JAIPUR/ NEHRU	</td><td> 4(8) </td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	27.	</td> <td>	03CS1031	</td> <td>	BABU PURAN KALAPALA VIS/ LLR	</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	28.	</td> <td>	03CS1032	</td> <td>	ARITRA SAHA CAL/ NEHRU	</td><td> 4(6) </td><td> 2 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	29.	</td> <td>	03CS1033	</td> <td>	SANDEEP BANDELA KAKI/ PATEL	</td><td></td><td> 0 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	30.	</td> <td>	03CS1034	</td> <td>	ROHIT SINGHAL JAM/ RP	</td><td>4(1)</td><td>4</td><td></td><td></td><td> 3(5,7,8)</td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	31.	</td> <td>	03CS1035	</td> <td>	SOURISH CHAUDHURI CAL/ NEHRU	</td><td> 4(4) </td><td> 4 </td><td></td><td> </td><td> 1(7) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	32.	</td> <td>	03CS1036	</td> <td>	KUMAR DEEPAK DEO/ AZ	</td><td> 4(2) </td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	33.	</td> <td>	03CS1037	</td> <td>	ANEESH JAIN ND/ AZ	</td><td> 4(2) </td><td></td><td></td><td></td><td> 1(8) </td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td>  <td>	DUAL DEGREE	</td>	</tr>
+<tr>	<td>	Sl. No.	</td> <td>	Roll No.	</td> <td>	Name	</td>	</tr>
+<tr>	<td>	1.	</td> <td>	03CS3003	</td> <td>	PIYUSH GOEL ND/RK	</td><td> 4(5) </td>  <td>4</td><td></td><td></td><td> 1(7) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	2.	</td> <td>	03CS3004	</td> <td>	DIGVIJAY SINGH ND/RK	</td><td> 4(3) </td><td></td><td></td><td></td><td> 2(4,5) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	3.	</td> <td>	03CS3005	</td> <td>	UMANG JAIN NEVEDA/PATEL	</td><td> 4(4) </td><td> 4 </td><td></td><td></td><td> 2(5,7) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	4.	</td> <td>	03CS3006	</td> <td>	PAWAN SINGH FAUJADAR BEH/AZAD	</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	5.	</td> <td>	03CS3007	</td> <td>	ARIJIT GHOSH KOL/PATEL	</td><td></td><td> 3 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	6.	</td> <td>	03CS3008	</td> <td>	MUKESH AGRAWAL PATNA/AZAD	</td><td> 4(2) </td><td> 4 </td><td></td><td></td><td> 2(7,8) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	7.	</td> <td>	03CS3009	</td> <td>	ARPIT JAIN JAIPUR/RP	</td><td> </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	8.	</td> <td>	03CS3010	</td> <td>	MAYANK JAIN                          /RK	</td><td> 4(2) </td><td></td><td></td><td></td><td> 2 (7,8) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	9.	</td> <td>	03CS3011	</td> <td>	UDIT SAJJANHAR MEERUT/RK	</td><td> 4(8) </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	10.	</td> <td>	03CS3012	</td> <td>	SHAH RUSHIN NAVNEET AH/RP	</td><td> 4(8) </td><td> 0 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	11.	</td> <td>	03CS3013	</td> <td>	MUNEISH KUMAR ADYA SIMLA/LLR	</td>	</tr>
+<tr>	<td>	12.	</td> <td>	03CS3014	</td> <td>	AMAR KUMAR DANI KOL/PATEL	</td><td> 4(5) </td>  <td>4</td><td></td><td></td><td> 2(7,8) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	13.	</td> <td>	03CS3015	</td> <td>	NITIN BANSAL FARI/RK	</td><td> 4(5) </td><td> 4 </td><td></td><td></td><td> 1(6) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	14.	</td> <td>	03CS3016	</td> <td>	HEMA SWETHA KOPPULA VIS/IG	</td><td> 4(5) </td><td></td><td></td><td></td><td> 1(7) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	15.	</td> <td>	03CS3018	</td> <td>	DIPAK KUMAR BEHERA BHU/NEHRU	</td><td> 4(4) </td><td> 4 </td><td></td><td></td><td> 3(6,7,8) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	16.	</td> <td>	03CS3019	</td> <td>	PRAMOD KUMAR GIRIDIH/LLR	</td> <td>		</td> <td> 4		</td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	17.	</td>	<td>	03CS3020	</td> <td>	BHABEN DEORI                       /LLR	</td><td> 4(8) </td><td> 4 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	18.	</td> <td>	03CS3021	</td> <td>	JOY DEEP NATH INDORE/RK	</td><td> 4(4) </td><td> 4 </td><td></td><td></td><td> 2(7,8) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	19.	</td> <td>	03CS3022	</td> <td>	TATHAGATA DAS KOL/AZAD	</td><td> 4(3) </td><td></td><td></td><td></td><td> 2 + 1(8) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	20.	</td> <td>	03CS3023	</td> <td>	SANKALP AGARWAL JAIPUR/AZAD	</td><td> 4(8) </td><td></td><td></td><td> </td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	21.	</td> <td>	03CS3024 	</td> <td>	PANKAJ JAJOO KOTA/NEHRU	</td><td> 4(3) </td><td></td><td></td><td> </td><td>3(6,7,8) </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	22.	</td> <td>	03CS3025	</td> <td>	KUMAR PUSPESH PATNA/NEHRU	</td><td> 4(3) </td><td></td><td></td><td></td><td> 2(6,7) </td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td>	<td>	FOURTH YEAR (2002 BATCH)	</td> 	</tr>
+<tr>	<td>	Sl. No.	</td> <td>	Roll No.	</td> <td>	Name	</td>	</tr>
+<tr>	<td>	1	</td> <td>	02CS1009	</td> <td>	SHAMEEK BAIN KOLKATA/NEHRU	</td><td></td><td> 0 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	2	</td> <td>	02CS1010	</td> <td>	HRISHIKESH BHATTACHARYA KOLKATA/RP	</td><td> 4(8) </td><td></td><td></td><td></td><td> 1 </td><td></td><td></td><td></td><td></td></tr>
+<tr>	<td>	3	</td> <td>	02CS1022	</td> <td>	SAMIRSATPATHY SAMBALPUR/PATEL	</td><td> 4(4) </td><td></td><td></td><td></td><td> 1(8) </td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+
+<center>
+<a name="Lab-Assign"><H1>Lab Assignments</H1></a>
+</center>
+<h2>General Guidelines</h2>
+<ul>
+<li> 3 people per group. 
+<li> Web based submission has to be done. The procedure will be explained
+        during lab hours.
+<li> Each member of the group should specify what he/she has done.
+</ul>
+
+<a name="Lab-Assign1"><h2> Assignment 1: Assignment on Thompson's Construction</h1></a>
+
+
+<p>
+You have to implement the following two algorithms
+<ul>
+<li> Thompson Construction - Constructing NFA from regular expression
+<li> Constructing DFA from NFA.
+</ul>
+
+<p>
+For constructing a lexical analyzer/scanner from a given set of regular
+expression. The input alphabet may be specified by the user. It should be
+possible to encode each symbol of the alphabet as a printable ascii
+character.
+
+
+
+<h3>Marking Guidelines</h3>
+<table>
+<tr><td>(A)<td>NFA construction           <td align="right"><b>15</b>
+
+<tr><td>(B)<td>NFA ouput in proper format <td align="right"><b>5</b>
+<tr><td>(C)<td>Subset construction        <td align="right"><b>20</b>
+<tr><td>(D)<td>DFA ouput in proper format <td align="right"><b>5</b>
+<tr><td>   <td><i>Total marks</i>         <td align="right"><b><i>45</i></b>
+
+</table>
+<p>* Evaluation of items (B) and (D) will be done in the lab.
+Please be present on 12/09/2005 to show your code. </p>
+<p>* The overall working of the code will be evaluated based on test cases.</p>
+
+
+<a name="Lab-Assign2"><h2>Assignment 2: Lex/Scanner for a simple language using lex</h2></a>
+
+<P>Construct a simple C-like language with</P>
+
+<ol>
+<li> Data Type : integer (INT/int), floating point (FLOAT/float)</P>
+<li> Condition constructs:  if</P>
+<li> Loop Constructs: for, while
+<li> Input / Output Constructs:
+<ol>
+    <li>read(x) - Read into variable x
+    <li>print(x) - Write variable x to output
+</ol>
+<li> Relational operators, assignment and arithmetic operators
+
+<li> Only function is main(), there is no other function.
+</ol>
+
+<h3>Example</h3>
+</P>
+<hr>
+<pre>
+main()
+{
+        INT i=0;
+        INT sum=0;
+        INT count;
+       
+        read(count);
+        for(i=0;i&lt;10;i++)
+        {
+               
+               read(x);
+               sum+=x;
+
+        }
+        
+        print(sum);
+}
+</pre>
+<hr>
+
+
+<P>
+You have to implement a Lexical Analyzer/Scanner for the simple C-like programming
+language using 'lex' tools.
+
+<p>
+Take a file as input (You can test it on the above example file).
+<p>
+Output the tokens along with:
+<ul>
+<li>Value of the integer constant
+<li>Value of the floating point constant
+<li>An array of characters (for identifiers)
+</ul>
+<p>
+Use the variable yyval to accomplish this.
+
+<h3>Marking Guidelines</h3>
+<table>
+<tr> <td>Lex token specification    <td align="right"><b>15</b>
+
+<tr> <td>Use of lex variables       <td align="right"><b>5</b>
+<tr> <td><i>Total marks</i>         <td align="right"><i><b>20</b></i>
+</table>
+<p>* Evaluation will be done on test cases.
+
+<a name="Lab-Assign3"><h2> Assignment 3: LL(1) Parser</h2></a>
+<br>
+You have to write a CFG for Simple-C programming language, and implement a table-driven LL(1) parser.
+<p>
+<b>Given</b>
+
+<ol>
+
+<li>The Simple-C language is a simplified and modified subset of C programming language. <br>
+
+   The language specifications are given in second assignment.
+<li> You can get the CFG for C-programming language at Appendix A13
+
+in Kernighan, B. W. and Ritchie, D. M., The C Programming Language, PHI.<br>
+</ol>
+<p>
+
+<b>Reuse</b>
+<br>
+<ul>
+
+<li>Use the Lexical Analyzer developed by you in assignment 2. (Feel free to modify).
+</ul>
+<br>
+
+<p>
+<b>TO BE DONE - with paper and pencil</b>
+<br>
+<ul>
+<li>Write a CFG for the Simple-C language specifications.
+
+<li>Transform your CFG (without changing the language) suitably for
+
+    a table-driven predictive parser (LL(1)).
+
+<li> Compute FIRST, FOLLOW and Predict Sets and create the Parsing table (manually).
+</ul>
+<br>
+
+<p>
+
+<b>TO BE DONE - programming assignment</b>
+<br>
+<ul>
+<li>Write a non-recursive table-driven LL(1) parser.
+</ul>
+<br>
+
+<p>
+<b>Input for this assignment</b>
+<br>
+<P>
+The input will be Simple-C programs, which may be wrong or correct syntactically and semantically. You will have to output both syntax and semantic errors in the Input.
+</P>
+<br>
+
+<p>
+<b>Example Input Programs</b>
+<br>
+<hr>
+<pre>
+Example 1: Correct Simple-C Program
+
+int main()
+{
+
+      int fn1 = 1;
+      int fn2 = 1 ;
+      int i=0;
+      int n;
+      int fn=0;
+     
+      read(n);
+      if(n < 1)
+            print(0);
+      else
+      {
+            while(i < n)
+            {
+                  fn = fn1 + fn2;
+                  print(fn);
+                  fn2 = fn1;
+                  fn1 = fn;
+                  i++;
+            }
+
+      }     
+
+}
+
+The above program should be accepted by the parser.
+
+Example 2: Wrong Simple-C Program
+
+int main()
+{
+
+      int r;
+      int p                   /* Syntactic error here, missing semicolon */
+      int int j;              /* Parse error here, keyword int occurs two times */
+      int total=0;
+      int i;
+      
+      read(r);
+      read(p);
+      scanf (j;            /* unrecognized token here: scanf and mismatched parentheses*/
+      for(i = r; i < p; i+= j)
+            total = total + j;
+      print(total);
+}
+</pre>
+<hr>
+
+The input to your program should be given from the command line. Like a.out < testinput.txt
+<br>
+<p>
+
+<b>Output Expected</b>
+<br>
+<P>
+If input is wrong, i.e the parser was not able to parse the input or lexer was not able to recognize a token, then the output along with diagnosed reasons should be presented to the user.
+</P>
+<p>
+<b>Sample Output</b>
+<br>
+<P>
+FAIL
+<br>
+Line number: 7 Parse Error
+<br>
+Or
+<br>
+
+FAIL
+<br>      
+Line number: 6 Token 716aklas Unexpected Token
+<br>
+If input is correct then OUTPUT should be simply PASS.
+<br>
+</P>
+<p>
+<b>Files To Be Submitted</b>
+<br>
+<ul>
+<li>Individual submissibles, to be submitted by everyone, individually:<ol>
+	<li>Description of own contribution
+</ol>	
+
+<li>Group submissibles, to be submitted by any group member:<ol>
+
+<li>Lex file *.l
+
+<li>Your parser implementation *.c
+
+<li>Header file *.h
+
+<li>Sample input file  in.txt
+
+<li>README.txt
+
+<li>Makefile
+</ol>
+</ul>
+ 
+<P>
+You have to implement a Lexical Analyzer/Scanner for the simple C-like programming
+language using 'lex' tools.
+<p>
+Take a file as input (You can test it on the above example file).
+<p>
+
+Output the tokens along with:
+<ul>
+<li>Value of the integer constant
+<li>Value of the floating point constant
+<li>An array of characters (for identifiers)
+</ul>
+<p>
+Use the variable <tt>yyval</tt> to accomplish this.
+
+<h3>Marking Guidelines</h3>
+<table>
+<tr> <td>Coverage of tokens of language     <td align="right"><b>5</b>
+
+<tr> <td>Interface with lexical analyzer    <td align="right"><b>5</b>
+<tr> <td>Construction of CFG for given language
+					    <td align="right"><b>5</b>
+<tr> <td>Table driven LL(1) parser          <td align="right"><b>10</b>
+<tr> <td>Construction of LL(1) parsing table for particular
+         CFG and its actual relevance to the given language
+					    <td align="right"><b>20</b>
+<tr> <td>Individual assessment              <td align="right"><b>5</b>
+
+<tr> <td><i>Total marks</i>                 <td align="right"><i><b>50</b></i>
+</table>
+
+<a name="Lab-Assign4"><h2>Assignment 4: Lexical Analyser and LL(1) Parser</h2></a>
+
+You have to use the table-driven LL(1) parser developed in assignment 3
+with your own lexical analyser developed in LA assignment for
+Simple-C programming language.
+
+<p>
+<h2>Given</h2>
+</p><ol>
+
+<li>The Simple-C language is a simplified and modified subset of C programming language. 
+
+   The language specifications are given in second assignment.
+</li><li> You can get the CFG for C-programming language at Appendix A13
+
+in Kernighan, B. W. and Ritchie, D. M., The C Programming Language, PHI.
+
+</li></ol>
+
+<h3>TO BE DONE - programming assignment</h3>
+
+
+<ul>
+<li>Implement a lexical analyser for Simple-C programming language using the lexical
+    analyzer developed for the <i>Thompson Construction</i> assignment.
+<li>Integrate it with LL(1) parser developed in the <i>LL(1) Parser</i> assignment,
+    without modifying the parser program.
+    You may have to work on the interface of the lexical analyzer developed in the
+    <i>Thompson Construction</i> assignment to make that lex-compatible.
+
+<li>Your Parser should already be working with lexical analyser developed in the
+    <i>Lexical Analyzer</i> assignment.
+</ul>
+
+<h3>Input for this assignment</h3>
+
+
+<p>
+The input will be Simple-C programs, which may be wrong or correct
+syntactically and semantically. You will have to output both syntax and
+semantic errors in the Input.
+
+<h3>Example Input Programs</h3>
+
+
+<hr>
+
+<pre>Example 1: Correct Simple-C Program
+
+int main()
+{
+
+      int fn1 = 1;
+      int fn2 = 1 ;
+      int i=0;
+      int n;
+      int fn=0;
+     
+      read(n);
+      if(n &lt; 1)
+            print(0);
+      else
+      {
+            while(i &lt; n)
+            {
+                  fn = fn1 + fn2;
+                  print(fn);
+                  fn2 = fn1;
+                  fn1 = fn;
+                  i++;
+            }
+
+      }     
+
+}
+
+The above program should be accepted by the parser.
+
+Example 2: Wrong Simple-C Program
+
+int main()
+{
+
+      int r;
+      int p          /* Syntactic error here, missing semicolon */
+      int int j;     /* Parse error here, keyword int occurs two times */
+      int total=0;
+      int i;
+      
+      read(r);
+      read(p);
+      scanf (j;      /* unrecognized token here: scanf and mismatched parentheses*/
+      for(i = r; i &lt; p; i+= j)
+            total = total + j;
+      print(total);
+}
+</pre>
+<hr>
+
+The input to your program should be given from the command line. Like a.out &lt; testinput.txt
+
+<h3>Output Expected</h3>
+
+<p>If input is wrong, i.e the parser was not able to parse the
+input or lexer was not able to recognize a token, then the output along
+with diagnosed reasons should be presented to the user.
+
+</p>
+
+<h3>Sample Output</h3>
+
+<p>
+FAIL
+<br>
+Line number: 7 Parse Error
+<br>
+Or
+<br>
+FAIL
+<br>      
+Line number: 6 Token 716aklas Unexpected Token
+<br>
+If input is correct then OUTPUT should be simply PASS.
+
+
+</p>
+
+<h3>Files To Be Submitted</h3>
+
+<ul>
+<li>Individual submissibles, to be submitted by everyone, individually:<ol>
+	<li>Description of own contribution
+</li></ol>	
+</li><li>Group submissibles, to be submitted by any group member:<ol>
+
+<li>Your lex implementation *.c
+        
+</li><li>Your parser implementation *.c
+
+</li><li>Header file *.h</li><li>Sample input file  in.txt
+
+
+</li><li>README.txt
+
+</li><li>Makefile
+</li></ol>
+</li></ul>
+ 
+<p>
+Take a file as input (You can test it on the above example file).
+</p><p>
+Output the tokens along with:
+</p><ul>
+<li>Value of the integer constant
+</li><li>Value of the floating point constant
+</li><li>An array of characters (for identifiers)
+</li></ul>
+<p>
+Use the variable <tt>yyval</tt> to accomplish this.
+
+</p>
+<h3>Marking Guidelines</h3>
+<table>
+
+<tbody>
+<tr><td>Running the program with your own LA</td><td style="font-weight: bold;">20</td></tr>
+<tr><td>Interchangability of LA by lex and your own LA
+</td><td align="right" style="font-weight: bold;">5</td></tr>
+<tr><td><i>Total Marks</i></td><td style="font-weight: bold;"><i>25</i></td></tr>
+</tbody>
+</table>
+
+<a name="Lab-Assign5"><h2>Assignment 5: LR(1) Parser Generator for Simple-C</h2></a>
+
+You are required to develop a LR(1) parser generator for a given grammar.
+You are to use the generator to generate a LR(1) for the
+Simple-C programming language.
+Use one of your earlier lexical analyzers to work with the parser that
+you generate.
+
+<h3>Given</h3>
+<ol>
+<li>The Simple-C language is a simplified and modified subset of C programming
+language. 
+The language specifications are given in the <i>lexical analyser</i> assignment.
+
+<li>You can get the CFG for C-programming language at Appendix A-13
+in Kernighan, B. W. and Ritchie, D. M., The C Programming Language, PHI.
+</ol>
+
+<h3>TO BE DONE - programming assignment</h3>
+
+
+<ul>
+<li>Develop a LR(1) parser generator for a given grammar
+<li>Use the generator to generate a LR(1) parser for the
+Simple-C programming language
+<li>Interface parser with an earlier lexical analyser to get a fully
+working parser lexical analyzer pair
+</ul>
+
+<h3>Input for this assignment</h3>
+
+
+<p>
+The input will be Simple-C programs, which may be wrong or correct
+syntactically and semantically. You will have to output both syntax and
+semantic errors in the Input.
+
+<h3>Example Input Programs</h3>
+
+
+<hr>
+<pre>Example 1: Correct Simple-C Program
+
+int main()
+{
+
+      int fn1 = 1;
+      int fn2 = 1 ;
+      int i=0;
+      int n;
+      int fn=0;
+     
+      read(n);
+      if(n &lt; 1)
+            print(0);
+      else
+      {
+            while(i &lt; n)
+            {
+                  fn = fn1 + fn2;
+                  print(fn);
+                  fn2 = fn1;
+                  fn1 = fn;
+                  i++;
+            }
+
+      }     
+
+}
+
+The above program should be accepted by the parser.
+
+Example 2: Wrong Simple-C Program
+
+int main()
+{
+
+      int r;
+      int p          /* Syntactic error here, missing semicolon */
+      int int j;     /* Parse error here, keyword int occurs two times */
+      int total=0;
+      int i;
+      
+      read(r);
+      read(p);
+      scanf (j;      /* unrecognized token here: scanf and mismatched parentheses*/
+      for(i = r; i &lt; p; i+= j)
+            total = total + j;
+      print(total);
+}
+</pre>
+<hr>
+
+The input to your program should be given from the command line.
+Like a.out &lt; testinput.txt
+
+<h3>Output Expected</h3>
+
+<p>If input is wrong, i.e the parser was not able to parse the
+input or lexer was not able to recognize a token, then the output along
+with diagnosed reasons should be presented to the user.
+</p>
+
+<h3>Sample Output</h3>
+
+<p>
+FAIL
+<br>
+Line number: 7 Parse Error
+<br>
+
+Or
+<br>
+FAIL
+<br>      
+Line number: 6 Token 716aklas Unexpected Token
+<br>
+If input is correct then OUTPUT should be simply PASS.
+
+</p>
+
+<h3>Files To Be Submitted</h3>
+
+<ul>
+<li>Individual submissibles, to be submitted by everyone, individually:
+<ol>
+<li>Description of own contribution
+</ol>	
+
+<li>Group submissibles, to be submitted by any group member:
+<ol>
+
+<li>README.txt
+
+<li>Your lex program *.c (essential)
+<li>Your lex header *.h (optional)
+        
+<li>Your parser generator program *.c (essential)
+<li>Your parser generator header *.h (optional)
+<li>Grammar file  gram.txt
+<li>Sample input file  in.txt
+
+<li>Makefile
+</ol>
+</ul>
+ 
+<h3>Marking Guidelines</h3>
+<table>
+
+<tr><td>LR(1) parser generator</td>
+	<td style="font-weight: bold;">25</td></tr>
+<tr><td>LR(1) grammar for language</td>
+	<td align="right" style="font-weight: bold;">5</td></tr>
+<tr><td>Overall LR(1) parser and lex pair operation and test example</td>
+	<td align="right" style="font-weight: bold;">5</td></tr>
+<tr><td>Own contribution</td>
+
+	<td align="right" style="font-weight: bold;">5</td></tr>
+<tr><td><i>Total Marks</i></td>
+	<td style="font-weight: bold;"><i>50</i></td></tr>
+</table>
+
+<a name="Lab-Assign6"><h2>Assignment 6: LALR(1) Parser Generator for Simple-C</h2></a>
+
+You are to use the YACC parser generator to generate a LALR(1) parser
+for the Simple-C programming language.
+Use one of your earlier lexical analyzers to work with the parser that
+you generate.
+
+<h2>Given</h2>
+<ol>
+<li>The Simple-C language is a simplified and modified subset of C programming
+language. 
+The language specifications are given in the <i>lexical analyser</i> assignment.
+
+<li>You can get the CFG for C-programming language at Appendix A-13
+in Kernighan, B. W. and Ritchie, D. M., The C Programming Language, PHI.
+</ol>
+
+<h2>TO BE DONE - programming assignment</h2>
+
+
+<ul>
+<li>Use the YACC parser generator to generate a LALR(1) parser for the
+Simple-C programming language
+<li>Interface parser with an the LEX based lexical analyser to get a
+fully working parser lexical analyzer pair
+</ul>
+
+<h2>Input for this assignment</h2>
+
+
+<p>
+
+The input will be Simple-C programs, which may be wrong or correct
+syntactically and semantically. You will have to output both syntax and
+semantic errors in the Input.
+
+<h3>Example Input Programs</h3>
+
+
+<hr>
+<pre>Example 1: Correct Simple-C Program
+
+int main()
+{
+
+      int fn1 = 1;
+      int fn2 = 1 ;
+      int i=0;
+      int n;
+      int fn=0;
+     
+      read(n);
+      if(n &lt; 1)
+            print(0);
+      else
+      {
+            while(i &lt; n)
+            {
+                  fn = fn1 + fn2;
+                  print(fn);
+                  fn2 = fn1;
+                  fn1 = fn;
+                  i++;
+            }
+
+      }     
+
+}
+
+The above program should be accepted by the parser.
+
+Example 2: Wrong Simple-C Program
+
+int main()
+{
+
+      int r;
+      int p          /* Syntactic error here, missing semicolon */
+      int int j;     /* Parse error here, keyword int occurs two times */
+      int total=0;
+      int i;
+      
+      read(r);
+      read(p);
+      scanf (j;      /* unrecognized token here: scanf and mismatched parentheses*/
+      for(i = r; i &lt; p; i+= j)
+            total = total + j;
+      print(total);
+}
+</pre>
+<hr>
+
+The input to your program should be given from the command line.
+Eg a.out &lt; testinput.txt
+
+
+<h2>Output Expected</h2>
+
+<p>Each grammar rule reduction should be printed as it occurs.
+<h3>Example</h3>
+If you have a rule <tt>F-&gt;</tt><b>id</b> which is reduced then
+the parser should print "<tt>F-&gt;id</tt>".
+
+If input is correct then OUTPUT should be simply PASS.
+
+</p>
+
+<h2>Files To Be Submitted</h2>
+
+<ul>
+<li>Individual submissibles, to be submitted by everyone, individually:
+<ol>
+<li>Description of own contribution
+</ol>	
+<li>Group submissibles, to be submitted by any group member:
+<ol>
+<li>Your LEX file *.l
+<li>Your YACC file *.y
+<li>Sample input file  in.txt
+<li>Makefile
+<li>README.txt
+
+</ol>
+</ul>
+ 
+<h2>Marking Guidelines</h2>
+
+<table>
+<tr><td>Overall LALR(1) parser and lex pair operation and test example</td>
+	<td align="right" style="font-weight: bold;">25</td></tr>
+<tr><td>Own contribution</td>
+	<td align="right" style="font-weight: bold;">5</td></tr>
+<tr><td><i>Total Marks</i></td>
+	<td style="font-weight: bold;"><i>30</i></td></tr>
+</table>
+
+<a name="Lab-Assign7"><h2>Assignment 7: 
+Intermediate Code Generation for Simple-C</h2></a>
+<p>
+You are to use the YACC based LALR(1) parser
+for the Simple-C programming language to generate 3-address code.
+Use the lex generated lexical analyzers to work with the parser that
+you generate.
+Your <tt>makefile</tt> should include a target for generating an
+executable from the 3-address code that you generate using a standard
+assembler.
+It should also include necessary commands to compile the programs
+generated by <tt>lex</tt> and <tt>yacc</tt>.
+
+
+<p>The 3-address code file should be generated as a result of
+<tt>make&nbsp;all</tt>.
+
+<p>
+The other specifications are same as for the assignment on
+<em>LALR(1) Parser Generator for Simple-C</em>
+
+<p>
+To understand how parameter passing for subroutine calls should be handled,
+generate the assembly for simple `C' programs using <tt>gcc&nbsp;-S</tt>
+and analyze the resulting assembly code.
+You should use <tt>printf()</tt> to output values computed in your program.
+
+
+<h2>Files To Be Submitted</h2>
+
+<ul>
+<li>Individual submissibles, to be submitted by everyone, individually:
+<ol>
+<li>Description of own contribution
+</ol>	
+<li>Group submissibles, to be submitted by any group member:
+<ol>
+<li>Your LEX file <tt>*.l</tt>
+<li>Your YACC file <tt>*.y</tt>
+<li>Sample input file  <tt>in.txt</tt>
+
+<li><tt>Makefile</tt>
+<li><tt>README.txt</tt>
+</ol>
+</ul>
+
+<h2>Marking Guidelines</h2>
+<table>
+<tr><td>Basic code generation</td>
+	<td align="right" style="font-weight: bold;">15</td></tr>
+<tr><td>Subroutine handling and gcc compatibility</td>
+
+	<td align="right" style="font-weight: bold;">10</td></tr>
+<tr><td>Own contribution</td>
+	<td align="right" style="font-weight: bold;">5</td></tr>
+<tr><td><i>Total Marks</i></td>
+	<td style="font-weight: bold;"><i>30</i></td></tr>
+</table>
