@@ -1,0 +1,592 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <Title> CS 43001 Compiler Construction Course</Title>   
+</head>
+
+<body bgcolor="#000000" text="#ffffcc" link="#ffff00" vlink="#ddcc55" alink="#ff9999">
+
+<center>
+<br>
+<br>
+<H1><font size=+2>CS 43001 Compiler Construction</font></H1>
+<H3>(Autumn Semester 2006)</H3>
+<b>Theory</b><br>  <b>Niloy Ganguly</b> <a href = "mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a><br><br>
+<b>Laboratory</b><br>  
+<b>Chitta Ranjan Mandal</b> <a href = "mailto:chitta@cse.iitkgp.ernet.in">chitta@cse.iitkgp.ernet.in</a><br>
+<b>Niloy Ganguly</b> <a href = "mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a><br><br>
+<b>Teaching Assisstant</b><br> 
+<b> Subhankar Mitra </b> <a href = "mailto:subhankar.mitra@gmail.com">subhankar.mitra@gmail.com</a><br>
+<b> Ashish Tiwari <mail.ashishtiwari@gmail.com></b> <a href = "mailto:mail.ashishtiwari@gmail.com">mail.ashishtiwari@gmail.com</a><br>
+<b>Monu Kedia</b> <a href = "mailto:monu.kedia@gmail.com">monu.kedia@gmail.com</a><br>
+<b>Ankur Saxena</b> <a href = "mailto:ankur.ankursaxena@gmail.com">ankur.ankursaxena@gmail.com</a><br>
+<p>
+</center>
+<hr>
+<a href="#notice"><H3>Notices</H3></a>
+<center>
+<a name="notice"><H2>Notices</H2></a>
+</center>
+<font color=gold> 30.11.2006 </font> The <a href=compiler.xls> Marks </a> are out. You can come to see your answer script. However please avoid it 
+if you have got EX or the chance of getting your grade change is minimum. The marks are abolute and the grades follow accordingly. (89 - EX). 
+Also all grievances regarding lab has been taken into consideration. <br>
+<font color=gold> 12.09.2006 </font> - In scribing you have to submit the doc, pdf and ppt file <br>
+<font color=gold> 25.09.2006 </font> - Assignment 4 last date is extended to 16th October, 2006. Before DP, please submit the
+parsing table in doc format <br>
+<font color=gold> 25.09.2006 </font> - All scribes before midsem has to be submitted by 16th OCtober, 2006. <br>
+<font color=gold> 10.10.2006 </font> - Midsem and class test marks are out, If you want to see the answer scripts visit my office by
+Oct 13. 
+<hr>
+<a href="#myselect"><H3>Theory</H3></a>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lecture">Lectures</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Assessment">Evaluation</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Blog">Blog</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Assignment">Assignments</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=studentlist.xls>Students List</a>
+
+<H3><a href = "#Lab-Assign">Laboratory</a></H3>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=asg-marks.xls>Marks</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign1">Assignment 1</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign2">Assignment 2</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Tiny-C">Tiny-C Specification</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign3">Assignment 3</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign4">Assignment 4</a><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign5">Assignment 5</a><br>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign6">Assignment 6</a><br>
+	 <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lab-Assign7">Assignment 7</a><br>-->
+
+<hr>
+
+<a name="myselect"><H2>Theory</H2></a>
+</center>
+
+<pre>
+  Lectures   : 	Mon - 4, Tue - 1,2, Thu -3 
+  Room #     :  CSE 119
+  Units      :	4-0-2
+  Credits    :  4 (Theory) 
+  Instructor :	Niloy Ganguly
+  Contact    : 	Room #313  (CSE), Phone 3460
+
+Text Books:
+
+[1]  Aho, A. V., Sethi, R. and Ullman, J. D.
+     Compilers - Principles, Techniques and Tools
+     Addison-Wesley, 1988 (Indian reprint)
+     - aka Dragon book
+
+[2] Santanu Chattopadhyay
+    Compiler Design
+    PHI, 2005.
+
+[3] Advanced Compiler Design Implementation
+    Steven S. Muchnick
+    Elsevier, 2003
+</pre>
+
+<a name="Lecture"><H2>Lectures</H2></a>
+The lecture notes are unedited version of student submission.<br> 
+01. 24.07.06 -	<a href=notes/introduction04CS1024.doc>Introduction,</a>. <a href=ppt/intro04CS1005.ppt>ppt</a> 04CS1024<br>
+02. 25.07.06 -	<a href=notes/intro04CS3019.doc>Introduction,</a>. <a href=ppt/intro04CS3019.ppt>ppt</a> 04CS3019 <br> 
+03. 25.07.06 -	<a href=notes/lecture304CS1005.doc>Introduction,</a>. <a href=ppt/intro04CS1005.ppt>ppt</a> 04CS1005<br>
+04. 07.08.06 -	<a href=notes/> Lexical Analyzer</a>. <a href=ppt/lexana1006.ppt>ppt</a> 04CS1006<br>
+05. 08.08.06 -	<a href=notes/subset1017.doc>Thompson Construction, Subset Construction,</a>. <a href=ppt/TC1017.ppt>ppt</a> 04CS1017<br>
+06. 08.08.06 -	<a href=notes/subset_const041007.doc>Thompson Construction, Subset Construction,</a>. <a href=ppt/subsect04CS1007.ppt>ppt</a>04CS1007 <br>
+07. 10.08.06 -	<a href=notes/TC1002.doc>Thompson Construction, Subset Construction,</a>. <a href=ppt/TC1002.ppt>ppt</a>04CS1002 <br>
+08. 16.08.06 -	<a href=notes/lex1008.doc>Lex</a>,  <a href=ppt/lex04CS1008.ppt>ppt</a>04CS1008<br>
+09. 17.08.06 -	<a href=notes/syntax04CS1004.doc>Syntax Analysis, Error Recovery,</a> <a href=ppt/syerrrec1004.ppt>ppt</a>04CS1004 <br>
+10. 24.08.06 -	<a href=notes/ambiguity1010.doc>Ambiguity in Grammar,</a><a href=ppt/>ppt</a> 04CS1010 <br>
+11. 28.08.06 -	<a href=notes/LRec1011.doc>Left Recursion</a>, <a href=ppt/LRec1011.ppt>ppt</a> , 04CS1011<br>
+12. 29.08.06 -	<a href=notes/TD1012.doc>Top Down Parsing</a>  <a href=ppt/tdp1012.ppt>ppt</a>, 04CS1012<br>
+13. 29.08.06 -	<a href=notes/ll1020.doc>LL(1) Parser,</a>  <a href=ppt/LL1020.ppt>ppt</a>, 04CS1020<br>
+14. 31.08.06 -	<a href=notes/LL11013.doc>LL(1) Parser,</a> <a href=ppt/LL11013.ppt>ppt</a>, 04CS1013<br>
+15. 07.09.06 -	<a href=notes/>Bottom-up Parser,</a>  <a href=ppt/ll1014.ppt>ppt1</a>,  <a href=ppt/bu1014.ppt>ppt2</a>04CS1014 <br>
+16. 11.09.06 -	<a href=notes/buop1015.doc>Bottom-up Parser, Operator Precedence Parser,</a> <a href=ppt/BUOP1015.ppt/>ppt</a>, 04CS1015<br>
+17. 12.09.06 -	<a href=notes/LRP1016.doc>SLR Parser,</a><a href=ppt/compiler1016.ppt>ppt</a>, 04CS1016<br>
+18. 12.09.06 -	<a href=notes/SLR1019.doc>SLR Parser,</a> <a href=ppt/slr1019.ppt>ppt</a>, 04CS1019<br>
+19. 14.09.06 -	<a href=notes/LR1021.doc>SLR Parser,</a> <a href=ppt/LR1021.ppt>ppt</a>, 04CS1021<br>
+20. 25.09.06 -	<a href=notes/LR1023.doc>LR(1) Parser,</a> <a href=ppt/LR1023.ppt>ppt</a>,04CS1023<br>
+21. 26.09.06 -	<a href=notes/LALR1026.doc>LR(1) Parser, LALR Parser,</a> <a href=ppt/LALR1026.ppt>ppt</a>, 04CS1026<br>
+22. 26.09.06 -	<a href=notes/LALR1026.doc>LR(1) Parser, LALR Parser,</a> <a href=ppt/LALR1026.ppt>ppt</a>, 04CS1027<br>
+23. 28.09.06 -	<a href=notes/LALR1029.doc>LALR Parser,</a> <a href=ppt/LALR1029.ppt>ppt</a>, 04CS1029<br>
+24. 09.10.06 -	<a href=notes/AG1030.doc>Ambiguity in Grammar</a> <a href=ppt/AG1030.ppt>ppt</a>, 04CS1030<br>
+25. 10.10.06 -	<a href=notes/error1028.doc>Ambiguity in Grammar, Error Recovery</a> <a href=ppt/error1028.ppt>ppt</a>,  04CS1028<br>
+26. 10.10.06 -	<a href=notes/AG1032.doc>Ambiguity in Grammar</a> <a href=ppt/AG1032.ppt>ppt</a>, 04CS1032<br>
+27. 16.10.06 -	<a href=notes/IC3002.pdf>Intermediate Code Generation </a><a href=ppt/IC3002.ppt>ppt</a>,  04CS3002<br>
+28. 17.10.06 -	<a href=notes/TAC1033.doc>Three Address Code Generation,</a>, <a href=ppt/TAC1033.ppt>ppt</a>,  04CS1033<br>
+29. 17.10.06 - 	<a href=notes/TAC1034.doc>Three Address Code Generation</a>, <a href=ppt/TAC1034.ppt>ppt</a>,  04CS1034<br>
+30. 18.10.06 -	<a href=notes/TAC1035.doc>Three Address Code Generation</a> <a href=ppt/TAC1035.ppt>ppt</a>, 04CS1035<br>
+31. 23.10.06 -	<a href=notes/TAC1036.doc>Three Address Code Generation - Array</a>, <a href=ppt/TAC1036.ppt>ppt</a>,  04CS1036<br>
+32. 24.10.06 -	<a href=notes/TAC1037.doc>Three Address Code Generation - Array</a>, <a href=ppt/TAC1037.ppt>ppt</a>,  04CS1037<br>
+33. 24.10.06 -	<a href=notes/TAC3001.doc>Three Address Code Generation -Boolean Functions</a>, <a href=ppt/TAC3001.ppt>ppt</a>,  04CS3001<br>
+34. 26.10.06 -  <a href=notes/TAC3004.doc>Three Address Code Generation - Control Statements</a>, <a href=ppt/TAC3004.ppt>ppt</a>, 04CS3004 <br>
+35. 30.10.06 -  <a href=notes/TAC3005.doc>Three Address Code Generation - Control Statements</a>, <a href=ppt/TAC3005.ppt>ppt</a>, 04CS3005 <br>
+36. 31.10.06 -  <a href=notes/TAC3008.doc>Three Address Code Generation - Control Statements</a>, <a href=ppt/TAC3008.ppt>ppt</a>, 04CS3008<br>
+37. 31.10.06 -  <a href=notes/TAC3010.doc>Three Address Code Generation - Backpatching</a>, <a href=ppt/TAC3010.ppt>ppt</a>, 04CS3010<br> 
+38. 02.11.06 -  <a href=notes/>Three Address Code Generation - Backpatching</a>, <a href=ppt/TAC3013.ppt>ppt</a>, 04CS3013 <br> 
+39. 09.11.06 -  <a href=notes/TAC3014.doc>Three Address Code Generation - Backpatching</a>, <a href=ppt/TAC3014.ppt>ppt</a>, 04CS3014<br> 
+40. 13.11.06 -	<a href=notes/TC3015.doc>Target Code Generation</a>, <a href=ppt/TC3015.ppt>ppt</a>, 04CS3015 <br>
+41. 14.11.06 -	<a href=notes/TC3020.doc>Target Code Generation - Basic Blocks</a>, <a href=ppt/TC3020.ppt>ppt</a>, 04CS3020  <br>
+42. 14.11.06 -	<a href=notes/TC3022.doc>Target Code Generation - Next Usage</a>, <a href=ppt/TC3022.ppt>ppt</a>, 04CS3022 <br>
+43. 16.11.06 -	<a href=notes/TC3023.doc>Target Code Generation - Register Allocation/DAG</a>, <a href=ppt/TC3023.ppt>ppt</a>, 04CS3023 <br>
+<!--7.11.05 -	<a href=notes/TCDAG1.doc>Target Code Generation - DAG</a> 02CS1009 - This note is slightly different from class note. <br>
+8.11.05 -	<a href=notes/TCDAG.doc>Target Code Generation - DAG</a> 03CS1008 <br>
+8.11.05 -	<a href=notes/TCDAG.doc>Target Code Generation - DAG</a> 03CS3006 <br>
+10.11.05 -	<a href=notes/TCLT.doc>Target Code Generation - DAG</a> 03CS1015 <br>
+14.11.05 -	<a href=notes/TCheck.doc>Type Checking</a> 03CS3013<br>
+17.11.05 -	<a href=notes/TCheck1.doc>Type Checking and Peephole Optimization</a> 03CS3013<br>-->
+
+
+<a name="Assessment"><H2>Evaluation</H2></a>
+	Teacher's Assessment : 20 <br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Assignment/Scribing     : 6<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href=notes/classtest1.ps>Class Test I</a>     : 5  -<a href=notes/ClassTest1.doc> 04CS1022</a><br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href=notes/classtest-2-06.ps>Class Test II</a>     : 5 - <a href=notes/ClassTest2.doc> 04CS3024 </a><br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Attendance     : 4<br><br>
+	<a href=notes/midsem06.ps>Mid-sem </a>:	30 - Solution <a href=notes/midsemsolu06.doc> 04CS3017</a><br><br>
+	<a href=notes/end-sem-06.ps>End-sem </a> :	50 - Solution<a href=notes/endsemsolution3025.doc> 04CS3025</a><br>
+
+<a name="Blog"><H2>Blog</H2></a>
+<a href=http://www.compiler2006.blogspot.com>Class Diary before midsem</a> <br>
+04CS3011, 04CS1018, 04CS3026, 04CS1031<br><br>
+ 
+<a href=http://www.compiler-2006.blogspot.com>Class Diary after midsem</a> <br>
+04CS3018, 04CS3016, 04CS1025, 04CS3012<br><br>
+
+
+<a name="Assignment"><H2>Assignments</H2></a>
+
+<li> Let G be the following grammar:<font color=gold>
+<a href=notes/AG3006.doc>(04CS3006)</a></font><br> 
+S-> S op1 S | S op2 S | A<br>
+A-> a | b<br>
+
+a. Prove that G is ambiguous.<br>
+b. Rewrite G to impose left associativity on both op1 and op2 and to
+impose higher
+precedence on op1 than op2. The resulting grammar should be unambiguous,
+and able to specify an LR(1) parser.<br><br>
+
+<li> Consider the following grammar:<font color=gold>
+<a href=notes/gram3007.doc>(04CS3007)</a></font><br> 
+
+      R =>  R  | R<br>
+      R =>  R R<br>
+      R => R *<br>
+      R => ( R )<br>
+      R => a | b<br>
+
+where the terminals are {  |, *, (, ), a, b }. This grammar generates regular
+expressions over a,b involving alternation, concatenation, and repetition.<br>
+
+| alternation, 
+* repetetion 1 or more time<br>
+
+a) Compute FIRST and FOLLOW for the only non-terminal in this grammar.<br>
+
+b) Show the grammar is ambiguous.<br>
+
+c) construct an equivalent unambiguous grammar that gives the operators
+star (repetition), concatenation, and alternation the usual precedences :<br>
+
+             repetition > concatenation > alternation.<br>
+
+d) Build the FIRST and FOLLOW set for this new grammar. Is it LL (1)?<br><br>
+
+<li> We want to construct a simple <i>pocket-calculator</i> program using yacc and lex which can parse strings 
+such as <i>1+(10-5-3)*5+2</i> and print the result, 13 in this case. 
+Outline the overall structure of your program components. Give full details of the input to yacc and lex. 
+(Precise syntactic details are not important, but your answer should reflect basic principles involved).  <br>
+
+Make following assumption :<br>
+- Only three binary operator are allowed i.e. plus, minus and multiply<br>
+- Only integer data type is allowed<br>
+- Parentheses are used to override precedence. <a href=notes/calculator3009.doc> <font color=gold>
+ 04CS3009 </font> </a><br>
+
+<hr>
+
+<center>
+<a name="Lab-Assign"><H1>Lab Assignments</H1></a>
+</center>
+<h2>General Guidelines</h2>
+<ul>
+<li> 2 people per group. 
+<li> Each member of the group should specify what he/she has done.
+</ul>
+
+<a name="Lab-Assign1"><h2> Assignment 1: Assignment on Thompson's Construction</h1></a>
+- understand the working of #include, #define, #ifdef, #ifndef and 
+commenting in C preprocessor.<br>
+
+ Write a mini pre-processor for a C-language. The preprocessor should do the
+ following:<br>
+
+  - inclusion of header files<br>
+        -- Implement #include preprocessor directive. The content of the argument 
+file should be copied to the output file.<br><br>
+
+  - textual replacement<br>
+        -- Implement #define preprocessor (macro) directive that is replace the macro 
+calls inside the program with the macro contents. 
+                Parametrized and recursive #define need not be considered.<br><br>
+  
+  - conditional inclusion/exclusion<br>
+        -- Implement #ifdef and #ifndef preprocessor directives. According to the 
+value copy the #ifdef ot #ifndef part to the output file<br>
+
+  - stripping out the comments.<br>
+        -- Implement both single line (//) and multiple line comments (/* 
+*/)stripping.<br><br>
+
+<font color=gold>
+Submission Date - 7th August<br>
+
+On 31st Jule come to the lab between 2 to 3 and meet your Teaching Assistants. 
+Any doubt about the assignments will be cleared by them 
+</font>
+
+<a name="Lab-Assign2"><h2> Assignment 2: Assignment on Thompson's Construction</h1></a>
+You have to implement the following two algorithms <br>
+
+ * Thompson Construction - Constructing NFA from regular expression <br>
+ * Constructing DFA from NFA. <br>
+
+For constructing a lexical analyzer/scanner from a given set of regular
+expression. <br>
+Assume following specifications for implementation :<br>
+1. Input alphabets<br>
+ * All alphabets from a to z character<br>
+   - [a..z] denotes all the alphabets from a to z<br>
+ * White space, \t, \n<br>
+<br>
+2. Character corresponding to operators<br>
+ * Union (|) Ex: A|B<br>
+ * Intersection (.) Ex: A.B<br>
+ * Asterate (*) Ex: A* (0 or more occurences of A)<br>
+ * Plus (+) Ex: A+ (1 or more occurences)<br>
+
+3. Input format to the tool<br>
+Assume that the input regular expressions will given in a file
+(reg.exp). Each line will corresponds to one regular expression of the form<br>
+<regular expression, String(macro name thereof corresponding to integer value)>.<br>
+
+(a) Assume simple regular expressions only which can be parsed easily without need for
+complicated parsing.<br>
+(b) Return UNMATCHED for lexeme which donot match any of the regular expression in reg.exp.<br>
+(c) Your scanner should go for longest possible match i.e. a string 'iff' should be identified
+ as 'iff', not as 'if' and 'f'.<br>
+(d) Regular expression defined earlier in the reg.exp file should get priority over the one
+defined later i.e. 'for' can match as an ID also but if 'for' is defined earlier in the reg.exp
+as FOR then it should return FOR not ID<br>
+
+Sample Input-Output (just for illusatration, your tool should work for other
+test cases also)<br><br>
+-------------------------------------------------<br>
+reg.exp file :<br>
+< i.n.t,INT><br>
+< f.l.o.a.t,FLOAT><br>
+<[a..z]+,ID><br>
+
+Input to be scanned :<br>
+int a<br>
+float a<br>
+ag-fgfg<br>
+
+Output to be generated :<br>
+INT<br>
+ID<br>
+FLOAT<br>
+ID<br>
+UNMATCHED<br>
+---------------------------------------------------- <br><br>
+
+<font color=gold>
+
+
+Submission Date - 21st August<br>
+
+On 14th August come to the lab between 2 to 3 and meet your Teaching
+Assistants. Any doubt about the assignments will be cleared by them
+</font>
+
+
+<a name="Tiny-C"><h2> Tiny-C Specification</h1></a>
+        1. Data types: int, char, float <br>
+
+        2. Array  Support: As in C <br>
+
+	     Ex: int a[10], b[10][5]; <br>
+           
+           Multiple array declarations are also allowed. The format is
+	     as in C. <br>
+	     Ex: int a[10],b[5]; <br>
+                
+        3.  Structures: As in C language <br>
+
+        4.  Composite statement is enclosed within braces { . . .}. <br>
+
+        5.  Assignment. <br>
+		Ex: a = 10; <br>
+		Continued assingment should also be supported <br>
+		Ex: a = b = 10; <br>
+
+	  6.  Binary Arithmetic operators.  +, -, * <br>
+
+	  7.  Unary Arithmetic operator. ++, ** (only postfix) <br>
+               
+        8.  Boolean operators: ==, >, < <br>
+
+	  9.  Binary Logical operator : &&, || <br>
+
+	  10. Unary logical operator : ! <br>
+                
+        11. Unary operator: - <br>
+        
+        12. Conditional statement: <br>
+                if (condition) composite-statement [else composite-statement] <br>
+          
+        13. Loops: <br>
+                a. For loop as in C <br>
+                   
+                b. Do while loop (a bottom tested loop) as in C <br>
+                                                          
+                b. While loop as in C  <br>
+
+        14. Program entry point defined by keyword "main" <br>
+
+	  15. Subroutine identified by keyword "SUB", followed by subroutine name. <br>
+            It accepts parameters, they are within paranthesis following the subroutine
+		name. A subroutine is declared wherein the type of the parameters are defined.
+		There is no return value for a subroutine. <br>
+
+            Example : <br>
+
+            // Declaration of subroutine (here the type of parameters are defined) <br>
+            SUB routine(float, int); <br>
+
+		// Definition of subroutine (Note that the type of parameters are NOT mentioned
+		here. This is different from C) <br>
+		SUB routine(inti_f, iterate) <br>
+		{ <br>
+		// Here the code for subroutine <br>
+		.... <br>
+		... <br>
+		.. <br>
+		} <br>
+
+		// Call <br>
+		routine(1.9, 5); <br>
+
+Programes written in Tiny-C can use identifiers consisting of any alpha-numeric characters,
+starting with only _ or [a..z] or [A..Z] <br>
+
+Note : A sample programe written in Tiny-C will be circulated soon. <br>
+
+<a name="Lab-Assign3"><h2> Assignment 3: Understanding and working with Lex</h1></a>
+(2) You have to implement a Lexical Analyzer for Tiny-C programming language
+using LEX tools. The specifications of Tiny-C is given above. <br>
+
+
+
+Specifications of Lexical Analyzer: <br>
+
+
+
+(a) The name of the scanner function should be "int yylex()", it returns the
+
+integer as token. <br>
+
+(b) Each token may have some attributes. For example : If the token corresponds to
+
+"integer constant" than yylex() returns an integer corresponding to "integer constant"
+
+but the value of "integer constant" is its attribute. Such attributes should be made
+
+available to the future stages of compilation through a global variable of C-Union type
+
+which holds atleast the following attributes : <br>
+
+
+
+	- Value of the integer constant in case of integer token<br>
+
+	- Value of the floating point constant in case of floating point token<br>
+
+	- character string for other cases. Like it will have the name of the
+
+	identifier in case of identifier token<br>
+
+
+
+(c) Print some meaningful names for the tokens in the output file, rather than
+
+the integer value returned by the lexical analyzer to aid the understanding of
+
+the output.<br>
+
+The output should be a sequence of duplets : <lexeme,token><br>
+
+Example : <int,INT> <float,FLOAT><br>
+
+
+
+Note : This analyzer will be used in the subsequent assingments. So,it should be
+
+implemented in a clean and readable way.<br>
+
+
+<font color=gold>
+Submission Date - 4th September<br>
+</font>
+
+
+
+<a name="Lab-Assign4"><h2> Assignment 4:  CFG for Tiny-C and table-driven LL(1) parser</h1></a>
+
+
+ You have to write a CFG for Tiny-C programming language, and implement a
+    table-driven LL(1) parser. <br>
+
+
+Given: <br>
+______ <br>
+
+1.  The Tiny-C langauge is a simplified and modified subset of C programming language. 
+      The language specifications are given below. <br>
+
+2. You can get the CFG for C-programming language
+	at Appendix A13
+	in Kernighan, B. W. and Ritchie, D. M., The C Programming Language, PHI. <br>
+
+Reuse: <br>
+______
+ - Use the Lexical Analizer developed by you in Expt3 (feel free to modify). <br>
+
+
+TO BE DONE - with paper and pencil <br>
+__________________________________
+
+ - Write a CFG for the Tiny-C language specifications. <br>
+ - Transform your CFG (without changing the language) suitably for
+    a table-driven predictive parser (LL(1)). <br>
+ - Compute FIRST, FOLLOW and create the Parsing table
+ (manually). <br>
+
+ - Make a proper document of the above work, and submit a HARD-copy.
+   (Also mail the  soft-copy please). <br>
+
+TO BE DONE - programming assignment<br>
+___________________________________ <br>
+
+ - Write a Non-recursive table-driven LL(1) parser. <br>
+
+Input - Outputs <br>
+_______________ <br>
+
+	- The grammar of the language must not be hard coded in the program, rather should be taken
+	as input using a file. The file name can be fixed in the program or taken as one of the 
+	input of the program. <br>
+
+	- The program should also take the test program file as input.  <br>
+
+	- The output of the program should be "Accepted" in the case that the input program 
+	satisfies the given grammar. <br>
+
+	- In the event of errors, try to do as clear error reporting as possible. Both lexical and
+	syntactic errors should be clearly reported. The error reporting should contain the possible
+	line number of the error and the type of error as well. All errors must be reported in
+	separate lines and the format should be similar to the one used by gcc. <br>
+	
+	- The program should try to find multiple errors (if present). The program should be
+	designed in such a way that it does not terminate when an error is detected, but continues
+	to detect any other occurance of error.(This feature is optional, but, will attract bonus
+	marks if implemented.) <br>
+
+
+Programming Assignemnet Submission: <br>
+__________________________________ <br>
+
+ 1. Compile and test your program on one of the dept. machines. Once tested send
+     the report in the following way. Use a 'Makefile' for the whole
+     process(optional). The program must take inputs from the command line and must not be 
+     interactive. which then will be tested on 'test-data' (say). <br>
+
+               $make <br>
+               . <br>
+               . <br>
+               $a.out < test-data  <br>
+		or <br>
+	       $a.out test-data	 <br>
+
+ 2. For submission prepare a tar-archive consisting of the 'Makefile',
+     README, and all .c as well as all .h files. A .h file should
+     contain Macros, prototype declarations, and type definitions. But
+     it should not contain any C function body or variable declaration.
+     Never '#include' one .c file in another. Also include the Grammar
+     in a text file. <br>
+
+     You may include a few sample test-files. One sample file should
+     be named as 'in'. If you wish to include more sample files, name
+     them as 'in1', 'in2' ... <br>
+
+ 3. NAME the tar-archive as "expt4_??.tar" where "??" is a TWO DIGIT
+     Group_Id number. Do not include the directory while creating the
+     archive. For example, use "tar -cvf <tar-file-name>.tar ." in a
+     directory that contains all the files to be included. Do not
+     include binaries/image files. <br>
+
+ 4. Submit the tar file by mailing it to compiler.06@gmail.com. <br>
+
+ 5. This experiment is a part of generating a working compiler for Tiny-C
+    language which will continue until the semester-end. So keep a copy
+    of the archive with you, you need to reuse the source-code later. <br>
+
+<font color=gold>
+Submission Date - 28th September - The submission is to be done through mail <br>
+</font>
+
+<a name="Lab-Assign5"><h2> Assignment 5: Assignment on YACC</h2></a>
+
+You have to implement a LALR(1) parser for Tiny-C programming language
+using 'yacc' tools.
+
+- Specifications of Tiny-C is the same as circulated earlier <br>
+- Reuse the Lexical Analyzer which you implemented in Assingment 3 <br>
+- Reuse the grammar which you wrote in Assingment 4. Feel free to modify
+it as per the requirements of 'yacc' <br>
+- Try to report some error message in case of syntax error in the input <br>
+
+
+<font color=gold>
+Submission Date - 16th October <br>
+</font>
+
+<a name="Lab-Assign6"><h2> Assignment 6: Assignment of Intermediate Code Generation</h2></a>
+The goal of this assingment is to generate machine independent intermediate
+representation (IR) for a program written in Tiny-C. There can be several
+different types of IR. We are concerned with generating a simple but widely
+followed IR i.e. 3-address (TA) code.<br>
+
+Programming Assingment: <br>
+You have to incorporate semantic actions in the parser implemented in
+Assingment 5 for generating 3-address code.<br>
+
+- Reuse the Lexical analyzer for Tiny-C developed in Assingment 3<br>
+- Reuse the parser for Tiny-C developed in Assingment 5 <br>
+
+" Note : Generate 3-address code in such a way so that it can be
+compiled using native C compiler. For this use the equivalent C
+statements for 3-address code and include variable declarations
+of the user defined variables and temporaries. A sample front-end
+following this philosophy for C language can be looked at
+http://www.lancecompiler.com/ , we want to have similar front-end
+for Tiny-C " <br>
+
+
+<font color=gold>
+Submission Date - 30th October <br>
+</font>
+
+
+</font>
