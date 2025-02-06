@@ -1,0 +1,66 @@
+1.i)
+   N=10MB=10240KB
+   f=100samples/sec
+   B=100KBPS
+   T=10sec
+   S=1KB
+   
+   E= Pi*(N/f - (N*S)/B - T) + Pa*((N*S)/B + T)
+    = 10*(102.4 - 102.4 - 10) + 50*(102.4 + 10)
+    = -100 +  5620
+    = 5520mW
+    
+    There are some doubts among students as the first-part has become negative which ideally it should not be. This is a problem with the question. I have checked just the sum before exam not each part.
+    
+    
+ii).    E(Q1)=5nJ, E(Q2)=10nJ, E(Q3)=2nJ &  E(Q4)=8nJ and 
+	the probabilities of individual predicates being true are P(Q1)=0.5, P(Q2)=0.3, P(Q3)=0.8 & P(Q4)=0.2. 
+
+	Moreover, the probability of (Q1 AND Q2) being true is 0.35 & the probability of (Q3 OR Q4) being true is 0.4.
+
+
+	Q1 & Q2
+
+	NAC Q1= 5/0.5= 10
+	NAC Q2= 10/0.7=14.3
+
+	So, LR evaluation
+
+	E(Q1&Q2)=0.5*15+0.5*5=10
+
+	Q3 OR Q4
+
+	NAC Q3=2/0.8=2.5
+	NAC Q4=8/0.2=40
+
+	So, LR evaluation
+	E(Q3ORQ4)=0.8*2+0.2*(8+2)=1.6+2=3.6    
+
+	NAC (Q1&Q2)=10/0.65=15.38
+	NAC (Q3|Q4)=3.6/0.6=6
+
+	So, RL evaluation
+
+	E((Q1 AND Q2) OR (Q3 OR Q4))= 0.4*3.6 + 0.6*(3.6+10)=1.44+8.16=9.6nJ
+	
+2. i) Modp marker indices: 2 6 9 13   Maxp marker indices: 4 6 15 	
+  ii) MODP matching using Max match between markers: 2 [0,1,2,3,4] and 13 [11,12,13,14,15]
+ iii) Maxp needs more memory because entire data-streams to be stored in server whereas for chunk-match we just need to store the hash-values.
+ 
+3. i) All cells have max. strength at locations inside boundary. No cell can be out of the boundary according to the "boundary filtering" approach.
+  ii) New trace after cell combining
+      A -40
+      B -39
+      C -45
+      D -42
+      E -45
+      F -50
+      G -51
+      According to strongest RSSI predicted location B
+     
+      According to weighted Centroid X= 5*-40 + 8*-39 + 7*-45 + 11* -42 + 14*-45 + 19*-50 + 16*-51 /(-40-39-45-42-45-50-51)
+                                       = 11.81
+                                     Y= 9.37
+ 7. the difference in throughput between signal strength 99 and 60 at 60th percentile    ==> Approx 1.3
+    At what percentile does the throughput for signal strength 80 reach the throughput attained by signal strength 99 in 30th percentile     ===> Around 80-82 percentile
+                                        

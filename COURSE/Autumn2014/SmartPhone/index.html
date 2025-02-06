@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>CS 60078 Complex Networks Course</title>
+     
+  <style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+-->
+  </style></head>
+
+<body alink="#ff9999" bgcolor="#000000" link="#ffff00" text="#ffffcc" vlink="#ddcc55">
+
+<center>
+<br>
+<br>
+<h1><font size="+2">CS 60009 SmartPhone Computing and Applications</font></h1>
+<h3>(Autumn Semester 2014)</h3>
+<p><b>Theory</b><br>  
+    <b>Niloy Ganguly (NG)</b> <a href="mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a></p>
+<p>Ansuman Banerjee (Adjunct) <br>
+  <br>
+    <b>Teaching Assistant</b></p>
+<p><b>Soumajit Pramanik </b><a href="mailto:soumajit.pramanik@gmail.com">
+soumajit.pramanik@gmail.com</a></p>
+<p>Sandipan Sikdar sikdarsandipan99@gmail.com<br>
+  <br>
+</p>
+<p>
+</p></center>
+<hr>
+<h3>Notices</h3>
+<ul>
+  <li><a href="group.doc">Group and Assignment</a></li>
+</ul>
+<hr>
+<ul>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Essentials">Class Room/Hour</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Books">Books</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Assessment">Evaluation</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Lecture">Lectures</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Syllabus">Syllabus</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Studentlist.xls">Students List</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Assignment">Assignments</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Project">Term projects</a>
+  </li>
+</ul>
+
+<hr>
+
+<a name="Essentials"><h2>Class Room/Hours</h2>
+</a>
+<br>
+  Room      :  107<br>
+  Units      :  3-0-0<br>
+  Credits    :  3, Slot - F <br>
+  Contact    :  Room #313  (CSE), Phone 83460<br>
+
+
+<a name="Books"><h2>Books and Resources</h2></a>
+A list of useful books and materials is given below.  
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.5in">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="Books_Paper/(Morgan%20Kaufmann%20series%20in%20networking)%20Pei%20Zheng%20and%20Lionel%20Ni%20(Auth.)-Smart%20Phone%20and%20Next%20Generation%20Mobile%20Computing%20(1).pdf">Smart Phone and Next Generation Mobile Computing (Morgan Kaufmann Series in 
+Networking)</a>,&nbsp; PeiZheng, Lionel Ni</p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.5in">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Principles Of Mobile Computing, Hansmann, LotharMerk, Martin Niclous, Stober</p>
+<p class="MsoNormal">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="Books_Paper/MC.pdf">Mobile Computing,</a> Tomasz Imielinski, Springer</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Android App Development
+<a target="_blank" href="http://developer.android.com/">
+http://developer.android.com/</a>&nbsp;</p>
+<p class="MsoNormal">Sensing<br>
+<a href="Books_Paper/Sensing.pdf">A survey of mobile phone sensing</a> Authors: 
+Nicholas D. Lane, Emiliano Miluzzo, Hong Lu, Daniel Peebles, Tanzeem Choudhury, 
+Andrew T. Campbell, · Journal IEEE Communications Magazine archive Volume 48 
+Issue 9, September 2010, Pages 140-150 </p>
+<p class="MsoNormal"><span class="this-person">Archan Misra</span>,
+<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/l/Lim:Lipyeow.html">
+Lipyeow Lim</a>: <span class="title">
+<a href="Books_Paper/Archan_Acqua_conf.pdf">Optimizing Sensor Data Acquisition 
+for Energy-Efficient Smartphone-Based Continuous Event Processing</a>.</span>
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/mdm/mdm2011-1.html#MisraL11">
+Mobile Data Management (1) 2011</a>: 88-97 </p>
+<p class="MsoNormal">
+<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/l/Lim:Lipyeow.html">
+Lipyeow Lim</a>, <span class="this-person">Archan Misra</span>,
+<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/m/Mo:Tianli.html">
+Tianli Mo</a>: <span class="title">
+<a href="Books_Paper/Archan-acqua_journal-1.pdf">Adaptive data acquisition 
+strategies for energy-efficient, smartphone-based, continuous processing of 
+sensor streams.</a></span>
+<a href="http://www.informatik.uni-trier.de/~ley/db/journals/dpd/dpd31.html#LimMM13">
+Distributed and Parallel Databases 31</a>(2): 321-351 (2013)<br>
+Niranjan Balasubramanian Aruna Balasubramanian Arun Venkataramani,
+<a href="Books_Paper/UM-CS-2009-022.pdf">Energy Consumption in Mobile Phones: A 
+Measurement Study and Implications for Network Applications</a>, IMC 09. </p>
+<p class="MsoNormal">
+Bhavish Aggarwal, Aditya Akella, Ashok Anand, Athula Balachandran, Pushkar 
+Chitnis, Chitra Muthukrishnan, Ramachandran Ramjee, and George Varghese,
+<a id="/HTML/BODY/DIV/DIV/DIV/DIV/DIV/DIV/DIV/DIV/DIV/UL/LI/A" onclick="stc(this, 37)" href="http://research.microsoft.com/apps/pubs/default.aspx?id=118422">
+EndRE: An End-System Redundancy Elimination Service for Enterprises</a>, in
+<i id="/HTML/BODY/DIV/DIV/DIV/DIV/DIV/DIV/DIV/DIV/DIV/UL/LI/I">Symposium on 
+Networked Systems Design and Implementation (NSDI)</i>, USENIX, April 2010 ..<a href="Books_Paper/EndRe.pdf"> 
+Paper</a></p>
+<p class="MsoNormal">Schulman, Aaron and Navda, Vishnu and Ramjee, Ramachandran 
+and Spring, Neil and Deshpande, Pralhad and Grunewald, Calvin and Jain, Kamal 
+and Padmanabhan, Venkata N,&nbsp;<a href="Books_Paper/mobicom10-bartendr.pdf"> 
+Bartendr: A Practical Approach to Energy-aware Cellular Data Scheduling,</a> 
+Mobicom 10</p>
+<pre id="1966474"><font face="Times New Roman">C</font><font face="Times New Roman" size="3">hun, Byung-Gon and Ihm, Sunghwan and Maniatis, Petros and Naik, Mayur and Patti, Ashwin, <a href="Books_Paper/eurosys2011-chun.pdf">CloneCloud: Elastic Execution Between Mobile Device and Cloud</a>, EuroSys 2011. </font></pre>
+<pre><font face="Times New Roman" size="3">Eduardo Cuervoy, Aruna Balasubramanianz, Dae-ki Cho, Alec Wolmanx, Stefan Saroiux, Ranveer Chandrax, Paramvir Bahl,<a href="Books_Paper/maui.pdf"> MAUI: Making Smartphones Last Longer with Code Offload</a>, Mobisys, 10</font></pre>
+<pre><font face="Times New Roman" size="3">Mark S. Gordon, D. Anoushe Jamshidi, Scott Mahlke, Z. Morley Mao, Xu Chen, <a href="Books_Paper/osdi12-final-11.pdf">COMET: Code Offload by Migrating Execution Transparently</a>, OSDI 12</font></pre>
+<pre><font face="Times New Roman" size="3">Marco V. Barbera, Sokol Kosta, Alessandro Mei, and Julinda Stefa, <a href="Books_Paper/Marco_infocom13.pdf">To Offload or Not to Offload? The Bandwidth and Energy Costs of Mobile Cloud Computing,</a> Infocom 13</font></pre>
+<pre><font face="Times New Roman" size="3">Weiwen Zhang1, Yonggang Wen1, and Dapeng Oliver Wu2, <a href="Books_Paper/Zhang-Infocom13.pdf">Energy-efficient Scheduling Policy for Collaborative Execution in Mobile Cloud Computing,</a> Infocom 13</font></pre>
+<p class="MsoNormal">Paramvir Bahl and Venkata N. Padmanabhan,
+<a href="Books_Paper/infocom2000.pdf">RADAR: An In-Building RF-based User 
+Location and Tracking System</a>, Infocom 2000</p>
+<p class="MsoNormal">Jie Yang, Alexander Varshavsky, Hongbo Liu, Yingying Chen, 
+Marco Gruteser, <a href="Books_Paper/yang10celltower.pdf">Accuracy 
+Characterization of Cell Tower Localization</a>, Ubicomp 2010</p>
+<p class="MsoNormal">Souvik Sen, Božidar Radunovic, Romit Roy Choudhury, Tom 
+Minka, <a href="Books_Paper/pinloc-final.pdf">You are facing the Mona Lisa: spot 
+localization using PHY layer information</a>, Mobisys'12</p>
+<p class="MsoNormal">
+<span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-size: 11.0pt; font-family: 'Times New Roman',serif">Ionut 
+Constandache Romit Roy Choudhury Injong Rhee, <a href="Books_Paper/Compacc.pdf">
+CompAcc: Using Mobile Phone Compasses and Accelerometers for Localization</a>, 
+Infocom 2010</span></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+James Biagioni Tomas Gerlich Timothy Merrifield Jakob Eriksson,
+<a href="Books_Paper/easytracker-sensys11.pdf">EasyTracker: Automatic Transit 
+Tracking, Mapping, and Arrival Time Prediction Using Smartphones</a>, Sensys 11</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Aruna Balasubramanian, Ratul Mahajan, Arun Venkataramani,
+<a href="Books_Paper/r14b-wiffler.pdf">Augmenting Mobile 3G Using WiFi</a>, 
+Mobisys, 10</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Robert LiKamWa†‡, Yunxin Liu‡, Nicholas D. Lane‡, Lin Zhong†,
+<a href="Books_Paper/likamwa2013mobisys2.pdf">MoodScope: Building a Mood Sensor 
+from Smartphone Usage Patterns</a>, Mobisys 13</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+R. W. Picard, <a href="Books_Paper/1995_Affective%20computing_Picard.pdf">
+Affective Computing,</a> M.I.T Media Laboratory Perceptual Computing Section 
+Technical Report No. 321, 1995</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Hosub Lee, Young Sang Choi, Sunjae Lee, and I. P. Park,&nbsp;
+<a href="Books_Paper/ccnc-samsung.pdf">Towards Unobtrusive Emotion Recognition 
+for Affective Social Communication</a>, CCNC, 12</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Hong Lu, Mashfiqui Rabbi, Gokul T. Chittaranjan, Denise Frauendorfer, Marianne 
+Schmid Mast, Andrew T. Campbell, Daniel Gatica-Perez, Tanzeem Choudhury,
+<a href="Books_Paper/ubicomp2012_StressSense.pdf">StressSense: Detecting Stress 
+in Unconstrained Acoustic<br>
+Environments using Smartphones</a>, Ubicomp'12</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Kyunghan Lee, Seongik Hong, Seong Joon Kim, Injong Rhee and Song Chong,
+<a href="Books_Paper/slaw.pdf">&nbsp;SLAW: A Mobility Model for Human Walks</a>, 
+Infocom 2009</font></p>
+<p class="MsoNormal">Kyunghan Lee, Seongik Hong, Seong Joon Kim, Injong Rhee and 
+Song Chong, <strong>
+<a href="http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Autumn2010/UC/Resource/Demystifying_Levy_Walk_Patterns.pdf">
+Demystifying Levy Walk Patterns in Human Walks</a></strong>, Technical Report, 
+2008</p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Bu&#728;gra Gedik, Ling Liu, <a href="Books_Paper/2005-kanom-2.pdf">Location Privacy 
+in Mobile Systems: A Personalized Anonymization Model,</a> ICDCS, 2005</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">&nbsp;Chuan 
+Qin, Xuan Bao, Romit Roy Choudhury,&nbsp;&nbsp; Srihari Nelakudit TagSense: A 
+Smartphone-based Approach to Automatic Image Tagging, Mobisys'11.
+<a href="http://www.cse.sc.edu/~srihari/pubs/TagSense.html">Webpage Link</a>&nbsp;&nbsp;&nbsp;
+</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Ganesh Ananthanarayanan, Venkata N. Padmanabhan, Lenin Ravindranath, 
+Chandramohan A. Thekkath.&nbsp; <a href="Books_Paper/combine-mobisys2007.pdf">
+COMBINE: Leveraging the Power of Wireless Peers through Collaborative 
+Downloading</a>. Mobisys'07 </font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Sandip Agrawal, Ionut Constandache, Shravan Gaonkar, Romit Roy Choudhury Kevin 
+Caves, Frank DeRuyter, <a href="Books_Paper/mobi198-agrawal.pdf">Using Mobile 
+Phones to Write in Air</a>, Mobisys'11</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Chuang-Wen You, Nicholas D. Lane, Fanglin Chen, Rui Wang, Zhenyu Chen, Thomas J. 
+Bao, Martha Montes-de-Oca, , Yuting Cheng, Mu Lin, Lorenzo Torresani, Andrew T. 
+Campbell, <a href="Books_Paper/mobisys_carsafe.pdf">CarSafe App: Alerting Drowsy 
+and Distracted Drivers using Dual Cameras on Smartphones</a>, Mobisys'13</font></p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+Yohan Chon, Nicholas D. Lane, Fan Li, Hojung Cha, Feng Zhao,&nbsp;&nbsp;
+<a href="Books_Paper/Location.pdf">&nbsp;Automatically Characterizing Places 
+with Opportunistic CrowdSensing using Smartphones</a>, UbiComp'12</font></p>
+<p class="MsoNormal">Michael Grace, Yajin Zhou, Qiang Zhang , Shihong Zou , 
+Xuxian Jiang, RiskRanker: <a href="Books_Paper/RiskRanker.pdf">Scalable and 
+Accurate Zero-day Android Malware Detection</a>, Mobisys'12</p>
+<p class="MsoNormal"><font face="Times New Roman,serif" style="font-size: 11pt">
+<br>
+&nbsp;</font></p>
+
+<hr>
+
+<p><a name="Syllabus"></p>
+<h2>Syllabus</h2>
+</span><font color="#FFFF00" face="Times New Roman"><b>Introduction</b>&nbsp;</b></font></p>
+<font face="Times New Roman">Challenges in mobile computing, convergence of sensing, computing, and 
+communications, Introduction to smartphones, tablet, PDA, or other digital 
+mobile devices, Introduction to smartphone system architecture.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Programming platforms</b></b></font></font></p>
+<font face="Times New Roman">Overview of different mobile programming environments, Difference with the 
+classical programming practices, Introduction to mobile operating systems,&nbsp; iOS, 
+Android, Windows, Mobile application development.</font></p>
+<font color="#FFFF00" face="Times New Roman"><b>Wireless 
+Energy Management</b></b></font></p>
+<font face="Times New Roman">Measurement of energy consumption, WiFi Power Save Mode (PSM), Constant Awake 
+Mode (CAM), Different Sleep States, WiFi Energy management.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Localization</b></font></b></font></p>
+<font face="Times New Roman">User location and tracking system, Cell tower localization, Spot localization, 
+Logical location, Ambience fingerprinting, War-driving, Localization without 
+war-driving, Indoor localization, Crowd sourcing for localization.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Location Privacy&nbsp;</b></b></font></font></p>
+<font face="Times New Roman">Different approaches, K-anonymity, CliqueCloak, Location Privacy, Applications 
+with location proof.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Context Sensing&nbsp;</b></b></font></font></p>
+<font face="Times New Roman">Context-Aware system, Automatic Image Tagging, Safety critical applications 
+(case study: determining driver phone use), Energy-efficient Context Sensing, 
+Contextual Ads and Mobile Apps.</font></p>
+<font face="Times New Roman">
+</span><b><font color="#FFFF00">Activity and Gesture Recognition&nbsp;</b></font></b></font></p>
+<font face="Times New Roman">Machine Recognition of Human Activities, Mobile Phones to Write in Air, 
+Personalized Gesture Recognition, Content Rating, Recognizing Human without Face 
+Recognition, Phone-to-Phone Action Games, Interface design issues, Touchscreen, 
+Gesture-based Input.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Mobility&nbsp;</b></font></b></font></p>
+<font face="Times New Roman">Overview of Mobility models, Automatic Transit Tracking, Mapping, Arrival Time 
+Prediction, Augmenting Mobile 3G with WiFi, Vehicular WiFi Hotspots, Code 
+Offload </font> </p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Privacy and Security</b></b><br></font>Authentication on Mobile Phones, Activity based Password, 
+Finger Taps usage as Fingerprints</font></p>
+<font face="Times New Roman"><font color="#FFFF00"><b>Miscellany</b></b></font><br>
+Cloud-based services, Peer-to-peer applications, 
+Delay-tolerance, Mobile social networking</font></p>
+<br><br>
+<p>&nbsp;	</p><a name="Assessment">
+<h2>Evaluation (Tentative)</h2></a>
+<p>
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/midsem.pdf">Mid-sem</a>: 30 
+<br> <br>
+<a href="question_endsem_14.pdf">End-sem</a> : 50<br><a name="Lecture"></p>
+<h2>Lectures</h2></a>
+<h2><span style="font-weight: 400"><font size="3">Lect</font><font size="3"> 1 - 
+Introduction <a href="Slides/class_slide1.ppt">Slides </a>(18.7.14)</font></span></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 2 - Android App - 
+Overview&nbsp; <a href="Slides/class_slide_Android.pptx">Slides</a> (24.7.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 3 - Sensing - Survey
+<a href="Slides/class_slide_sensing.pptx">Slides</a> (25.7.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 4 - Sensing, Energy and 
+Query Optimization - <a href="Slides/class_slide_sensing_ACQUA.pptx">Slides </a>
+(31.7.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 5 - Energy Issues -
+<a href="Slides/class_slide_energy.pptx">Slides</a>&nbsp; (4.8.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 6 -&nbsp; Tailender -
+<a href="Slides/class_slide_Tailender.pptx.ppt">Slides</a> (7.8.14) Notes</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 7 - End to End 
+Compression - <a href="Slides/class_slide_EndRE.pptx">Slides</a> (8.8.14), 
+Power_Tutor <a href="Slides/class_slide_PowerTutor.pptx">Slides</a> </span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 8 - Bartendr -
+<a href="Slides/mobicom10-bartendr-slides.pdf">Slides</a> (14.8.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 9 - Android Programming 
+<a href="Slides/Android-Coursera.pdf">Slides</a> (16.8.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 10 - Mobile Cloud&nbsp;
+<a href="Slides/MCC-PradiptaDe.ppt">Slides&nbsp; </a>(21.8.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 11 - Mobile Cloud
+<a href="Slides/MAUI-mobisys10.pptx">Slides 1</a>,
+<a href="Slides/CloneCloudEuroSys.pptx">Slides 2</a>,
+<a href="Slides/COMET-OSDI12.pptx">Slides 3</a>, <a href="Slides/DSM.ppt">Slides 
+4</a> (22.8.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 12 - Localization - GPS
+<a href="Slides/class_slide_intro_localization_GPS.pptx">Slides</a> (28.8.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 13 - Localization - RADAR
+<a href="Slides/class_slide_RADAR.pptx">Slides</a> (29.8.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 14 - Localization - Cell 
+Tower/War Driving <a href="Slides/wardriving_example.ppt">Slides1</a>
+<a href="Slides/class_slide_celltower.pptx">Slides2</a> (4.9.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 15 - Localization - 
+PinLoc <a href="Slides/PinLoc_mod.pdf">Slides</a>(5.9.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 16 - Localization - 
+ComPacc <a href="Slides/class_slide_compacc.ppt">Slides</a> (10.9.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 17 - Mobility Model -
+<a href="Slides/Lec1-Mobility.ppt">Slides</a> (24.9.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 18 - EasyTracking -
+<a href="Slides/biagioni-sensys11-slides.pdf">Slides</a> (25.9.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect19 - Augmenting 3G -
+<a href="Slides/wiffler-uw-2010.pptx">Slides</a> (26.9.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect20 - MoodSense - 
+<a href="Slides/slides_moodscope_v1.pptx">Slides </a>(10.10.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 21 - SLAW -
+<a href="Slides/SLAW.ppt">Slides</a> (16.10.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 22 - SLAW/Location 
+Privacy <a href="Slides/slide_k-anonymity.ppt">Slides</a> (17.10.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 23 - Location Privacy 
+(continued) (22.10.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 24 - Tagging Images - 
+Tagsense <a href="Slides/class_slide_Tagsense.pptx">Slides</a> (27.10.14) </span>
+</font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 25 - Collaborative 
+Download <a href="Slides/class_slide_combine.pptx">Slide</a>s(29.10.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 26 - Collaborative 
+Download (continued) (30.10.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 27 - Writing in the Air 
+(phone pen) <a href="Slides/class_phonepoint.pptx">Slides</a>&nbsp; (31.10.14)
+</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 28 - Carsafe
+<a href="Slides/carsafe-mobisys-final-140228221155-phpapp01.pptx">Slides</a> 
+(7.11.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 29 - Crowdsense
+<a href="Slides/crowdsense.ppt">Slides</a> (12.11.14)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 30 - RiskRank<a href="Slides/Class_slide_RiskRanker.pptx"> 
+Slides </a>(13.11.14)</span></font><a name="Lecture"><br></h2></a>
+<div style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<h2><a name="Assignment">Assignments </a></h2>
+	<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 1350px">
+		<colgroup><col width="148" style="width: 111pt">
+			<col width="120" style="width: 90pt">
+			<col width="64" style="width:48pt">
+		</colgroup>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" width="148" style="height: 15.0pt; width: 111pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Members</font></td>
+			<td width="120" style="width: 90pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Proposed App. Name</font></td>
+			<td style="width: 1080px; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Project Idea</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Aakash Anuj</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">BestProxy</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">Connection to the best proxy and the best Wifi 
+		based on location tracked using GPS</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Yetesh Chaudhary</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Anishetty Rahul</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Akash Maurya</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">EasyNavigator</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">Navigation within IIT KGP campus, using 
+		accelerometer and gyrometer (without GPS)</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Bathulwar Akash</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Rajesh Kontham</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Shambhu Prasad</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Smart Contacts</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">New form of a Phonebook app where a person is just 
+		responsible for maintaing his/her own contact details</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Rajan Buha</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Deepit Purkayastha</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Aniruddha Gupta</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">U-mote</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">A wireless mouse/keyboard/remote app for ubuntu</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Shushman Choudhury</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Utkarsh Jaiswal</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Akash Amat</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Open Quizzer</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">A quizzing program, it imports questions and 
+		answer options from external file and presents in a graphical format. As 
+		additional demonstration feature the app captures a incoming phone call 
+		and allows user to pick up only after they answer correctly.</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Rhitottam De</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Sourav Sarkar</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">ALBUM-S</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">This is a tour album creator. The app integrates 
+		with the users Facebook Profile. So, when the user goes on a tour with 
+		his friends (facebook friends and who also has the app installed in 
+		their phones), The app will gather all the location data for the tour 
+		time from all the phones and it will also take the photos from all the 
+		phones. It will create a combined album from all the data, tag the users 
+		in the respective photos and share the combined photos in facebook(or 
+		google drive).So the users don’t need to ask the other travellers to 
+		upload their photos repeatedly and it will save the time to create a 
+		complete album.</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Subham De</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Subham Ghosh</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Abhishek Gupta</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Checkers</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">One player Checkers game(https://en.wikipedia.org/wiki/English_draughts)</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Devender Bindal</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Rohan Jain</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Saurav Manchanda</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">LazyGestures</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">Motion Gestures for Mobile Interaction and home 
+		automation</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Harsh Ranjan</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Anindhya Sankhla</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Nikhil Agrawal</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">EasyAttendance</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">Auto Conduct the Attendance in the Class using GPS 
+		location.</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Mavendra singh Tomar</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Rupesh kumar</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">K.Gowtham Sri Charan</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Book Sharing</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">Books sharing app for an organisation where 
+		regitered users can have their books shared with others.</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Sumit kumar</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Salman Ahmad shaik</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Laxmi Kant Tiwari</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">HomeAutomation</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">Speech Recognition and Home Automation Using 
+		Smartphone</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Vaibhav Tiwari</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Shivam Yuvraj</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Mahendra Chauhan</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Home Surveillance System</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">
+			<font color="#FFFFFF">To develop an android application to detect 
+		intrusion and record any movement thereafter and raise alarm.</font></td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Aviral Shrivastava</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+		<tr height="20" style="height:15.0pt">
+			<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+			<font color="#FFFFFF">Jaydeep Bodwadkar</font></td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px">&nbsp;</td>
+			<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="1080">&nbsp;</td>
+		</tr>
+	</table></div>
+<div style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+&nbsp;</div>
+<p>&nbsp;&nbsp;&nbsp; </p>
+<ol>
+</ol>
+</body></html>

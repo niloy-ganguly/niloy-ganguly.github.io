@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>CS 60078 Complex Networks Course</title>
+     
+  <style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+-->
+  </style></head>
+
+<body alink="#ff9999" bgcolor="#000000" link="#ffff00" text="#ffffcc" vlink="#ddcc55">
+
+<center>
+<br>
+<br>
+<h1><font size="+2">CS 60009 Smartphone Computing and Applications</font></h1>
+<h3>(Autumn Semester 2016)</h3>
+<p><b>Theory</b><br>  
+    <b>Niloy Ganguly (NG)</b> <a href="mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a></p>
+<p> <br>
+  <br>
+    <b>Teaching Assistant</b></p>
+<p>Satadal Sengupta satadal.sengupta.nit@gmail.com</p>
+<p>Sankarsan Mridha sankarshan7@gmail.com</p>
+<p>Arushi Keswarwani <a href="mailto:arushikesarwani@gmail.com">
+arushikesarwani@gmail.com</a></p>
+<p>Gyanendra Singh gyanendra.official@gmail.com
+</p>
+<p>
+  <br>
+</p>
+<p>
+</p></center>
+<hr>
+<h3>Notices</h3>
+<ul>
+  <li><a href="group.doc">Group and Assignment</a></li>
+</ul>
+<hr>
+<ul>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Essentials">Class Room/Hour</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Books">Books</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Assessment">Evaluation</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Lecture">Lectures</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Syllabus">Syllabus</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Studentlist.xls">Students List</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Assignment">Assignments</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Project">Term projects</a>
+  </li>
+</ul>
+
+<hr>
+
+<a name="Essentials"><h2>Class Room/Hours</h2>
+</a>
+<br>
+  Room : 119<br>
+  Units      :  3-0-0<br>
+  Credits : 3, Slot - E <br>
+  Contact    :  Room #313  (CSE), Phone 83460<br>
+
+
+<a name="Books"><h2>Books and Resources</h2></a>
+A list of useful books and materials is given below.  
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.5in">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="Books_Paper/(Morgan%20Kaufmann%20series%20in%20networking)%20Pei%20Zheng%20and%20Lionel%20Ni%20(Auth.)-Smart%20Phone%20and%20Next%20Generation%20Mobile%20Computing%20(1).pdf">Smart Phone and Next Generation Mobile Computing (Morgan Kaufmann Series in 
+Networking)</a>,&nbsp; PeiZheng, Lionel Ni</p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.5in">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Principles Of Mobile Computing, Hansmann, LotharMerk, Martin Niclous, Stober</p>
+<p class="MsoNormal">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="Books_Paper/MC.pdf">Mobile Computing,</a> Tomasz Imielinski, Springer</p>
+<p class="MsoNormal">Android App Development
+<a target="_blank" href="http://developer.android.com/">
+http://developer.android.com/</a>&nbsp;</p>
+<p class="MsoNormal">Sensing<br>
+<a href="Books_Paper/Sensing.pdf">A survey of mobile phone sensing</a> Authors: 
+Nicholas D. Lane, Emiliano Miluzzo, Hong Lu, Daniel Peebles, Tanzeem Choudhury, 
+Andrew T. Campbell, · Journal IEEE Communications Magazine archive Volume 48 
+Issue 9, September 2010, Pages 140-150 </p>
+<p class="MsoNormal"><span class="this-person">ENERGY</span></p>
+<p class="MsoNormal"><span class="this-person">
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<p class="MsoNormal"><span class="this-person">Archan Misra</span>,
+<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/l/Lim:Lipyeow.html">
+Lipyeow Lim</a>: <span class="title">
+<a href="Books_Paper/Archan_Acqua_conf.pdf">Optimizing Sensor Data Acquisition 
+for Energy-Efficient Smartphone-Based Continuous Event Processing</a>.</span>
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/mdm/mdm2011-1.html#MisraL11">
+Mobile Data Management (1) 2011</a>: 88-97 </p>
+<p class="MsoNormal">
+<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/l/Lim:Lipyeow.html">
+Lipyeow Lim</a>, <span class="this-person">Archan Misra</span>,
+<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/m/Mo:Tianli.html">
+Tianli Mo</a>: <span class="title">
+<a href="Books_Paper/Archan-acqua_journal-1.pdf">Adaptive data acquisition 
+strategies for energy-efficient, smartphone-based, continuous processing of 
+sensor streams.</a></span>
+<a href="http://www.informatik.uni-trier.de/~ley/db/journals/dpd/dpd31.html#LimMM13">
+Distributed and Parallel Databases 31</a>(2): 321-351 (2013)</p>
+<p class="MsoNormal">
+<br>
+Niranjan Balasubramanian Aruna Balasubramanian Arun Venkataramani,
+<a href="Books_Paper/UM-CS-2009-022.pdf">Energy Consumption in Mobile Phones: A 
+Measurement Study and Implications for Network Applications</a>, IMC 09. </p>
+<p class="MsoNormal">
+Bhavish Aggarwal, Aditya Akella, Ashok Anand, Athula Balachandran, Pushkar 
+Chitnis, Chitra Muthukrishnan, Ramachandran Ramjee, and George Varghese,
+<a id="/HTML/BODY/DIV/DIV/DIV/DIV/DIV/DIV/DIV/DIV/DIV/UL/LI/A" onclick="stc(this, 37)" href="http://research.microsoft.com/apps/pubs/default.aspx?id=118422">
+EndRE: An End-System Redundancy Elimination Service for Enterprises</a>, in
+<i id="/HTML/BODY/DIV/DIV/DIV/DIV/DIV/DIV/DIV/DIV/DIV/UL/LI/I">Symposium on 
+Networked Systems Design and Implementation (NSDI)</i>, USENIX, April 2010 ..<a href="Books_Paper/EndRe.pdf"> 
+Paper</a></p>
+<p class="MsoNormal">Schulman, Aaron and Navda, Vishnu and Ramjee, Ramachandran 
+and Spring, Neil and Deshpande, Pralhad and Grunewald, Calvin and Jain, Kamal 
+and Padmanabhan, Venkata N,&nbsp;<a href="Books_Paper/mobicom10-bartendr.pdf"> 
+Bartendr: A Practical Approach to Energy-aware Cellular Data Scheduling,</a> 
+Mobicom 10</p>
+<p class="MsoNormal">LOCALIZATION</p>
+<p class="MsoNormal">
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<p class="MsoNormal">Paramvir Bahl and Venkata N. Padmanabhan,
+<a href="Books_Paper/infocom2000.pdf">RADAR: An In-Building RF-based User 
+Location and Tracking System</a>, Infocom 2000</p>
+<p class="MsoNormal">Jie Yang, Alexander Varshavsky, Hongbo Liu, Yingying Chen, 
+Marco Gruteser, <a href="Books_Paper/yang10celltower.pdf">Accuracy 
+Characterization of Cell Tower Localization</a>, Ubicomp 2010</p>
+<p class="MsoNormal">Heba Aly, Moustafa Youssef,
+<a href="Books_Paper/SIGSPATIAL.pdf">Dejavu: An Accurate Energy-Efficient 
+Outdoor Localization System</a>. SIGSPATIAL'13</p>
+<p class="MsoNormal"><span style="background-color: #000000">Souvik Sen, Božidar Radunovic, Romit Roy Choudhury, Tom 
+Minka, </span> <a href="Books_Paper/pinloc-final.pdf">
+<span style="background-color: #000000">You are facing the Mona Lisa: spot 
+localization using PHY layer information</span></a><span style="background-color: #000000">, Mobisys'12</span></p>
+<p class="MsoNormal">
+<span style="background-color: #000000">
+-----------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<p class="MsoNormal">
+<span style="background-color: #000000">COLLABORATIVE DOWNLOAD</span></p>
+<p class="MsoNormal">
+<font face="Times New Roman,serif" style="font-size: 11pt; background-color:#000000">
+Ganesh Ananthanarayanan, Venkata N. Padmanabhan, Lenin Ravindranath, 
+Chandramohan A. Thekkath.&nbsp; <a href="Books_Paper/combine-mobisys2007.pdf">
+COMBINE: Leveraging the Power of Wireless Peers through Collaborative 
+Downloading</a>. Mobisys'07 </font>
+<span style="background-color: #000000"><strike>
+<br>
+<br>
+</strike>Lorenzo Keller, Anh Le, Blerim Cici, Hulya Seferoglu, Christina Fragouli, Athina 
+Markopoulou: </span> <a href="Books_Paper/Microcast.pdf">
+<span style="background-color: #000000">MicroCast: cooperative video streaming 
+on smartphones.</span></a><span style="background-color: #000000"> 57-70, 
+Mobisys'12</span></p>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<p class="MsoNormal">
+<span style="background-color: #000000">MOBILITY MODELS</span></p>
+<p class="MsoNormal">
+<font face="Times New Roman,serif" style="font-size: 11pt; background-color:#000000">
+Kyunghan Lee, Seongik Hong, Seong Joon Kim, Injong Rhee and Song Chong,
+<a href="Books_Paper/slaw.pdf">&nbsp;SLAW: A Mobility Model for Human Walks</a>, 
+Infocom 2009</font></p>
+<p class="MsoNormal"><span style="background-color: #000000">Kyunghan Lee, Seongik Hong, Seong Joon Kim, Injong Rhee and 
+Song Chong, </span> <strong>
+<a href="http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Autumn2010/UC/Resource/Demystifying_Levy_Walk_Patterns.pdf">
+<span style="background-color: #000000">Demystifying Levy Walk Patterns in Human Walks</span></a></strong><span style="background-color: #000000">, Technical Report, 
+2008</span></p>
+<p class="MsoNormal"><span style="background-color: #000000">
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<p class="MsoNormal">
+<span style="background-color: #000000">PRIVACY</span></p>
+<p class="MsoNormal">
+<span style="background-color: #000000">Ning Xia, Han Hee Song, Yong Liao, Marios Iliofotou, Antonio Nucci, Zhi-Li 
+Zhang, Aleksandar Kuzmanovic, </span> <a href="Books_Paper/Mosaic.pdf">
+<span style="background-color: #000000">Mosaic: 
+Quantifying Privacy Leakage in Mobile Networks</span></a><span style="background-color: #000000">, SigComm'13</span></p>
+<p class="MsoNormal"><span style="background-color: #000000">
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<p class="MsoNormal"><span style="background-color: #000000">AUGMENTED REALITY</span></p>
+<p class="MsoNormal">Tiffany Yu-Han Chen, Lenin Ravindran, Paramvir Bahl,&nbsp; 
+Hari Balakrishnan, <a href="Books_Paper/sen060-chenA.pdf">Glimpse: Continuous, 
+Real-Time Object Recognition on Mobile Devices</a>, Sensys'15</p>
+<p class="MsoNormal">Puneet Jain, Justin Manweiler,&nbsp; Romit Roy Choudhury<span style="background-color: #000000">, 
+OverLay: <a href="Books_Paper/overlay.pdf">Practical Mobile Augmented Reality</a>, 
+MobiSys'16</span></p>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">MOBILE CLOUD AND ENERGY</span></p>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<pre><font face="Times New Roman" size="3"><span style="text-decoration: line-through; background-color: #000000">Eduardo Cuervoy, Aruna Balasubramanianz, Dae-ki Cho, Alec Wolmanx, Stefan Saroiux, Ranveer Chandrax, Paramvir Bahl,<a href="Books_Paper/maui.pdf"> MAUI: Making Smartphones Last Longer with Code Offload</a>, Mobisys, 10</span></font></pre>
+<pre><font face="Times New Roman" size="3"><span style="text-decoration: line-through; background-color: #000000">Weiwen Zhang, Yonggang Wen, and Dapeng Oliver Wu, <a href="Books_Paper/Zhang-Infocom13.pdf">Energy-efficient Scheduling Policy for Collaborative Execution in Mobile Cloud Computing,</a> Infocom 13</span></font></pre>
+<pre><font face="Times New Roman" size="3"><span style="text-decoration: line-through; background-color: #000000">Alpar Juttner, Balazs Szviatovszki, Ildiko Mecs, Zsolt Rajk ´ o´,<a href="Books_Paper/LARAC.pdf"> Lagrange Relaxation Based Method for the QoS Routing Problem</a>, Infocom 01</span></font></pre>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">MOBILITY MODELS</span></p>
+<p class="MsoNormal">
+<font face="Times New Roman,serif" style="font-size: 11pt; text-decoration:line-through; background-color:#000000">
+Kyunghan Lee, Seongik Hong, Seong Joon Kim, Injong Rhee and Song Chong,
+<a href="Books_Paper/slaw.pdf">&nbsp;SLAW: A Mobility Model for Human Walks</a>, 
+Infocom 2009</font></p>
+<p class="MsoNormal"><strike><span style="background-color: #000000">Kyunghan Lee, Seongik Hong, Seong Joon Kim, Injong Rhee and 
+Song Chong, </span> <strong>
+<a href="http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Autumn2010/UC/Resource/Demystifying_Levy_Walk_Patterns.pdf">
+<span style="background-color: #000000">Demystifying Levy Walk Patterns in Human Walks</span></a></strong><span style="background-color: #000000">, Technical Report, 
+2008</span></strike></p>
+<p class="MsoNormal"><strike><span style="background-color: #000000">Fan Bai and Ahmed Helmy,
+</span>
+<a href="Books_Paper/Survey-Mobility-Chapter-1.pdf">
+<span style="background-color: #000000">A SURVEY OF MOBILITY MODELS 
+in Wireless Adhoc Networks</span></a><span style="background-color: #000000">, 1999. 
+</span></strike> </p>
+<p class="MsoNormal"><strike><span style="background-color: #000000">Rajib Ranjan Maiti, Arun Mallya, Animesh Mukherjee, Niloy 
+Ganguly: </span> <a href="Books_Paper/Mobility_Property_acs_2013.pdf">
+<span style="background-color: #000000">&nbsp;Understanding 
+the Correlation of the Properties of Human movement Patterns</span></a><span style="background-color: #000000">. Advances in 
+Complex Systems 17(6) (2014)</span></strike></p>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">
+-----------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">
+COLLABORATIVE DOWNLOAD</span></p>
+<p class="MsoNormal"><strike>
+<font face="Times New Roman,serif" style="font-size: 11pt; background-color:#000000">
+Ganesh Ananthanarayanan, Venkata N. Padmanabhan, Lenin Ravindranath, 
+Chandramohan A. Thekkath.&nbsp; <a href="Books_Paper/combine-mobisys2007.pdf">
+COMBINE: Leveraging the Power of Wireless Peers through Collaborative 
+Downloading</a>. Mobisys'07 </font><span style="background-color: #000000"><br>
+<br>
+Lorenzo Keller, Anh Le, Blerim Cici, Hulya Seferoglu, Christina Fragouli, Athina 
+Markopoulou: </span> <a href="Books_Paper/Microcast.pdf">
+<span style="background-color: #000000">MicroCast: cooperative video streaming 
+on smartphones.</span></a><span style="background-color: #000000"> 57-70, 
+Mobisys'12</span></strike></p>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+<p class="MsoNormal">
+<span style="text-decoration: line-through; background-color: #000000">PRIVACY</span></p>
+<p class="MsoNormal">
+<strike><span style="background-color: #000000">Ning Xia, Han Hee Song, Yong Liao, Marios Iliofotou, Antonio Nucci, Zhi-Li 
+Zhang, Aleksandar Kuzmanovic, </span> <a href="Books_Paper/Mosaic.pdf">
+<span style="background-color: #000000">Mosaic: 
+Quantifying Privacy Leakage in Mobile Networks</span></a><span style="background-color: #000000">, SigComm'13</span></strike></p>
+<p class="MsoNormal">
+<strike><span style="background-color: #000000">&nbsp;Richard McPherson, Suman Jana, Vitaly Shmatikov,
+</span>
+<a href="Books_Paper/shmat_www15ar.pdf"><span style="background-color: #000000">No Escape From Reality: Security and 
+Privacy of Augmented Reality Browsers</span></a><span style="background-color: #000000">, www'15<br>
+<br>
+----------------------------------------------------------------------------------OTHER 
+PAPERS -- NOT TAUGHT 
+-----------------------------------------------------------------------<br>
+</span>
+<span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;; background-color:#000000">&nbsp;</span></strike></p>
+<p class="MsoNormal">
+<span style="font-size: 11.0pt; font-family: 'Times New Roman',serif; text-decoration:line-through; background-color:#000000">Ionut 
+Constandache Romit Roy Choudhury Injong Rhee, <a href="Books_Paper/Compacc.pdf">
+CompAcc: Using Mobile Phone Compasses and Accelerometers for Localization</a>, 
+Infocom 2010</span></p>
+<p class="MsoNormal">
+<font face="Times New Roman,serif" style="font-size: 11pt; text-decoration:line-through; background-color:#000000">
+James Biagioni Tomas Gerlich Timothy Merrifield Jakob Eriksson,
+<a href="Books_Paper/easytracker-sensys11.pdf">EasyTracker: Automatic Transit 
+Tracking, Mapping, and Arrival Time Prediction Using Smartphones</a>, Sensys 11</font></p>
+<p class="MsoNormal">
+<font face="Times New Roman,serif" style="font-size: 11pt; text-decoration:line-through; background-color:#000000">
+Aruna Balasubramanian, Ratul Mahajan, Arun Venkataramani,
+<a href="Books_Paper/r14b-wiffler.pdf">Augmenting Mobile 3G Using WiFi</a>, 
+Mobisys, 10</font></p>
+<p class="MsoNormal">
+<font face="Times New Roman,serif" style="font-size: 11pt; text-decoration:line-through; background-color:#000000">
+Bu&#728;gra Gedik, Ling Liu, <a href="Books_Paper/2005-kanom-2.pdf">Location Privacy 
+in Mobile Systems: A Personalized Anonymization Model,</a> ICDCS, 2005</font></p>
+
+<hr>
+
+<a name="Syllabus">
+<h2>Syllabus</h2>
+</span><font color="#FFFF00" face="Times New Roman"><b>Introduction</b>&nbsp;</b></font></p>
+<font face="Times New Roman">Challenges in mobile computing, convergence of sensing, computing, and 
+communications, Introduction to smartphones, tablet, PDA, or other digital 
+mobile devices, Introduction to smartphone system architecture.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Programming platforms</b></b></font></font></p>
+<font face="Times New Roman">Overview of different mobile programming environments, Difference with the 
+classical programming practices, Introduction to mobile operating systems,&nbsp; iOS, 
+Android, Windows, Mobile application development.</font></p>
+<font color="#FFFF00" face="Times New Roman"><b>Wireless 
+Energy Management</b></b></font></p>
+<font face="Times New Roman">Measurement of energy consumption, WiFi Power Save Mode (PSM), Constant Awake 
+Mode (CAM), Different Sleep States, WiFi Energy management.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Localization</b></font></b></font></p>
+<font face="Times New Roman">User location and tracking system, Cell tower localization, Spot localization, 
+Logical location, Ambience fingerprinting, War-driving, Localization without 
+war-driving, Indoor localization, Crowd sourcing for localization.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Location Privacy&nbsp;</b></b></font></font></p>
+<font face="Times New Roman">Different approaches, K-anonymity, CliqueCloak, Location Privacy, Applications 
+with location proof.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Context Sensing&nbsp;</b></b></font></font></p>
+<font face="Times New Roman">Context-Aware system, Automatic Image Tagging, Safety critical applications 
+(case study: determining driver phone use), Energy-efficient Context Sensing, 
+Contextual Ads and Mobile Apps.</font></p>
+<font face="Times New Roman">
+</span><b><font color="#FFFF00">Activity and Gesture Recognition&nbsp;</b></font></b></font></p>
+<font face="Times New Roman">Machine Recognition of Human Activities, Mobile Phones to Write in Air, 
+Personalized Gesture Recognition, Content Rating, Recognizing Human without Face 
+Recognition, Phone-to-Phone Action Games, Interface design issues, Touchscreen, 
+Gesture-based Input.</font></p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Mobility&nbsp;</b></font></b></font></p>
+<font face="Times New Roman">Overview of Mobility models, Automatic Transit Tracking, Mapping, Arrival Time 
+Prediction, Augmenting Mobile 3G with WiFi, Vehicular WiFi Hotspots, Code 
+Offload </font> </p>
+<font face="Times New Roman">
+</span><font color="#FFFF00"><b>Privacy and Security</b></b><br></font>Authentication on Mobile Phones, Activity based Password, 
+Finger Taps usage as Fingerprints</font></p>
+<font face="Times New Roman"><font color="#FFFF00"><b>Miscellany</b></b></font><br>
+Cloud-based services, Peer-to-peer applications, 
+Delay-tolerance, Mobile social networking</font></p>
+<br><br>
+<p>&nbsp;	</p><a name="Assessment">
+<h2>Evaluation (Tentative)</h2></a>
+<p>
+<a href="Slides_2016/MidSem.pdf">Mid-sem</a>: 25<a href="Slides_2016/Smartphone2016_MidSem_Solutions.pdf"> 
+Solution</a><br>
+Term Project: 35&nbsp; <br>
+<a href="Slides_2016/SmartPhone_EndSem_16.pdf">End-sem</a> : 40
+<a href="Slides_2016/SmartPhone_EndSem_Solution16.pdf">Solution</a><br></p>
+<p>
+&nbsp;</p>
+<a name="Lecture">
+<h2>Lectures</h2>
+<h2><span style="font-weight: 400"><font size="3">Lect 1 - 
+Introduction </font></span></a>
+<span style="font-weight: 400"><font size="3">
+<a name="Lecture" href="Slides_2016/Intro_Slide.pptx">Slides 
+</a>
+<a name="Lecture">(21.7.16)</a></font></span></h2>
+<h2><font size="3"><span style="font-weight: 400"><a name="Lecture">Lect 3 - Sensing - Survey </a>
+<a name="Lecture" href="Slides_2016/class_slide_sensing.pptx">Slides</a><a name="Lecture"> (27.7.16)</a></span></font></h2>
+<h2><a name="Lecture"><font size="3"><span style="font-weight: 400">
+<font color="#FFFFFF">Lect 4 - Sensing, Energy and 
+Query Optimization -<a name="Lecture" href="Slides_2016/class_slide_sensing_ACQUA.pptx"> Slides</a><a href="Slides/class_slide_sensing_ACQUA.pptx">
+</a>
+(28.7.16/29.7.16/4.8.16)</font></span></font></a></h2>
+<h2><a name="Lecture"><font size="3"><span style="font-weight: 400">Lect 5 - 
+Tailender - <a name="Lecture" href="Slides_2016/class_slide_Tailender.ppt">Slides 
+</a>(5.8/10.8)</span></font></h2>
+<h2><font size="3"><span style="font-weight: 400">Lect 6 -&nbsp; EndRE -</span></font></a><font size="3"><span style="font-weight: 400">
+<a name="Lecture" href="Slides_2016/class_slide_EndRE.ppt">Slides </a>
+<a name="Lecture">(11.8/12.8) </a> </span></font></h2>
+<h2><span style="font-weight: 400"><font size="3">Lect 7 -&nbsp; Bartender&nbsp;
+<a href="Slides_2016/bartender_pics_updated.pptx">Slides</a> (17.8)</font></span></h2>
+<h2><span style="font-weight: 400"><font size="3">Lect 8 -&nbsp; ANDROID 
+TUTORIAL <a href="Slides_2016/Android%20App%20Development_BASIC.pptx">Slides</a></font></span><br>
+<br>
+<span style="font-weight: 400"><font size="3"><font color="#FFFF00">What are the 
+Android Common Views?<br>
+ref: https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view<br>
+</font><a href="Slides_2016/Common%20Android%20Views.pdf">slide</a><font color="#FFFF00">
+</font><a href="Slides_2016/Common%20Android%20Views%20Cheat%20Sheet.pdf">Slide</a></font></span></h2>
+<h2><span style="font-weight: 400"><font size="3"><font color="#FFFF00">What is 
+Layout ?<br>
+ref: http://labs.udacity.com/images/Layout-Cheat-Sheet.pdf?_ga=1.140793522.1092577776.1467228329<br>
+</font><a href="Slides_2016/Layout.pdf">slide</a><font color="#FFFF00"><br>
+<br>
+What is px, dp, sp etc ? <br>
+Ref: https://material.google.com/layout/units-measurements.html#units-measurements-pixel-density<br>
+<br>
+Padding and Margin:<br>
+http://www.101apps.co.za/index.php/articles/android-s-gravity-layout-gravity-padding-and-layout-margin-attributes.html<br>
+<br>
+Udacity Android Development course for Beginner. link: https://www.udacity.com/course/android-development-for-beginners--ud837<br>
+&nbsp;</font></font></span></h2>
+<h2><span style="font-weight: 400"><font size="3">Lect 9 -&nbsp; RADAR 
+(24.8/25.8) <a href="Slides_2015/class_slide_RADAR.pptx">Slides</a></font></span></h2>
+<h2><span style="font-weight: 400"><font size="3">Lect 10-&nbsp; Cell Tower 
+Localization (31.8/2.9) <a href="Slides_2016/class_slide_celltower_updated.pptx">
+Slides</a></font></span></h2>
+<p>Lect 11 - DejaVu <a href="Slides_2015/Dejavu.ppt">Slides</a></p>
+<p>----------------------------</p>
+<p>Lect 12 - Pinloc <a href="Slides_2015/PinLoc_mod.ppt">Slides</a><a href="Slides_2015/PinLoc_mod.pdf"> 
+Pdf</a></p>
+<p>Lect 13 - COMBINE <a href="Slides_2016/COMBINE.ppt">Slides</a></p>
+<p>Lect 14&nbsp; MicroCast
+<a href="Slides_2016/MicroCast-Cooperative%20Video%20Streaming%20on%20Smartphones%20Modified.ppt">
+Slides</a></p>
+<p>Lect 15 SLAW <a href="Slides_2015/SLAW.ppt">Slides</a>
+<a href="Slides_2016/SLAW1.pptx">Slides</a></p>
+<p>Lect 16 Mosaic <a href="Slides_2015/Mosaic.pptx">Slides</a></p>
+<p>Lect 17&nbsp; Glimpse <a href="Slides_2016/glimpse_sensys_edited.pdf">Slides</a></p>
+<p>Lect 18 Overlay <a href="Slides_2016/overlay-talk-mobisys.pptm">Slides</a></p>
+<p><b><font size="5">Term Project</font></b></p>
+</body></html>
