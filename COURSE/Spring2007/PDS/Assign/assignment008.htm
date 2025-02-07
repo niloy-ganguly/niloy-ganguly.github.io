@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"><head><!-- saved from url=(0072)http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Spring2007/pds/main.html --><title>CS 11001 Programming and Data Structure</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Microsoft FrontPage 5.0" name="GENERATOR">
+</head><body alink="#ff9999" bgcolor="#000000" link="#ffff00" text="#ffffcc" vlink="#ddcc55">
+<center><br>
+</center>
+<hr>
+
+<h3><font size="5">Assignment 8 : Pointers and Structures&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Date : 19<sup>th </sup>&nbsp;Mar, 07</h3>
+<hr>
+
+<a name="Lecture">
+
+<p><font size="5" color="#FFFF00">Tutorial&nbsp; 8.1.a:</font></p>
+
+<p dir="ltr"><font size="5">Check output of the following program.<br>
+void main ()<br>
+{<br>
+int a,*b,**c,***d,****e;<br>
+a=10;<br>
+b=&amp;a;<br>
+c=&amp;b;<br>
+d=&amp;c;<br>
+e=&amp;d; <br>
+printf(“\n a=%d b= %u c=%u d=%u e=%u”, a ,b, c, d, e);<br>
+printf(“\n a=%d a+*b= %d **c + ***d=%d ***d + ****e=%d ”,a, <br>
+a+*b, **c + ***d, ***d + ****e);<br>
+}<br>
+&nbsp;</font></p>
+
+<p><font size="5">
+<font color="#FFFF00">Tutorial 8.1.b:<br>
+</font>Write a C program to swap two variables<br>
+void main()<br>
+{<br>
+int a=5,b=10;<br>
+printf(“Before Swap:\n a=%d and b=%d”,a,b);<br>
+swap(a,b);<br>
+printf(“After swap:\n a=%d and b=%d”,a,b);<br>
+swap_ptr(&amp;a,&amp;b);<br>
+printf(“After swap using pointer: \n a=%d and b=%d”,a,b);<br>
+}</font></p>
+
+<p dir="ltr"><font size="5">void swap(int a, int b)<br>
+{<br>
+int temp; <br>
+temp=a;<br>
+a=b;<br>
+b=temp;<br>
+}<br>
+<br>
+void swap_ptr(int *a, int *b)<br>
+{<br>
+int temp; <br>
+temp=*a;<br>
+*a=*b;<br>
+*b=temp;<br>
+}<br>
+&nbsp;</font></p>
+
+<p><font color="#3366CC"><font size="5">Output: Before Swap:</font></p>
+
+</font>
+</a>
+
+<font color="#3366CC">
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+
+<a name="Lecture">
+
+<font size="5">&nbsp;a=5 and b=10</font></p>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+After Swap:</font></p>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a=5 
+and b=10</font></p>
+
+</a>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+
+<a name="Lecture">
+
+<font size="5">After swap using pointers:</font></a></p>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+a=10 and b=5</font></font></p>
+
+<a name="Lecture">
+
+<p dir="ltr"><font size="5">
+<font color="#FFFF00">Tutorial 8.1.c:<br>
+</font>Write a C program to read a string of length N and copy it to another 
+memory location using pointers and Dynamic memory allocation.<br>
+Soln:<br>
+#include&lt;stdio.h&gt;<br>
+#include&lt;stdlib.h&gt;<br>
+<br>
+void strcopy(char *s,char *t)<br>
+{<br>
+while((*t++ = *s++) !='\0');<br>
+}<br>
+<br>
+int main()<br>
+{<br>
+char *str1;<br>
+char *str2;<br>
+int len;<br>
+<br>
+printf(&quot;Enter Length of the string: &quot;);<br>
+scanf(&quot;%d&quot;,&amp;len);<br>
+<br>
+str1 = (char *)malloc(len*sizeof(char));<br>
+str2= (char *)malloc(len*sizeof(char));<br>
+printf(&quot;\nEnter the String: &quot;);<br>
+scanf(&quot;%s&quot;,str1);<br>
+strcopy(str1,str2);<br>
+printf(&quot;\n Input String stored in str1=%s and copied to&nbsp; str2=%s&quot;,str1,str2);<br>
+return 0;<br>
+}</font></p>
+
+<p dir="ltr"><font color="#3366CC"><font size="5">Output: Enter Length of the 
+string: 8</font></p>
+
+</font>
+</a>
+
+<font color="#3366CC">
+
+<p dir="ltr"><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></font>
+
+<a name="Lecture">
+
+<font color="#3366CC"><font size="5">Enter the String: Pointers</font></p>
+
+<p dir="ltr"></font><font size="5"><font color="#3366CC">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Input String stored in str1=Pointers and copied to&nbsp; str2=Pointers</font><br>
+&nbsp;</font></p>
+
+<hr noshade="noshade" size="2">
+
+<p><font size="5"><font color="#FFFF00">Assignment 8.1:</font><br>
+Write a C program to read a string of 
+length N (given as input) the string memory should be dynamically allocated and then 
+write user defined functions performs the 
+following string operations. You are not allowed to use any string library 
+functions. Moreover array constructs like a[i] cannot be used.</font></p>
+
+<p><font size="5"><br>
+a) <font color="#FFFF00">strComp (char *S, char *T)</font>:&nbsp; compares two strings S and T .<br>
+return &lt;0 if S&lt;T<br>
+return 0 if S==T<br>
+return &gt;0 if S&gt;T, Here &quot; &lt; &quot; or &quot; &gt; &quot; implies less or greater according to 
+ASCII values.<br>
+&nbsp;</font></p>
+
+<p><font color="#3366CC" size="5"><u>Input&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Output</u></font></p>
+
+<p><font color="#3366CC"><font size="5">S= abc T= def&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+-1</font></p>
+
+<a name="Lecture">
+
+<p><font color="#3366CC"><font size="5">S= abc T= abc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0</font></p>
+
+</font>
+
+<p><font color="#3366CC"><font size="5">S= def&nbsp; T= abc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1</font></p>
+
+</font>
+</a>
+
+</font>
+
+<p><font size="5">b) <font color="#FFFF00">strEnd</font> <font color="#FFFF00">(char *S, char *T)</font>: <br>
+returns 1 if T occurs at the end of string S <br>
+return 0 otherwise.</font></p>
+
+</a>
+
+<p><font size="5">For Example:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="#3366CC"><u>Input</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u>Output</u></font></font><font color="#3366CC"></p>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+S= pickpocketing&nbsp;&nbsp;&nbsp; T=pocket&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0</font></p>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u>Input</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u>Output</u></font></p>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+S= for your eyes&nbsp;&nbsp;&nbsp;&nbsp; T=yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1</font></p>
+
+</font>
+
+<p>
+
+<a name="Lecture">
+
+<font size="5">c)<font color="#FFFF00"> strRotate(char *str):</font> Displays all possible rotations of a string;<br>
+<br>
+For Example: <br>
+<font color="#3366CC">INPUT: abcdefg&nbsp;
+</font>
+</font></p>
+
+<p><font color="#3366CC" size="5">OUTPUT: </font>
+
+<font size="5"><font color="#3366CC">gabcdef&nbsp;&nbsp;&nbsp;&nbsp; fgabcde&nbsp;&nbsp;&nbsp;&nbsp; 
+efgabcd&nbsp;&nbsp;&nbsp;&nbsp; defgabc&nbsp;&nbsp;&nbsp; cdefgab&nbsp;&nbsp;&nbsp; 
+bcdefga&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; abcdefg</font><font color="#FFFF00"><br>
+</font><br>
+d) <font color="#FFFF00">strReverse (char *S)</font>: Function accepts an array of 
+<font color="#FFFF00">N</font> strings of length <font color="#FFFF00">K</font> as input 
+argument and return the reverse of each of the strings. <br>
+&nbsp;&nbsp;&nbsp; I. Construct a 2-Dimensional array using dynamic memory 
+allocation to store the given input strings.<br>
+&nbsp;&nbsp;&nbsp; II. The input string are of different length.<br>
+&nbsp;&nbsp;&nbsp; III. Your strReverse( ) function must be “In Place”.<br>
+<br>
+Hint: You can modify the Swap( ) function as shown. You have to use just two variables to swap.
+in Tutorial 8.1.b.<br>
+<br>
+For example:<br>
+</font><font color="#3366CC">
+<span style="font-weight: normal; font-size: 16pt;"><u>Input&nbsp;&nbsp;&nbsp;</u>&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N 
+= 5 K=4,4,3,7,3</span></p>
+
+<p class="MsoNormal"><span style="font-weight: normal; font-size: 16pt;">Enter 
+strings :</span></p>
+<p class="MsoNormal"><span style="font-weight: normal; font-size: 16pt;">Amit&nbsp;&nbsp;&nbsp; 
+Ajay&nbsp;&nbsp;&nbsp; Mal&nbsp;&nbsp;&nbsp; aravind&nbsp;&nbsp;&nbsp; ram</span></font></p>
+<p class="MsoNormal"><font color="#3366CC">
+<span style="font-weight: normal; font-size: 16pt;"><u>Output</u>&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;Reverse 
+order of&nbsp; given strings :</span></p>
+<p class="MsoNormal"><span style="font-size: 16pt">tima</span><span style="font-weight: normal; font-size: 16pt;">&nbsp;&nbsp; 
+yaja&nbsp;&nbsp;&nbsp; lam&nbsp;&nbsp;&nbsp;dnivara&nbsp;&nbsp;&nbsp; mar</span></font></p>
+
+<hr noshade="noshade" size="2">
+
+</a>
+
+</body></html>

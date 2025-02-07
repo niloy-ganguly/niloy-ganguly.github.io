@@ -1,0 +1,274 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <Title> CS 60078 Complex Networks Course</Title>   
+</head>
+
+<body bgcolor="#000000" text="#ffffcc" link="#ffff00" vlink="#ddcc55" alink="#ff9999">
+
+<center>
+<br>
+<br>
+<H1><font size=+2>CS 60078 Complex Networks</font></H1>
+<H3>(Spring Semester 2006)</H3>
+<b>Theory</b><br>  <b>Niloy Ganguly (NG)</b> <a href = "mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a><br><br>
+<b>Teaching Assisstant</b><br> 
+<b>Animesh Mukherjee (AM) </b> <a href = "mailto:Animesh.Mandal@iitkgp.ac.in">Animesh.Mandal@iitkgp.ac.in</a><br><br>
+<b>Resource Persons</b><br>
+<b>Monojit Choudhury (MC)</b><br>
+<b>Pabitra Mitra (PM)</b>
+<p>
+</center>
+<hr>
+<h3>Notices</h3>
+<font color = yellow>
+27.04.2006 - The <a href=notes/students1.xls> marks </a> are out. You can check your marks. Your grade will be directly derived from the normalized column. If you are a borderline case, and if you have not submitted scribe/term project report, please submit the scribe/report now. This is your last chance. If your scribe is already submitted by somebidy else, contact me.  You can also meet me anytime till 2nd May to see your answer script. <br>
+20.04.2006 - All scribes must reach by Saturday <br>
+20.04.2006 - Note the changes in scribe. New people are now assigned the task which the others failed eg, 4(16) means 4 has lost chance to 16 <br> 
+20.04.2006 - Many have not submitted the term report. Also please submit your program.<br>
+20.04.2006 - SUBMISSION of program applies to everybody, submit it like program_P(your project no).tar.gz eg  program_P3.tar.gz <br> </font>
+04.04.2006 - Scribes of Roll No 1 - 10 <b> must </b> reach by April 17. This is a <b>hard</b> deadline. <br>
+04.04.2006 - All the resources to be submitted by April 21. Please have a readme file and don't forget to put 'enough' comments on your program <br>
+04.04.2006 - Presentation on 18th April, 2.30 pm <br>
+04.04.2006 - Final report to be submitted by April 17. The final report to be written in latex and typically it should not be more
+than 15 pages. Please submit tex, figs, eps along with the final pdf file. <br>
+04.04.2006 - Scribes of Roll No 1 - 10 <b> must </b> reach by April 7 morning. This is a hard deadline. <br>
+03.03.2006 - Kindly prepare the scribes. Use latex. You will find the template
+<a href=../Networks/Latex/scribe.tar.gz>here. </a> Please submit the tex, ps and all the fig files in a tarball.
+Check your roll no. <br>
+26.02.2006 - Term project discussion on 1st March from 3pm in my room.
+<hr>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Essentials">Class Room/Hour</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Books">Books</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Assessment">Evaluation</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Lecture">Lectures</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=Resource/CNT.pdf>Syllabus</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=students1.pdf>Students List</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#Project">Term projects</a>
+
+<hr>
+
+<a name="Essentials"><H2>Class Room/Hours</H2></a>
+  Lectures   :  Wed - 5, Thu - 4, Fri - 2 <br>
+  Room      :  CSE 320<br>
+  Units      :  3-0-0<br>
+  Credits    :  3 <br>
+  Contact    :  Room #313  (CSE), Phone 3460<br>
+
+
+<a name="Books"><H2>Books</H2></a>
+A list of useful books and materials is given below.  
+</p>
+
+<ul>
+<li>S. N. Dorogovtsev and J. F. F. Mendes, <a href=Resource/evolution_of_networks.pdf><i>Evolution of Networks</i></a>, Oxford University Press, Oxford (2003)
+
+<li> M. E. J. Newman, <a href=Resource/strucfuncnetwork.pdf><i>The structure and function of complex networks</i></a>, SIAM Review 45, 167-256 (2003).
+
+<li>R. Albert and A.-L. Barabasi <a href=Resource/statistical-mechanics-of-complex.pdf> Statistical mechanics of complex networks. </a> Rev.  Mod. Phys., Vol. 74, No. 1, January 2002. 
+<li> Narsingh Deo, <i>Graph Theory</i> Prentice Hall India.<br>
+For Social Networks
+<li>Robert A. Hanneman <a href=Resource/SocialNetwork.pdf>Introduction to Social Network Methods</a> <br>
+For Assortativeness
+<li><a href="http://aps.arxiv.org/abs/cond-mat/0205405/">Assortative mixing in
+networks</a>, M. E. J. Newman, <i>Phys. Rev. Lett.</i> <b>89</b>, 208701
+(2002).
+<li><a href="http://aps.arxiv.org/abs/cond-mat/0210146/">Mixing patterns
+and community structure in networks</a>, M. E. J. Newman and M. Girvan, in
+<i>Statistical Mechanics of Complex Networks,</i> R. Pastor-Satorras,
+J. Rubi, and A. Diaz-Guilera (eds.), Springer, Berlin (2003). <br>
+For Community Structure
+<li><a href="notes/epjb.pdf">Detecting community structure in
+networks</a>, M. E. J. Newman, <i>Eur. Phys. J. B</i> <b>38</b>, 321-330
+(2004).<br>
+For Generating Function 
+<li><a href="http://arxiv.org/abs/cond-mat/0007235/">Random graphs with
+arbitrary degree distributions and their applications</a>, M. E. J. Newman,
+S. H. Strogatz, and D. J. Watts, <i>Phys. Rev. E</i> <b>64</b>, 026118
+(2001).<br>
+For growth model 
+<li> M. E. J. Newman, <a href=Resource/strucfuncnetwork.pdf><i>The structure and function of complex networks</i></a>, 
+SIAM Review 45, 167-256 (2003).
+
+
+</li>
+<!--
+<li>A. Degenne and M. Forse, <a href="http://www.amazon.com/exec/obidos/ASIN/0761956042"><i>Introducing Social Networks</i></a>, Sage, London (1999)
+<li> 
+<li>F. Harary, <a href="http://www.amazon.com/exec/obidos/ASIN/0201410338"><i>Graph Theory</i></a>, Perseus, Cambridge, MA (1995)
+<li> 
+<li>C. D. Meyer, <a href="http://www.amazon.com/exec/obidos/ASIN/0898714540"><i>Matrix Analysis and Applied Linear Algebra</i></a>, SIAM, Philadelphia, PA (2000) <li>J. Scott, <a href="http://www.amazon.com/exec/obidos/ASIN/0761963391"><i>Social Network Analysis: A Handbook</i></a>, 2nd edition, Sage, London (2000)
+<li>S. Wasserman and K. Faust, <a href="http://www.amazon.com/exec/obidos/ASIN/0521387078"><i>Social Network Analysis</i></a>, Cambridge University Press, Cambridge (1994)
+<li>D. J. Watts, <a href="http://www.amazon.com/exec/obidos/ASIN/0393041425"><i>Six Degrees: The Science of a Connected Age</i></a>, Norton, New York (2003)
+<li>D. B. West, <a href="http://www.amazon.com/exec/obidos/ASIN/0130144002"><i>Introduction to Graph Theory</i></a>, Prentice Hall, Upper Saddle River, NJ (1996)
+<li>R. J. Wilson, <a href="http://www.amazon.com/exec/obidos/ASIN/0582249937"><i>Introduction to Graph Theory</i></a>, 4th edition, Addison-Wesley, Reading, MA (1997)-->
+</ul>
+
+<a name="Assessment"><H2>Evaluation</H2></a>
+        <a href=notes/midsem.pdf>Mid-sem </a>:  20<br>
+	Term Project : 35<br>
+	Class Performance : 5 <br>
+        <a href=notes/endsem.pdf> End-sem </a>     : 40<br>
+
+
+<a name="Lecture"><H2>Lectures</H2></a>
+04.01.06 -      <a href=notes/introduction.ppt>Introduction,</a> <br>
+05.01.06 -      <a href=notes/scribe_01CS3004_1.ps>Graph Theory</a> - 1 <br>
+13.01.06 -      <a href=notes/scribe_01CS3004_2.ps>Graph Theory - Adjacency Matrix, Shortest Path, Incidence Matrix, Directed Graph, Connected Component, Rank</a> - 1 <br>
+17.01.06 -      <a href=notes/scribe_01CS3016_1.ps>Graph Theory - Planar, dual graphs, connectivity, separability</a> - 2 <br>
+18.01.06 -      <a href=notes/scribe_01CS3016_2.ps>Graph Theory - Edge Vertex Connectivity, Network flow definition, Max Flow, Min Cut</a> - 2 <br>
+25.01.06 -      Overview of the Term Projects</a> <br>
+24.01.06 -      Term Project Discussion, (MC, AM)</a> <br>
+01.02.06 -      <a href=notes/scribe_01CS3019_1.ps>Social Network Theory - Small world clustering, Structured holes and redundancy (AM)</a> - 3 <br>
+08.02.06 -      <a href=notes/scribe_01CS3019_2.ps>Social Network Theory - Reciprocity, Citation Networks, Degree Distribution, Centrality (AM)</a> - 3 <br>
+10.02.06 -      <a href=notes/scribe_05CS6018_1.ps>Social Network Theory - Node Removal, Flow Betweeness, Eigenvector Centrality, Pagerank algo of Google (AM)</a> - 4(16) <br>
+15.02.06 -      <a href=notes/scribe_02CS3022_2.pdf>Social Network Theory - Cliques and Clan</a> - 4(10) <br>
+01.03.06 -      <a href=notes/scribe_05CS6027_1.ps>Social Network Theory - Equivalence </a> - 5 (17) <br>
+02.03.06 -      <a href=notes/scribe_05CS6027_2.ps>Social Network Theory - Equivalence, Hierarchical Clustering</a> - 5 (17) <br>
+03.03.06 -      <a href=notes/scribe_sachin.pdf>Social Network Theory - Equivalence, Taboo search</a> - 6 (18) <br>
+08.03.06 -      <a href=notes/scribe_sachin.pdf>Social Network Theory - Taboo search, Regular Equivalence</a> - 6 (18)<br>
+09.03.06 -      <a href=notes/scribe_06CS9402_1.pdf>Social Network Theory - Assortitavity</a> - 7 (20) <br>
+10.03.06 -      <a href=notes/scribe_06CS9402_2.pdf>Social Network Theory - Assortitavity</a> - 7 (20) <br>
+16.03.06 -      <a href=notes/scribe16.pdf>Social Network Theory - Community Structure</a> - 8  <br>
+17.03.06 -      <a href=notes/scribe17.pdf>Social Network Theory - Community Structure</a> - 8  <br>
+22.03.06 -      <a href=notes/scribe_02CS3021_1.ps>Social Network Theory - Community Structure</a> - 9 <br>
+23.03.06 -      <a href=notes/scribe_02CS3021_2.ps>Social Network Theory - Community Structure</a> - 9 <br>
+24.03.06 -      <a href=notes/scribe_02CS3022.pdf>Social Network Theory - Community Structure</a> - 10 <br>
+29.03.06 -      <a href=notes/scribe_05CS6002_1.ps>Pajek </a> - 11 <br>
+30.03.06 -      <a href=notes/scribe_05CS6002_1.ps>Pajek </a> - 11 <br>
+31.03.06 -      <a href=notes/scribe_05CS6005_1.pdf>Random Graphs</a> - 12 <br>
+05.04.06 -      <a href=notes/scribe_05CS6005_2.pdf>Random Graphs</a> - 12 <br>
+06.04.06 -      <a href=notes/scribe_05cs6008.pdf>Generating Function</a> - 13 <br>
+07.04.06 -      <a href=notes/scribe_05cs6008.pdf>Generating Function</a> - 13 <br>
+12.04.06 -      <a href=notes/>Generating Function</a> - 14 <br>
+13.04.06 -      <a href=notes/scribe_himika.pdf>Growth Model - Barabasi Model </a> - 15 <br>
+19.04.06 -      <a href=notes/scribe_himika.pdf>Growth Model - Price Model</a> - 15 <br>
+20.04.06 -      <a href=notes/>Growth Model and Miscellaneous </a> - 16 <br>
+
+
+<a name="Project"><H2>Term Projects</H2></a>
+
+Every student has to carry out one term project. The term project consists of the
+following phases.
+
+<li> Abstract Submission (one page) - Stating clearly what is the plan. The plan should be
+detailed enough with adequate reference.
+<li> Discussion - There will be a discussion session where your plan will be refined.
+<li> Report - Final report of the project clearly stating your findings as well as future work.
+<li> Resource - Software developed, should be well documented.
+
+<H3>Project 1 </H3>
+<b><font color = "yellow"> Title :- </font></b> Bollywood Actors Network<br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> Build and analyse the network where each actor is a node. 
+There is an edge between two nodes (read actors) if they have co-acted in a film. 
+If they have co-acted in "w" films then "w" defines the weight of the edge.<br>
+<b><font color = "yellow"> Students :- </font></b> 11, 15 <br>
+<b><font color = "yellow">  Resource Persons :- </font></b> AM, NG <br>
+<b><font color = "yellow">  <a href= projectabstr/BollywoodActorsnetwork.pdf> Abstract  </a></font></b> <br>
+<b><font color = "yellow">   <a href= projectreposource/report_P1.pdf>Final Report :- </a></font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b>
+
+<H3>Project 2 </H3>
+<b><font color = "yellow"> Title :- </font></b> IIT Collaboration Network<br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> Build and analyse the network where each 
+teacher is a node. 
+There is an edge between two nodes (read authors) if they have co-authored a paper or have
+a joint student. If they have co-authored "w" papers then "w" defines the weight of the edge.<br>
+<b><font color = "yellow">  Students :- </font></b> 5, 6, 10 <br>
+<b><font color = "yellow">  Resource Persons :- </font></b> NG <br>
+<b><font color = "yellow">  <a href= projectabstr/iitcollaboration.pdf> Abstract   </a></font></b> <br>
+<b><font color = "yellow">  <a href= projectreposource/report_P2.pdf> Final Report :- </a> </font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b><br>
+<b><font color = "yellow">  Reference :- </font></b> <a href = "http://aps.arxiv.org/abs/cond-mat/0007214/"> The structure of scientific collaboration networks</a>, M. E. J. Newman, Proc. Natl. Acad. Sci. USA 98, 404-409 (2001)
+
+<H3>Project 3 </H3>
+<b><font color = "yellow"> Title :- </font></b> Graphemic and Phonemic Networks<br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> Build and analyse the network where each 
+word is a node. 
+There is an edge between every two nodes (read words) of the network with edge-weight being the edit-distance between the words (both graphemic and phonemic). 
+Each node also has a weight equal to its usage frequency. <br>
+<b><font color = "yellow">  Students :- </font></b> 2, 3 <br>
+<b><font color = "yellow">  Resource Persons :- </font></b> AM, NG <br>
+<b><font color = "yellow"> <a href= projectabstr/GraphemicandPhonemicNetworks.doc>  Abstract  </a></font></b> <br>
+<b><font color = "yellow">  <a href= projectreposource/report_P3.pdf> Final Report :- </a> </font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b>
+
+
+<H3>Project 4 </H3>
+<b><font color = "yellow"> Title :- </font></b> Web Social Network <br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> 
+Extract graph structure of the <i>orcut</i> friends network by crawling <i>orcut.com</i>. Extract the subgraph
+where members follow certain criteria like age, location, preference.<br>
+<b><font color = "yellow">  Students :- </font></b> 14, 16<br>
+<b><font color = "yellow">  Resource Persons :- </font></b> PM, NG <br>
+<b><font color = "yellow">  <a href= projectabstr/orcut.pdf> Abstract </a> </font></b> <br>
+<b><font color = "yellow">  <a href= projectreposource/report_P4.pdf> Final Report :- </a> </font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b>
+
+<H3>Project 5 </H3>
+<b><font color = "yellow"> Title :- </font></b> Topology Management <br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> 
+Study what types of networks are stable against random failure as well as targetted attack<br>
+<b><font color = "yellow"> Students :- </font></b> 4, 20<br>
+<b><font color = "yellow">  Resource Persons :- </font></b> NG <br>
+<b><font color = "yellow">  <a href= projectabstr/stability.doc> Abstract </a> </font></b> <br>
+<b><font color = "yellow"> <a href= projectreposource/report_P5.pdf> Final Report :-</a> </font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b>
+
+
+<H3>Project 6 </H3>
+<b><font color = "yellow"> Title :- </font></b> Word Network <br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> 
+Build and analyse the network where each
+word is a node.
+There is an edge between two nodes (read words) if they co-occur in a sentence. The edge weight is defined as the weighted sum of the number of sentences in which they have co-occurred. Each node also has a weight equal to its usage frequency.<br>
+<b><font color = "yellow"> Students :- </font></b> 7, 8<br>
+<b><font color = "yellow">  Resource Persons :- </font></b> MC, AM<br>
+<b><font color = "yellow">  Abstract :- </font></b> <br>
+<b><font color = "yellow">  <a href= projectreposource/report_P6.pdf> Final Report :- </a></font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b>
+
+
+<H3>Project 7 </H3>
+<b><font color = "yellow"> Title :- </font></b> Network of Musical Strings  <br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> 
+Build and analyse the network where each node
+is a musical note or a sequence of notes (note string of a given length). The edge weight is defined as the weighted average of the distance between the note strings in a musical composition.<br>
+<b><font color = "yellow"> Students :- </font></b> 12, 17<br>
+<b><font color = "yellow">  Resource Persons :- </font></b> MC, AM<br>
+<b><font color = "yellow">   <a href= projectabstr/music.pdf> Abstract </a> </font></b> <br>
+<b><font color = "yellow">   <a href= projectreposource/report_P7.pdf>Final Report :- </a></font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b>
+<!--http://arxiv.org/pdf/cond-mat/0307434--!>
+
+
+<H3>Project 8 </H3>
+<b><font color = "yellow"> Title :- </font></b> Airlines Network  <br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> 
+Build and analyse the network where each node
+is a city. There is an  edge between two cities if there is a plane connection between them.<br>
+<b><font color = "yellow"> Students :- </font></b> 13, 18<br>
+<b><font color = "yellow">  Resource Persons :- </font></b> NG<br>
+<b><font color = "yellow">  <a href= projectabstr/airlines.doc> Abstract </a></font></b> <br>
+<b><font color = "yellow">  <a href= projectreposource/report_P8.pdf> Final Report :- </a> </font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b><br>
+<b><font color = "yellow">  Reference :- </font></b> <a href ="http://aps.arxiv.org/abs/cond-mat/0208535/" >Small-world properties of the Indian Railway network, </a>  
+Parongama Sen and Subinay Dasgupta and Arnab Chatterjee and P A Sreeram and G Mukherjee and S S Manna, Physical Review E.
+
+
+<H3>Project 9 </H3>
+<b><font color = "yellow"> Title :- </font></b> Networks of NGO  <br>
+<b><font color = "yellow"> Brief Introduction :- </font></b> 
+Build and analyse the network where 
+each NGO is a node and there is an edge between two 
+NGOs if they work in a same area. The number of areas they work together in defines the edge weight.<br>
+<b><font color = "yellow"> Students :- </font></b> 1, 9<br>
+<b><font color = "yellow">  Resource Persons :- </font></b> AM, NG<br>
+<b><font color = "yellow"> <a href= projectabstr/NGO.doc> Abstract </a></font></b> <br>
+<b><font color = "yellow">  <a href= projectreposource/report_P9.pdf> Final Report :- </a></font></b> <br>
+<b><font color = "yellow">  Resource :- </font></b>
+
+
+
+
+

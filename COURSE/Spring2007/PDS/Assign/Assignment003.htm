@@ -1,0 +1,508 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0072)http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Spring2007/pds/main.html -->
+<HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"><HEAD><TITLE>CS 60078 Complex Networks Course</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<link rel="File-List" href="Assignment003_files/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</HEAD>
+<BODY text=#ffffcc vLink=#ddcc55 aLink=#ff9999 link=#ffff00 bgColor=#000000>
+<CENTER><BR><BR>
+</CENTER>
+<HR>
+
+<H3><font size="5">Tutorial 3 : <span style="font-weight: 400">Iterative Looping </span>(<span style="font-weight: 400">WHILE 
+and FOR Loop</span>)&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Date : 22<sup>nd </sup>&nbsp;Jan, 07</H3>
+<HR>
+<A name=Essentials>
+<p><font size="5">Fundamental of WHILE and FOR loop:</font></p>
+</A>
+<p><font size="5">Control Flow in the WHILE Loop:</font></p>
+<p>&nbsp;</p>
+<p><font size="5">step1:&nbsp;&nbsp;&nbsp; initialization of loop counter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+i=1;&nbsp;&nbsp;&nbsp;&nbsp; //<i>Outside of Loop</i></font></p>
+<p><font size="5">step2:&nbsp;&nbsp;&nbsp; condition for entering loop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+while (<i>condition</i>)</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //<i>body of the 
+loop</i></font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+................&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></p>
+<p><font size="5">&nbsp;step3:&nbsp;&nbsp;&nbsp; body of the loop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+....................</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+i = i + 1; (step 4)</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+}&nbsp;&nbsp; //<i>End of WHILE loop</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></p>
+<p><!--[if gte vml 1]><v:line id="_x0000_s1033"
+ style='position:absolute;left:0;text-align:left;top:0;flip:x;z-index:3'
+ from="260.25pt,442.5pt" to="297pt,442.5pt" strokecolor="yellow"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout;position:absolute;z-index:3;left:346px;top:589px;
+width:51px;height:2px'><img width=51 height=2
+src="Assignment003_files/image001.gif" v:shapes="_x0000_s1033"></span><![endif]><font size="5">step4:&nbsp;&nbsp;&nbsp; 
+increment (decrement) loop counter (generally in the body of the loop)</font></p>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<HR noShade SIZE=2>
+
+</A>
+<p><!--[if gte vml 1]><v:line
+ id="_x0000_s1032" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="259.5pt,303.75pt" to="261pt,442.5pt" strokecolor="yellow"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout;position:absolute;z-index:2;left:345px;top:404px;
+width:4px;height:187px'><img width=4 height=187
+src="Assignment003_files/image002.gif" v:shapes="_x0000_s1032"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1031" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:1' from="259.5pt,303pt" to="303pt,303.75pt" strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:345px;top:399px;width:61px;height:12px'><img width=61
+height=12 src="Assignment003_files/image003.gif" v:shapes="_x0000_s1031"></span><![endif]><font size="5">Illustrative 
+Example: Tutorial 3A:</font></p>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A>
+<p><font size="5"><u>Print first n consecutive integer numbers using WHILE loop.</u></font></p>
+<p>&nbsp;</p>
+<p><font size="5">#include &lt;stdio.h&gt;<br>
+<br>
+void main()<br>
+{<br>
+&nbsp;&nbsp; int n,i;<br>
+&nbsp;&nbsp; printf(&quot;Enter value of n :\n&quot;);<br>
+&nbsp;&nbsp; scanf(&quot;%d&quot;,&amp;n);<br>
+<br>
+&nbsp;&nbsp; i=1; //Initialization while loop counter<br>
+&nbsp;&nbsp; while (i&lt;n) //condition to enter the loop<br>
+&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\n%d\n&quot;,i);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i=i+1; // Increment of loop counter<br>
+&nbsp;&nbsp; }<br>
+}</font></p>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<HR noShade SIZE=2>
+
+<p><font size="5">Assign. 3A:</font></p>
+</A>
+<p><font size="5">Modify the program in Tutorial 3A to print first n numbers of 
+the following sequence.</font></p>
+<p><font size="5">1, 3, 6, 10, 15, ....</font></p>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<P><!--[if gte vml 1]><v:line
+ id="_x0000_s1050" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:3' from="516.75pt,1259.25pt" to="8in,1259.25pt" coordsize="21600,21600"
+ strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:688px;top:1673px;width:82px;height:12px'><img width=82
+height=12 src="Assignment003_files/image004.gif" v:shapes="_x0000_s1050"></span><![endif]><font size="5">Control Flow in the FOR Loop:</font></P>
+</A>
+
+<P><font size="5">for (initialization; condition; increment/decrement)</font></P>
+
+<P><font size="5">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></P>
+
+<P><!--[if gte vml 1]><v:line
+ id="_x0000_s1044" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:3' from="484.5pt,1275.75pt" to="485.25pt,1316.25pt" strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:641px;top:1700px;width:12px;height:57px'><img width=12
+height=57 src="Assignment003_files/image005.gif" v:shapes="_x0000_s1044"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1043" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:3' from="330pt,1261.5pt" to="372.75pt,1261.5pt" strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:439px;top:1676px;width:60px;height:12px'><img width=60
+height=12 src="Assignment003_files/image006.gif" v:shapes="_x0000_s1043"></span><![endif]><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1039" type="#_x0000_t202" style='position:absolute;
+ left:243.75pt;top:1245pt;width:86.25pt;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#FF0000" size="4">Initialization</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:324px;top:1659px;width:121px;height:46px'><img
+width=121 height=46 src="Assignment003_files/image007.gif"
+alt="Text Box: Initialization&#13;&#10;" v:shapes="_x0000_s1039"></span><![endif]><font size="5">&nbsp;&nbsp;&nbsp;&nbsp; 
+.................................&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></P>
+
+<P><!--[if gte vml 1]><v:shape
+ id="_x0000_s1052" type="#_x0000_t202" style='position:absolute;left:482.25pt;
+ top:1281pt;width:36pt;height:24.75pt;z-index:1' filled="f" fillcolor="none">
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#FF0000">yes</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:642px;top:1707px;width:54px;height:39px'><img width=54
+height=39 src="Assignment003_files/image008.gif" alt="Text Box: yes&#13;&#10;"
+v:shapes="_x0000_s1052"></span><![endif]><!--[if gte vml 1]><v:line id="_x0000_s1045"
+ style='position:absolute;left:0;text-align:left;top:0;flip:x;z-index:3'
+ from="408.75pt,1329.75pt" to="447pt,1329.75pt" strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:543px;top:1767px;width:54px;height:12px'><img width=54
+height=12 src="Assignment003_files/image009.gif" v:shapes="_x0000_s1045"></span><![endif]><font size="5">&nbsp;&nbsp;&nbsp; 
+// Body of the loop</font><!--[if gte vml 1]><v:shape
+ id="_x0000_s1040" type="#_x0000_t202" style='position:absolute;left:371.25pt;
+ top:1245.75pt;width:145.5pt;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font size="4" color="#FF0000">Condition checking</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:494px;top:1660px;width:200px;height:46px'><img
+width=200 height=46 src="Assignment003_files/image010.gif"
+alt="Text Box: Condition checking&#13;&#10;" v:shapes="_x0000_s1040"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1041" type="#_x0000_t202" style='position:absolute;left:446.25pt;
+ top:1315.5pt;width:111pt;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font size="4" color="#FF0000">Body of the loop</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:594px;top:1753px;width:154px;height:46px'><img
+width=154 height=46 src="Assignment003_files/image011.gif"
+alt="Text Box: Body of the loop&#13;&#10;" v:shapes="_x0000_s1041"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1042" type="#_x0000_t202" style='position:absolute;left:338.25pt;
+ top:1317pt;width:1in;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="141" height="100%">
+  <tr>
+    <td align="center" width="141">
+    <p align="left"><font size="4" color="#FF0000">Increment</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:450px;top:1755px;width:102px;height:46px'><img
+width=102 height=46 src="Assignment003_files/image012.gif"
+alt="Text Box: Increment&#13;&#10;" v:shapes="_x0000_s1042"></span><![endif]></P>
+
+<P><font size="5">&nbsp;&nbsp;&nbsp; ....................................</font></P>
+
+<P><!--[if gte vml 1]><v:line
+ id="_x0000_s1046" style='position:absolute;left:0;text-align:left;top:0;
+ flip:y;z-index:3' from="392.25pt,1275pt" to="392.25pt,1317.75pt"
+ strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:517px;top:1698px;width:12px;height:60px'><img width=12
+height=60 src="Assignment003_files/image013.gif" v:shapes="_x0000_s1046"></span><![endif]><font size="5">}</font><!--[if gte vml 1]><v:shape
+ id="_x0000_s1051" type="#_x0000_t202" style='position:absolute;left:576.75pt;
+ top:1243.5pt;width:86.25pt;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font size="4" color="#FF0000">Exit Loop</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:768px;top:1657px;width:121px;height:46px'><img
+width=121 height=46 src="Assignment003_files/image014.gif"
+alt="Text Box: Exit Loop&#13;&#10;" v:shapes="_x0000_s1051"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1053" type="#_x0000_t202" style='position:absolute;left:527.25pt;
+ top:1235.25pt;width:34.5pt;height:25.5pt;z-index:1' filled="f" fillcolor="none">
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#FF0000">no</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:702px;top:1646px;width:52px;height:40px'><img width=52
+height=40 src="Assignment003_files/image015.gif" alt="Text Box: no&#13;&#10;"
+v:shapes="_x0000_s1053"></span><![endif]></P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<HR noShade SIZE=2>
+
+</A>
+
+<P><font size="5">Illustrative Example:
+</font>
+<A 
+name=Lecture>
+<font size="5">Tutorial 3B:</font></A></P>
+
+<P><font size="5"><u>Print first n consecutive integer numbers using FOR loop</u></font></P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A>
+
+<P><font size="5">#include &lt;stdio.h&gt;<br>
+<br>
+void main()<br>
+{<br>
+&nbsp;&nbsp;&nbsp; int n, i;<br>
+&nbsp;&nbsp;&nbsp; printf(&quot;Enter value of n :\n&quot;);<br>
+&nbsp;&nbsp;&nbsp; scanf(&quot;%d&quot;,&amp;n);<br>
+<br>
+&nbsp;&nbsp;&nbsp; for (i=1;i&lt;=n;i++)<br>
+&nbsp;&nbsp; { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\n%d\n&quot;,i);<br>
+&nbsp;&nbsp; }<br>
+}</font></P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<HR noShade SIZE=2>
+
+<p><font size="5">Assign. 3B:</font></p>
+<p><font size="5">Modify the program in Tutorial 3B to print first n consecutive 
+even numbers.</font></p>
+<HR noShade SIZE=2>
+
+<HR noShade SIZE=2>
+
+<P><font size="5">Tutorial Example:Tutorial 3C:</font></P>
+<FONT size=5>
+<HR noShade SIZE=2>
+
+</FONT>
+</A><FONT size=5>
+<A name=Assign1>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Convert a given binary number into equivalent decimal 
+number and vice versa.</P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A>
+<P>// Use &quot;cc -lm &lt;programname.c&gt;&quot; for compilation </P>
+</A>
+<P>// This part is for converting binary to decimal.<A name=Assign1><br>
+<br>
+#include &lt;stdio.h&gt;<br>
+#include &lt;math.h&gt;<br>
+<br>
+void main()<br>
+{<br>
+&nbsp;&nbsp; long int bin_num;<br>
+&nbsp;&nbsp; int sum,pos;<br>
+&nbsp;&nbsp; printf(&quot;Enter a binary number (maximum 8 digits) :&quot;);<br>
+&nbsp;&nbsp; scanf(&quot;%ld&quot;,&amp;bin_num);<br>
+<br>
+&nbsp;&nbsp; sum=0;<br>
+&nbsp;&nbsp; pos=0;<br>
+&nbsp;&nbsp; while ((bin_num/10) &gt; 0)<br>
+&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp; sum=sum+(bin_num%10)*pow(2,pos);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; pos=pos+1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; bin_num=bin_num/10;<br>
+&nbsp; }<br>
+&nbsp; sum=sum+bin_num*pow(2,pos);<br>
+&nbsp; printf(&quot;The Decimal equivalent is = %d\n&quot;,sum);<br>
+}</A></P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A>
+<P>// This part is for converting decimal to binary.<A name=Assign1><br>
+<br>
+#include &lt;stdio.h&gt;<br>
+#include &lt;math.h&gt;<br>
+<br>
+void main()<br>
+{</A></P>
+<P>&nbsp;&nbsp; int dec_num;<br>
+&nbsp;&nbsp; int pos;<br>
+&nbsp;&nbsp; long int sum;<br>
+&nbsp;&nbsp; printf(&quot;Enter a Decimal number (maximum 512) :&quot;);<br>
+&nbsp;&nbsp; scanf(&quot;%d&quot;,&amp;dec_num);<br>
+<br>
+&nbsp;&nbsp; sum=0;<br>
+&nbsp;&nbsp; pos=0;<br>
+&nbsp;&nbsp; while ((dec_num/2) &gt; 0)<br>
+&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum=sum+(dec_num%2)*(long int)pow(10,pos);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pos=pos+1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; dec_num=dec_num/2;<br>
+&nbsp; }<br>
+&nbsp; sum=sum+dec_num*(long int)pow(10,pos);<br>
+&nbsp; printf(&quot;The Binary equivalent is = %d\n&quot;,sum);<br>
+}</P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<HR noShade SIZE=2>
+
+<p>Assign. 3C:</p>
+<HR noShade SIZE=2>
+
+<P>Input a number (IP_num) and its base(IP_base). Input another base (OP_base) 
+value. Convert the number to the second base. </P>
+<P>For example: Input IP_num=184, IP_base=10, OP_base=8 </P>
+<P>Oput put will be = 270 (in base 8).</P>
+<P>Hint: First converts the number (IP_num) from (IP_base) to the decimal (10) 
+then convert into OP_base.</P>
+<P><u>Test Run:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I/P (s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+O/P (s)</u></P>
+<P>i) IP_num=184, IP_base=10, Op_base=8&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+270&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </P>
+<P>ii)IP_num=10000, IP_base=2, Op_base=8&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+20</P>
+<P>iii)IP_num=126, IP_base=6, Op_base=3&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp; 
+2000</P>
+<P>iv)IP_num=12121, IP_base=3, Op_base=7&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp; 304</P>
+<HR noShade SIZE=2>
+
+<HR noShade SIZE=2>
+
+<p>Tutorial Example: Tutorial 3D:</p>
+<HR noShade SIZE=2>
+
+</A>
+<P>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Print all the triod numbers between 100 and 1000.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition: Triod Number: A number is a 
+triod number if sum of cubic of their digits are&nbsp; </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+equal to the number.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+For example: 153 is a triod number if&nbsp; 1<sup>3 </sup>+ 5<sup>3 </sup>+ 3<sup>3
+</sup>= 153. </P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A>
+<P>
+<A name=Assign1>
+#include &lt;stdio.h&gt;<br>
+#include &lt;math.h&gt;<br>
+<br>
+void main()<br>
+{</A></P>
+<P>&nbsp;&nbsp; int sum,i,num;<br>
+<br>
+&nbsp;&nbsp; for (i=100;i&lt;1000;i++)<br>
+&nbsp; {<br>
+&nbsp;&nbsp;&nbsp; sum=0;<br>
+&nbsp;&nbsp;&nbsp; num=i;<br>
+&nbsp;&nbsp; while ((num/10) &gt; 0)<br>
+&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum=sum+(int)pow((num%10),3);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; num=num/10; <br>
+&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; sum=sum+(int)pow(num,3);<br>
+&nbsp;&nbsp; if (sum==i)<br>
+&nbsp;&nbsp; printf(&quot;\n%d\n&quot;,i);<br>
+}</P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A>
+<P>Sample Output: </P>
+<P>153</P>
+<P>370</P>
+<P>371</P>
+<P>407</P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A>
+</FONT>
+<FONT size=4>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A></FONT>
+<FONT size=5>
+<P>Assign 3D:</P>
+<FONT size=4>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</A></FONT>
+Print the sum of digits of a given positive decimal 
+number (ip_NUM). </p>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For example: ip_NUM=5348, O/P would be (5+3+4+8) = 20. </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp; <b>Test Run:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I/P (s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+O/P (s)</b></P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+3456&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+18</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+27</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iv)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</P>
+<FONT size=4>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<HR noShade SIZE=2>
+
+</A></FONT>
+</FONT>
+
+</BODY></HTML>

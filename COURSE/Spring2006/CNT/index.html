@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>CS 60078 Complex Networks Course</title>
+     
+  <style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+  </style></head>
+
+<body alink="#ff9999" bgcolor="#000000" link="#ffff00" text="#ffffcc" vlink="#ddcc55">
+
+<center>
+<br>
+<br>
+<h1><font size="+2">CS 60078 Complex Networks</font></h1>
+<h3>(Spring Semester 2007)</h3>
+<b>Theory</b><br>  <b>Niloy Ganguly (NG)</b> <a href="mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a><br><br>
+<b>Teaching Assistant</b><br> 
+<b>Animesh Mukherjee (AM) </b> <a href="mailto:Animesh.Mandal@iitkgp.ac.in">Animesh.Mandal@iitkgp.ac.in</a><br><br>
+<b>Resource Persons</b><br>
+<b>Monojit Choudhury (MC) </b><br>
+<b>Bivas Mitra (BM)</b>
+<p>
+</p></center>
+<hr>
+<h3>Notices</h3>
+<ul>
+  <li>18.04.07 -<font color="#00ff00"> A</font><b><font color="#00ff00" size="4">LL 
+  SCRIBES AND ASSIGNMENTS SHOULD REACH BY 22nd. EXTREMELY STRICT DEADLINE</font></b></li>
+  <li>10.04.2007 - Term Project Viva on 18.04.07, 7.30 pm . You have to submit a 
+  write-up in latex and also the source code and data repository (if any) you 
+  have built. </li>
+  <li>&nbsp;21.03.2007 - All pending assignments have to be finished by 1st April. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  This include people who have submitted assignments on paper. It should be 
+  resend electronically.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The scribes submitted till now are below quality. Please check the
+Notice for proper guidance of scribe.&nbsp; Each one who submitted
+scribe will be&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+individually approached for rewriting. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+For the next four days I will take attendance. Absence in these class
+will surely result in deregistration. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Hardly anybody has come for round 2 discussion. Last date is Friday
+this week. Otherwise you get a zero</li>
+  <li>21.03.2007 - <b><font color="#ffff00">The following guidelines should be 
+  maintained while scribing.</font></b><br>
+  <br>
+  Since scribing is not just copying whatever is written on the class board 
+  therefore one should provide,<br>
+  <br>
+  1. At least a small background for each of the topic that is being taught. 
+  This can be done by a little amount of literature survey for each of&nbsp; the 
+  topics. However it should not be just a copy from the source article. <br>
+  <br>
+&nbsp;&nbsp;&nbsp; For instance, when one is explaining a community finding 
+  algorithm there should be,<br>
+&nbsp;&nbsp;&nbsp; i) A small description of the algorithm with proper 
+  references,<br>
+&nbsp;&nbsp;&nbsp; ii) At least one small example graph on which the run of the 
+  algorithm is explained.<br>
+  <br>
+  2. One should also try to enumerate the significance of a certain topic (may 
+  be with examples) wherever necessary. (This is required in the social network 
+  analysis type of stuffs).</li>
+  <li>28.02.2007 - 2nd Project meeting, by <b><font color="#ffff00">16th March</font></b>. 
+  Detailed Plan and initial results to be shown.</li>
+  <li>28.02.2007 - Midsem Marks are out !!</li>
+  <li>15.02.2007 - All scribing, Assignments should be submitted by 20th 
+  February. <font color="#ffff00"><b>THIS IS A HARD DEADLINE</b>.</font></li>
+  <li>06.02.2007 - Term Project assigned</li>
+  <li>31.01.2007 - 2,5,16 are assigned work. Kindly finish them ASAP.</li>
+  <li>16.01.2007 - Kindly prepare the scribes using&nbsp; latex. You will find the template
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/Networks/Latex/scribe.tar.gz">here. </a> Please submit the tex, ps and all the fig files in a tarball.
+Check your roll no. </li>
+  <li>16.01.2007 - You will be deregistered if you are absent for consecutive three 
+days.. </li>
+</ul>
+<hr>
+<ul>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Essentials">Class Room/Hour</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Books">Books</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Assessment">Evaluation</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Lecture">Lectures</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/syllabus_cnt.pdf">Syllabus</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Studentlist.xls">Students List</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Assignment">Assignments</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Project">Term projects</a>
+  </li>
+</ul>
+
+<hr>
+
+<a name="Essentials"><h2>Class Room/Hours</h2></a>
+  Lectures : Mon - 4, Tue - 2, Thu - 5 <br>
+  Room      :  CSE 302<br>
+  Units      :  3-0-0<br>
+  Credits    :  3 <br>
+  Contact    :  Room #313  (CSE), Phone 3460<br>
+
+
+<a name="Books"><h2>Books</h2></a>
+A list of useful books and materials is given below.  
+<p></p>
+
+<ul>
+<li>S. N. Dorogovtsev and J. F. F. Mendes, <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/evolution_of_networks.pdf"><i>Evolution of Networks</i></a>, Oxford University Press, Oxford (2003)
+
+</li><li> M. E. J. Newman, <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/strucfuncnetwork.pdf"><i>The structure and function of complex networks</i></a>, SIAM Review 45, 167-256 (2003).
+
+</li><li>R. Albert and A.-L. Barabasi <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/statistical-mechanics-of-complex.pdf"> Statistical mechanics of complex networks. </a> Rev.  Mod. Phys., Vol. 74, No. 1, January 2002. 
+</li><li> Narsingh Deo, <i>Graph Theory</i> Prentice Hall India.<br>
+<b><font color="#00ff00">For Social Networks </font></b>
+</li><li>Robert A. Hanneman <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/SocialNetwork.pdf">Introduction to Social Network Methods</a>
+</li><li>
+<span style="text-decoration: none;" lang="EN-GB">Martin 
+Everett</span><span style="text-decoration: none;">, </span>
+<span style="text-decoration: none;" lang="EN-GB">Stephen P. Borgatti</span><span style="text-decoration: none;">.
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/Centrality.doc">Extending Centrality</a></span></li><li>
+<span style="text-decoration: none;" lang="EN-GB">Martin 
+Everett</span><span style="text-decoration: none;">, </span>
+<span style="text-decoration: none;" lang="EN-GB">Stephen P. Borgatti</span><span style="text-decoration: none;">. </span>
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/computuingregularequivalence.pdf">Computing Regular 
+Equivalence: Practical and Theoretical Issues</a><br>
+<font color="#00ff00"><b>For Assortativeness </b></font>
+</li><li><a href="http://aps.arxiv.org/abs/cond-mat/0205405/">Assortative mixing in
+networks</a>, M. E. J. Newman, <i>Phys. Rev. Lett.</i> <b>89</b>, 208701
+(2002).
+</li><li><a href="http://aps.arxiv.org/abs/cond-mat/0210146/">Mixing patterns
+and community structure in networks</a>, M. E. J. Newman and M. Girvan, in
+<i>Statistical Mechanics of Complex Networks,</i> R. Pastor-Satorras,
+J. Rubi, and A. Diaz-Guilera (eds.), Springer, Berlin (2003). <br>
+<b><font color="#00ff00">For Community Structure </font></b>
+</li><li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/notes/epjb.pdf">Detecting community structure in
+networks</a>, M. E. J. Newman, <i>Eur. Phys. J. B</i> <b>38</b>, 321-330
+(2004).</li><li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/Wu_hubermann_community.pdf">Finding Communities in 
+Linear Time: A Physics Approach</a>&nbsp; Fang Wu, Bernardo A. Huberman</li><li>
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/0309488.pdf">Defining and identifying communities in networks</a>, 
+Filippo Radicchi, Claudio Castellano, Federico Cecconi, Vittorio Loreto, 
+Domenico Parisi</li><li>
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/community/randomwalk.newman.pdf">Finding and evaluating 
+community structure in network.</a> M.E.J. Newman, M. Girvan<br>
+<b><font color="#00ff00">For Generating Function </font></b> 
+</li><li><a href="http://arxiv.org/abs/cond-mat/0007235/">Random graphs with
+arbitrary degree distributions and their applications</a>, M. E. J. Newman,
+S. H. Strogatz, and D. J. Watts, <i>Phys. Rev. E</i> <b>64</b>, 026118
+(2001).<br>
+For growth model 
+</li><li> M. E. J. Newman, <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/strucfuncnetwork.pdf"><i>The structure and function of complex networks</i></a>, 
+SIAM Review 45, 167-256 (2003).
+
+
+</li>
+<!--
+<li>A. Degenne and M. Forse, <a href="http://www.amazon.com/exec/obidos/ASIN/0761956042"><i>Introducing Social Networks</i></a>, Sage, London (1999)
+<li> 
+<li>F. Harary, <a href="http://www.amazon.com/exec/obidos/ASIN/0201410338"><i>Graph Theory</i></a>, Perseus, Cambridge, MA (1995)
+<li> 
+<li>C. D. Meyer, <a href="http://www.amazon.com/exec/obidos/ASIN/0898714540"><i>Matrix Analysis and Applied Linear Algebra</i></a>, SIAM, Philadelphia, PA (2000) <li>J. Scott, <a href="http://www.amazon.com/exec/obidos/ASIN/0761963391"><i>Social Network Analysis: A Handbook</i></a>, 2nd edition, Sage, London (2000)
+<li>S. Wasserman and K. Faust, <a href="http://www.amazon.com/exec/obidos/ASIN/0521387078"><i>Social Network Analysis</i></a>, Cambridge University Press, Cambridge (1994)
+<li>D. J. Watts, <a href="http://www.amazon.com/exec/obidos/ASIN/0393041425"><i>Six Degrees: The Science of a Connected Age</i></a>, Norton, New York (2003)
+<li>D. B. West, <a href="http://www.amazon.com/exec/obidos/ASIN/0130144002"><i>Introduction to Graph Theory</i></a>, Prentice Hall, Upper Saddle River, NJ (1996)
+<li>R. J. Wilson, <a href="http://www.amazon.com/exec/obidos/ASIN/0582249937"><i>Introduction to Graph Theory</i></a>, 4th edition, Addison-Wesley, Reading, MA (1997)-->
+<li> P. L. Krapivsky and S. Redner, <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/kravipskygrowth.pdf">Organization of growing random networks</a><br> 
+<b><font color="#00ff00">For Small World</font></b></li><li>D. J. Watts, Small Worlds, Princeton Studies in Complexity
+</li><li><a href="http://arxiv.org/abs/cond-mat/0001118/">
+Models of the small world</a>, M. E. J. Newman, <i>J. Stat. Phys.</i> <b>
+101</b>, 819-841 (2000).<br>
+<b><font color="#00ff00">For 
+epidemics</font></b>
+
+  </li><li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/SIR-epidemics.pdf">SIR Study material</a></li>
+  <li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/SI-SIS.pdf">SIS Study material</a></li>
+  <li>R. Pastor-Satorras and A. Vespignani.<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/epidemic-long.pdf">Epidemic 
+  dynamics and endemic states in complex networks</a><br><font color="#00ff00">
+  <b>For Search</b></font></li>
+  <li>Jon M. Kleinberg <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/p604-kleinberg.pdf">Authoritative 
+  sources in a hyperlinked environment</a></li>
+</ul>
+<p><font size="5">Related Course Webpages</font></p>
+<ul>
+  <li>
+  <a href="http://www-personal.umich.edu/%7Emejn/courses/2005/cscs535/index.html">
+  Mark Newmann</a></li>
+  <li><a href="http://www-personal.umich.edu/%7Eladamic/si614w06/">Lada Adamic</a></li>
+  <li><a href="http://www.cs.cornell.edu/Courses/cs685/2002fa/">Jon Kleinberg</a></li>
+  <li><a href="http://www.columbia.edu/itc/sociology/watts/w3233/">Duncan Watts</a></li>
+  <li><span style="font-family: Times New Roman;"><big><small>
+  <a href="http://www.cs.helsinki.fi/u/tsaparas/InformationNetworks/">Panayiotis 
+  Tsaparas</a></small></big></span></li>
+  <li><font face="Times New Roman">
+  <a href="http://comet.columbia.edu/courses/elen_e9701/2001/overview.html">
+  Aurel A. Lazar</a></font></li>
+  <li>
+  <a href="http://eclectic.ss.uci.edu/%7Edrwhite/Anthro179a/SocialDynamics02.html">
+  Douglas R. White</a></li>
+</ul>
+
+<a name="Assessment"><h2>Evaluation (Tentative)</h2></a>
+        <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/midsem.pdf">Mid-sem</a> :  20 <b><font color="#ff0000">(4)</font></b><br>
+	Term Project : 35<br>
+	Class Performance (Scribe, Assignment and Attendance): 10&nbsp; <br>
+<a href="2007/ENDSEM.pdf">End-sem</a> : 35 <b><font color="#ff0000">(17)</font></b><br>
+
+
+<a name="Lecture"><h2>Lectures</h2></a>
+<ol>
+  <li>04.01.07 - <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/introduction2007.ppt">Introduction,</a></li>
+  <li>08.01.07 - Graph Theory - Adjacency Matrix, Shortest Path, Incidence Matrix, Directed Graph, Connected Component, Rank - 1</li>
+  <li>09.01.07 - <a href="2007/scribe/Centrality.ps">Graph Theory, Centrality</a><b><font color="#ff0000"> (Scribe Graph 
+Theory Basics ) - 5</font></b></li>
+  <li>11.01.07 - <a href="2007/scribe/Centrality.ps">Centrality, Eigenvector Centrality
+  </a> </li>
+  <li>15.01.07 - <a href="2007/scribe/PageRankAlgorithm.ps">Page Ranking Algorithm</a>&nbsp; <b><font color="#ff0000">(Scribe 
+Centrality to Page ranking ) - 5</font>&nbsp; </b> </li>
+  <li>16.01.07 - Core, Cliques and Clan <b><font color="#ff0000">(Scribe on 
+  Core, Cliques and Clan) - 16</font></b></li>
+  <li>18.01.07 - Equivalence</li>
+  <li>22.01.07 - Equivalence</li>
+  <li>25.01.07 - <a href="2007/scribe/equivalence.pdf">Equivalence</a> <font color="#ff0000"><b>(Scribe on Equivalence) - 
+  16</b></font></li>
+  <li>29.01.07 - <a href="2007/scribe/sf_assort.pdf">Small world properties</a></li>
+  <li>01.02.07 - <a href="2007/scribe/sf_assort.pdf">Assortativity</a> <font color="#ff0000"><b>(Scribe for last two 
+  class) - 3</b> </font>
+
+
+  </li>
+  <li>05.02.07 - <font color="#ddcc55">Term project discussion</font></li>
+  <li>06.02.07 - Community Identification - (Spectral Bisection and Keningham 
+  Lin Algorithm)</li>
+  <li>08.02.07 - Community Identification - (Wu-Hubermann algorithm)</li>
+  <li>12.02.07 - Community Identification - (Michel Girvan and Radichchi 
+  ALgorithm)</li>
+  <li>13.02.07 - <a href="2007/scribe/pajek.pdf">Pajek (AM)</a></li>
+  <li>15.02.07 - <a href="2007/scribe/community.pdf">Community Identification&nbsp;</a> <font color="#ff0000"><b>(Scribe for 
+  community identification) - 1</b> </font>
+
+
+  </li>
+  <li>26.02.07 - Random Graphs</li>
+  <li>27.02.07 - Models of network &#8211; Random graph, E-R graph</li>
+  <li>01.03.07 - <a href="2007/scribe/RandomGraph.pdf">Construction of Random graph (etc)</a> <b><font color="#ff0000">
+  (Scribe on random Graphs - 13)</font></b></li>
+  <li>05.03.07 - Methods (Algorithms) of construction of Random graphs. 
+  Introduction to Generating function and Go(x) and moments.</li>
+  <li>06.03.07 - Generating Functions - Degree sequence</li>
+  <li>08.03.07 - Generating Functions - Distribution of second neighbors</li>
+  <li>12.03.07 - Generating Functions - Special degree distribution</li>
+  <li>13.03.07 - Generating Functions - Component Size</li>
+  <li>15.03.07 - Pajek<b> (</b>AM)<b> <font color="#ff0000">(Scribe on Pajek - 
+  11)</font></b></li>
+  <li>19.03.07 - Generating Function - Component Size</li>
+  <li>20.03.07 - <a href="2007/scribe/GF.pdf">Generating Function - Component Size, Evolution Model</a>
+  <font color="#ff0000"><b>(Scribe on Generating Functions - 9)</b></font></li>
+  <li>
+  23/03/07 - Evolution of networks, Preferential 
+  attachment, Random attachment
+  </li><li>
+  26/03/07 - Growth of networks, Emergence of power law. 
+  Price model, derivation of degree distribution using beta and gamma function 
+  in discrete growth model.
+  </li><li> 27/03/07 - Sub-linear, 
+  Linear, Super-linear1, Super-linear growth.
+
+
+  </li>
+  <li> 02/04/07 - Small World Network
+
+
+  </li>
+  <li> 03/04/07 - Connected Caveman Problem</li>
+  <li> 05/04/07 - Watts Model, Newman Model, Klienberg Model etc.
+  <font color="#ff0000"><b>(Scribe on power-law and Small world - 14)</b></font></li>
+  <li> 08.04.07 - <a href="2007/scribe/SIR.ps">Epidemics - SIR Model</a></li>
+  <li> 09.04.07 - <a href="2007/scribe/SIS.ps">Epidemics - SIS Model</a></li>
+  <li> 10.04.07 - Epidemics</li>
+  <li> 16.04.07 - Epidemics in powerlaw network</li>
+  <li> 17.04.07 - <a href="2007/scribe/search.ps">Search in Network</a><b><font color="#ff0000"> (Scribe on 
+  Epidemics and search - 8)</font></b><br>
+<br>
+
+
+  </li>
+</ol>
+<h2><a name="Assignment">Assignments </a></h2>
+<ol>
+  <li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/assign2.html">Assignment I</a> - Assignment on Social 
+  Networks&nbsp; <font color="#ff0000"><b>(2,5)</b></font></li>
+<br><b><font color="#FF0000">Solutions (partial): </font><font color="#FFFF00">
+  <a href="2007/assignments/assign1_2.pdf">2</a>&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;
+  <a href="2007/assignments/assign1_10.doc">10</a></font></b>
+  <li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Assignment%203.htm">Assignment II</a> - More Assignments on 
+  Social Networks <font color="#ff0000"><b>(3,7,16)</b></font></li>
+<br><b><font color="#FF0000">Solutions (partial): </font><font color="#FFFF00">
+  <a href="2007/assignments/assign2_3.pdf">3</a>&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp; 
+16</font></b>
+  <li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Assignment%20III.doc">Assignment III</a> - Assignment on 
+  Random Graphs <font color="#ff0000"><b>(11, 13)</b></font></li>
+<br><b><font color="#FF0000">Solutions (partial): </font><font color="#FFFF00">11&nbsp;&nbsp;&nbsp;
+  <a href="2007/assignments/assign3_13.doc">13</a></font></b>
+  <li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Assignment%20IV.doc">Assignment IV</a> - Assignment on 
+  generating function <font color="#ff0000"><b>(6)</b></font></li>
+<br><b><font color="#FF0000">Solutions: </font><font color="#FFFF00">Not 
+Submitted</font></b>
+  <li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Assignment%20V.doc">Assignment V</a> - Assignment on growth 
+  and power-law<b><font color="#ff0000"> (15)</font></b></li>
+<br><b><font color="#FF0000">Solutions: </font><font color="#FFFF00">
+  <a href="2007/assignments/assign5_15.pdf">15</a></font></b>
+  <li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Assignment%20VI.doc">Assignment VI</a> - Assignment on 
+  small-world and powerlaw <b><font color="#ff0000">(12,18)</font></b></li>
+<br><b><font color="#FF0000">Solutions (partial): </font><font color="#FFFF00">
+  <a href="2007/assignments/assign6_12.pdf">12</a>&nbsp;&nbsp;&nbsp; 18</font></b>
+  <p>&nbsp;</p>
+  <h2><a name="Project">Term Projects</a></h2>Every student has to carry out one term project. The term project consists of the
+following phases.
+
+<ul>
+
+<li> Abstract Submission (one page) - Stating clearly what is the plan. The plan should be
+detailed enough with adequate reference.
+</li><li> Discussion - There will be a discussion session where your plan will be refined.
+</li><li> Report - Final report of the project clearly stating your findings as well as future work.
+</li><li> Resource - Software developed, should be well documented.
+
+<h3>List of Term Projects</h3>
+<ol>
+<li>
+<b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term1.html">Dynamical networks of moving agents</a></b>
+</li><li>
+<b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term2.html">Complex networks in biology: enzymes - metabolic pathways network</a></b>
+</li><li>
+<b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term3.html">Complex networks in biology: protein - protein interaction network</a></b>
+</li><li>
+<b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term4.html">Improving robustness of existing networks</a></b>
+</li><li>
+<b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term5.html">Studies on Orthographic Networks</a></b>
+</li><li>
+<b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term6.html">Edge weight revision for semantic net</a></b>
+</li><li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term7.html">Comparing different clustering algorithms on weighted
+networks through task completion (task being Part Of Speech tagging for
+English)</a><a>
+</a></li><li>
+<a><b></b>
+<b></b></a><b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term8.html">Gradient based search of multiple targets</a></b></li><li>
+<b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/Termproject/Opinions%20among%20Friends.pdf">Opinion and 
+Friendship Network</a></b></li><li>
+<b><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/term10.html">Community formation in networks</a></b></li><li>
+<b>Survey of Biological Network</b></li></ol></li></ul></body></html>

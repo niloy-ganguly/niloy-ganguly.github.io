@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>CS 60078 Complex Networks Course</title>
+     
+  <style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+  </style></head>
+
+<body alink="#ff9999" bgcolor="#000000" link="#ffff00" text="#ffffcc" vlink="#ddcc55">
+
+<center>
+&nbsp;<p>
+<br>
+<br>
+</p>
+<h1><font size="+2">CS 60078 Complex Networks</font></h1>
+<h3>(Spring Semester 2010)</h3>
+<b>Theory</b><br>  <b>Niloy Ganguly (NG)</b> <a href="mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</a><p><br>
+  <b>Teaching Assistant</b><br> 
+  <b>Joydeep Chandra  (JC) <a href="mailto:bivas_mitra@yahoo.com">joydeep_ch@yahoo.co.uk</a></b><br>
+  <br>
+&nbsp;</p>
+<p>
+</p></center>
+<hr>
+<h3>Notices</h3>
+<p><br>
+</p>
+<hr>
+<ul>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Essentials">Class Room/Hour</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Books">Books</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Assessment">Evaluation</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Lecture">Lectures</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="2009/syllabus_cnt.doc">Syllabus</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a href="2008/attendance%20sheet%202008.pdf">Students List</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Assignment">Assignments</a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Project">Term projects</a>
+  </li>
+</ul>
+
+<hr>
+
+<a name="Essentials"><h2>Class Room/Hours</h2></a>
+ Lectures : Wed - 3, Thu - 2, Fri - 4 <br>
+  Room      :  CSE 120<br>
+  Units      :  3-0-0<br>
+  Credits    :  3 <br>
+  Contact    :  Room #313  (CSE), Phone 3460<br>
+&nbsp;<a name="Books"><h2>Books</h2></a>
+A list of useful books and materials is given below.  
+<p></p>
+
+<ul>
+<li>Guido Caldarelli, Scale-Free Networks, Oxford University Press, Oxford 
+(2007)</li>
+<li>S. N. Dorogovtsev and J. F. F. Mendes, <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/evolution_of_networks.pdf"><i>Evolution of Networks</i></a>, Oxford University Press, Oxford (2003)</li><li> M. E. J. Newman, <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/strucfuncnetwork.pdf"><i>The structure and function of complex networks</i></a>, SIAM Review 45, 167-256 (2003).
+
+</li><li>R. Albert and A.-L. Barabasi <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/statistical-mechanics-of-complex.pdf"> Statistical mechanics of complex networks. </a> Rev.  Mod. Phys., Vol. 74, No. 1, January 2002. 
+</li><li> Narsingh Deo, <i>Graph Theory</i> Prentice Hall India.<br>
+<b><font color="#00ff00">For Social Networks </font></b>
+</li><li>Robert A. Hanneman <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/SocialNetwork.pdf">Introduction to Social Network Methods</a>
+</li><li>
+<span style="text-decoration: none;" lang="EN-GB">Martin 
+Everett</span><span style="text-decoration: none;">, </span>
+<span style="text-decoration: none;" lang="EN-GB">Stephen P. Borgatti</span><span style="text-decoration: none;">.
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/Centrality.doc">Extending Centrality</a></span></li><li>
+<span style="text-decoration: none;" lang="EN-GB">Martin 
+Everett</span><span style="text-decoration: none;">, </span>
+<span style="text-decoration: none;" lang="EN-GB">Stephen P. Borgatti</span><span style="text-decoration: none;">. </span>
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/computuingregularequivalence.pdf">Computing Regular 
+Equivalence: Practical and Theoretical Issues</a></li>
+<li><a href="2009/L02-02-09.ppt">Slides of Centrality,</a><br>
+    <font color="#00ff00"><b>For Assortativeness </b></font></li>
+<li><a href="http://aps.arxiv.org/abs/cond-mat/0205405/">Assortative mixing in
+networks</a>, M. E. J. Newman, <i>Phys. Rev. Lett.</i> <b>89</b>, 208701
+(2002).</li><li><a href="http://aps.arxiv.org/abs/cond-mat/0210146/">Mixing patterns
+and community structure in networks</a>, M. E. J. Newman and M. Girvan, in
+<i>Statistical Mechanics of Complex Networks,</i> R. Pastor-Satorras,
+J. Rubi, and A. Diaz-Guilera (eds.), Springer, Berlin (2003).
+</li>
+<li>Animesh (Srivastav)'s note on <a href="Resource/assortativity_coeff.pdf">assortativity</a></li>
+<br>
+<font color="#00FF00"><b>For Clustering Coefficient</b></font>
+<li><a href="http://xxx.tau.ac.il/PS_cache/cond-mat/pdf/0212/0212237v1.pdf">
+Higher order clustering coefficients in Barab´asi-Albert networks</a></li><br>
+<font color="#00FF00"><b>For Spectral Graph Theory</b></font>
+<li>Linear Algebra and its Applications, Gilbert Strang (Chapter 5)&nbsp;
+<a target="_blank" href="http://math.mit.edu/linearalgebra/ila0601.pdf">
+http://math.mit.edu/<wbr>linearalgebra/ila0601.pdf</a>,
+<a target="_blank" href="http://web.mit.edu/18.06/www/Video/video-fall-99-new.html">
+http://web.mit.edu/18.06/www/<wbr>Video/video-fall-99-new.html</a>&nbsp;(Lecture 21)</li>
+<li><a href="http://cs-www.cs.yale.edu/homes/spielman/sgta/">Lectures by Daniel 
+Spielman</a>. </li>
+<li><a href="http://www.molgen.mpg.de/~banerjee/Banerjee_PhD_Thesis.pdf">
+Banerjee and Jost, 2007</a></li>
+<li>Slide on <a  href="2009/L02-03-09.ppt">Spectral Analysis</a></li>
+<li>Mukherjee, Choudhury and Kannan</li>
+<li>Slides on <a href="2009/Random%20Walks%20on%20Graphs.ppt">Random Walk</a><br>
+    <b><font color="#00ff00">For Community Structure 
+</font></b></li>
+<li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/notes/epjb.pdf">Detecting community structure in
+networks</a>, M. E. J. Newman, <i>Eur. Phys. J. B</i> <b>38</b>, 321-330
+(2004).</li><li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/Wu_hubermann_community.pdf">Finding Communities in 
+Linear Time: A Physics Approach</a>&nbsp; Fang Wu, Bernardo A. Huberman</li><li>
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/0309488.pdf">Defining and identifying communities in networks</a>, 
+Filippo Radicchi, Claudio Castellano, Federico Cecconi, Vittorio Loreto, 
+Domenico Parisi</li><li>
+<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/community/randomwalk.newman.pdf">Finding and evaluating 
+community structure in network.</a> M.E.J. Newman, M. Girvan</li>
+<li>
+<a href="Resource/karnigham%20lin.pdf">Kernigham Lin Algorithms xerox</a><br>
+<b><font color="#00ff00">For Generating Function </font></b></li><li><a href="http://arxiv.org/abs/cond-mat/0007235/">Random graphs with
+arbitrary degree distributions and their applications</a>, M. E. J. Newman,
+S. H. Strogatz, and D. J. Watts, <i>Phys. Rev. E</i> <b>64</b>, 026118
+(2001).<br>
+<b><font color="#00FF00">For Growth Model </font></b> 
+</li><li> M. E. J. Newman, <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/strucfuncnetwork.pdf"><i>The structure and function of complex networks</i></a>, 
+SIAM Review 45, 167-256 (2003).
+
+
+</li>
+<!--
+<li>A. Degenne and M. Forse, <a href="http://www.amazon.com/exec/obidos/ASIN/0761956042"><i>Introducing Social Networks</i></a>, Sage, London (1999)
+<li> 
+<li>F. Harary, <a href="http://www.amazon.com/exec/obidos/ASIN/0201410338"><i>Graph Theory</i></a>, Perseus, Cambridge, MA (1995)
+<li> 
+<li>C. D. Meyer, <a href="http://www.amazon.com/exec/obidos/ASIN/0898714540"><i>Matrix Analysis and Applied Linear Algebra</i></a>, SIAM, Philadelphia, PA (2000) <li>J. Scott, <a href="http://www.amazon.com/exec/obidos/ASIN/0761963391"><i>Social Network Analysis: A Handbook</i></a>, 2nd edition, Sage, London (2000)
+<li>S. Wasserman and K. Faust, <a href="http://www.amazon.com/exec/obidos/ASIN/0521387078"><i>Social Network Analysis</i></a>, Cambridge University Press, Cambridge (1994)
+<li>D. J. Watts, <a href="http://www.amazon.com/exec/obidos/ASIN/0393041425"><i>Six Degrees: The Science of a Connected Age</i></a>, Norton, New York (2003)
+<li>D. B. West, <a href="http://www.amazon.com/exec/obidos/ASIN/0130144002"><i>Introduction to Graph Theory</i></a>, Prentice Hall, Upper Saddle River, NJ (1996)
+<li>R. J. Wilson, <a href="http://www.amazon.com/exec/obidos/ASIN/0582249937"><i>Introduction to Graph Theory</i></a>, 4th edition, Addison-Wesley, Reading, MA (1997)-->
+<li> P. L. Krapivsky and S. Redner, <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/kravipskygrowth.pdf">Organization of growing random networks</a></li>
+<li> Albert-L´aszl´o Barab´asi and R´eka Albert, <a href="Resource/ba-model.pdf">
+Emergence of Scaling in Random Networks</a></li>
+<li> Albert-L´aszl´o Barab´asi and R´eka Albert,
+<a href="Resource/ba-model-2.pdf">Topology of evolving networks: local events 
+and universality</a></li>
+<li> Ravi Kumar Prabhakar Raghavany Sridhar Rajagopalan D Sivakumar Andrew 
+Tomkins Eli Upfalz, <a href="Resource/vertex-copying.pdf">Stochastic models for 
+the web graph (Vertex Copying Model)</a></li>
+<li> Jon M Kleinberg, Ravi Kumar, Prabhakar Raghavan, Sridhar Rajagopalan and 
+Andrew S Tomkins,&nbsp; <a href="Resource/vertex-copying-2.pdf">The Web as a 
+graph measurements models and methods (Vertex Copying)</a></li>
+<li>Slides on Bipartite Networks <a href="2009/lec1_bnw.ppt">1</a>, <a href="2009/lec2_bnw.ppt">2</a>, <a href="2009/lec3_bnw.ppt">3</a><br> 
+    <b><font color="#00ff00">For Small World</font></b></li>
+<li>D. J. Watts, Small Worlds, Princeton Studies in Complexity</li><li><a href="http://arxiv.org/abs/cond-mat/0001118/">
+Models of the small world</a>, M. E. J. Newman, <i>J. Stat. Phys.</i> <b>
+101</b>, 819-841 (2000).</li>
+<li>Connected Caveman Problem - <a href="Resource/connected_cavman.pdf">Notes</a></li>
+<li>J. Kleinberg. <a href="Resource/search-in-small-world.pdf">The small-world 
+phenomenon: An algorithmic perspective.</a> Proc. 32nd ACM Symposium on Theory 
+of Computing, 2000.  </li>
+<li>A. Barrat and M. Weigt - <a href="Resource/barrat-sw.pdf">On the properties 
+of small-world networks</a>, EPJB, 2004<br>
+<b><font color="#00ff00">For 
+epidemics</font></b>  </li><li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/SIR-epidemics.pdf">SIR Study material</a></li>
+  <li><a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/SI-SIS.pdf">SIS Study material</a></li>
+  <li>R. Pastor-Satorras and A. Vespignani.<a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/epidemic-long.pdf">Epidemic 
+  dynamics and endemic states in complex networks</a><br><font color="#00ff00">
+  <b>For Search</b></font></li>
+  <li>Jon M. Kleinberg <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/Resource/p604-kleinberg.pdf">Authoritative 
+  sources in a hyperlinked environment</a></li>
+</ul>
+<p><font size="5">Related Course Webpages</font></p>
+<ul>
+  <li>
+  <a href="http://www-personal.umich.edu/%7Emejn/courses/2005/cscs535/index.html">
+  Mark Newmann</a></li>
+  <li><a href="http://www-personal.umich.edu/%7Eladamic/si614w06/">Lada Adamic</a></li>
+  <li><a href="http://www.cs.cornell.edu/Courses/cs685/2002fa/">Jon Kleinberg</a></li>
+  <li><a href="http://www.columbia.edu/itc/sociology/watts/w3233/">Duncan Watts</a></li>
+  <li><span style="font-family: Times New Roman;"><big><small>
+  <a href="http://www.cs.helsinki.fi/u/tsaparas/InformationNetworks/">Panayiotis 
+  Tsaparas</a></small></big></span></li>
+  <li><font face="Times New Roman">
+  <a href="http://comet.columbia.edu/courses/elen_e9701/2001/overview.html">
+  Aurel A. Lazar</a></font></li>
+  <li>
+  <a href="http://eclectic.ss.uci.edu/%7Edrwhite/Anthro179a/SocialDynamics02.html">
+  Douglas R. White</a></li>
+</ul>
+
+<a name="Assessment"><h2>Evaluation (Tentative)</h2></a>
+        Mid-sem :  20 <br>
+	Term Project/ (Scribes, Assignment) : 35<br>
+	Class Performance (Attendance etc): 5&nbsp; <br>
+End-sem : 40<br>
+
+
+<a name="Lecture"><h2>Lectures</h2></a>
+<p>Video Lecture - http://10.35.32.102/</p>
+<table cellspacing="0" cellpadding="0">
+  <tr valign="bottom">
+    <th width="22" bgcolor="#b0b0b0">&nbsp;</th>
+    <th width="80" align="center" bgcolor="#b0b0b0"><strong>A</strong></th>
+    <th width="380" align="center" bgcolor="#b0b0b0"><strong>B</strong></th>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>1</strong></th>
+    <td width="64" align="center" bgcolor="#666666"><strong>Date</strong></td>
+    <td width="304" align="center" bgcolor="#666666"><strong>Topic     Covered</strong></td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>2</strong></th>
+    <td width="64">&nbsp;</td>
+    <td width="304">&nbsp;</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>3&nbsp;</strong></th>
+    <td width="64" align="center">31/12/09</td>
+    <td width="304">Introduction to     Complex Networks</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="23"><strong>4</strong></th>
+    <td width="64" align="center">01/01/10</td>
+    <td width="304">Social Network,     Small world vs Random network, Basic Graph Theory</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>5</strong></th>
+    <td width="64" align="center">06/01/10</td>
+    <td width="304">Social Network     Analysis, clique, n-clique, n-clan, k-plex, LS-set</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>6</strong></th>
+    <td width="64" align="center">07/01/10</td>
+    <td width="304">Structural Equivalence,     Clustering</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="23"><strong>7</strong></th>
+    <td width="64" align="center">08/01/10</td>
+    <td width="304">Clustering coefficient,     Centrality, Node betweenness, Edge betweenness</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>8</strong></th>
+    <td width="64" align="center">13/01/10</td>
+    <td width="304">Pajek (Tutorial)</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>9</strong></th>
+    <td width="64" align="center">14/01/10</td>
+    <td width="304">Pajek (Tutorial)</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>10</strong></th>
+    <td width="64" align="center">21/01/10</td>
+    <td width="304">Assortativity     Mixing in graphs</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="23"><strong>11</strong></th>
+    <td width="64" align="center">27/01/10</td>
+    <td width="304">Configuration     Model, Construction of a graph with given assortativity matrix</td>
+  </tr>
+  <tr valign="bottom">
+    <th width="18" align="center" bgcolor="#b0b0b0" height="12"><strong>12</strong></th>
+    <td width="64" align="center">28/01/10</td>
+    <td width="304">Assortativity     derivation, Eigen vector centrality</td>
+  </tr>
+  <tr valign="bottom">
+    <th align="center" bgcolor="#b0b0b0" height="12">13</th>
+    <td align="center">3/2/2010</td>
+    <td>Eigen vector centrality</td>
+  </tr>
+  <tr valign="bottom">
+    <th align="center" bgcolor="#b0b0b0" height="12">14</th>
+    <td align="center">4/2/2010</td>
+    <td>Spectral graph theory</td>
+  </tr>
+  <tr valign="bottom">
+    <th align="center" bgcolor="#b0b0b0" height="12">15</th>
+    <td align="center">5/2/2010</td>
+    <td>Community Detection Algorithms, Spectral Bisection method, </td>
+  </tr>
+  <tr valign="bottom">
+    <th align="center" bgcolor="#b0b0b0" height="12">16</th>
+    <td align="center">10/2/2010</td>
+    <td>Wu Huberman method,</td>
+  </tr>
+  <tr valign="bottom">
+    <th align="center" bgcolor="#b0b0b0" height="12">17</th>
+    <td align="center">11/2/2010</td>
+    <td> Keningham Lin </td>
+  </tr>
+  <tr valign="bottom">
+    <th align="center" bgcolor="#b0b0b0" height="12">18</th>
+    <td align="center">12/2/2010</td>
+    <td>Divisive Algorithm, Shortest Path Betweenness</td>
+  </tr>
+  <tr valign="bottom">
+    <th align="center" bgcolor="#b0b0b0" height="12">19</th>
+    <td align="center">17/2/2010</td>
+    <td>Divisive Algorithm - Random Path Betweenness, Radichchi;s Algorithm</td>
+  </tr>
+  <tr valign="bottom">
+    <th align="center" bgcolor="#b0b0b0" height="12">20</th>
+    <td align="center">18/2/2010</td>
+    <td>Random Graphs</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><b><font size="5">Scribes</font></b></p>
+<!--
+<ol>
+  <li>04.01.07 - <a href="http://facweb.iitkgp.ernet.in/%7Eniloy/COURSE/Spring2006/CNT/2007/introduction2007.ppt">Introduction,</a></li>
+  <li>08.01.07 - Graph Theory - Adjacency Matrix, Shortest Path, Incidence Matrix, Directed Graph, Connected Component, Rank - 1</li>
+  <li>09.01.07 - <a href="2007/scribe/Centrality.ps">Graph Theory, Centrality</a><b><font color="#ff0000"> (Scribe Graph 
+Theory Basics ) - 5</font></b></li>
+  <li>11.01.07 - <a href="2007/scribe/Centrality.ps">Centrality, Eigenvector Centrality
+  </a> </li>
+  <li>15.01.07 - <a href="2007/scribe/PageRankAlgorithm.ps">Page Ranking Algorithm</a>&nbsp; <b><font color="#ff0000">(Scribe 
+Centrality to Page ranking ) - 5</font>&nbsp; </b> </li>
+  <li>16.01.07 - Core, Cliques and Clan <b><font color="#ff0000">(Scribe on 
+  Core, Cliques and Clan) - 16</font></b></li>
+  <li>18.01.07 - Equivalence</li>
+  <li>22.01.07 - Equivalence</li>
+  <li>25.01.07 - <a href="2007/scribe/equivalence.pdf">Equivalence</a> <font color="#ff0000"><b>(Scribe on Equivalence) - 
+  16</b></font></li>
+  <li>29.01.07 - <a href="2007/scribe/sf_assort.pdf">Small world properties</a></li>
+  <li>01.02.07 - <a href="2007/scribe/sf_assort.pdf">Assortativity</a> <font color="#ff0000"><b>(Scribe for last two 
+  class) - 3</b> </font>
+
+
+  </li>
+  <li>05.02.07 - <font color="#ddcc55">Term project discussion</font></li>
+  <li>06.02.07 - Community Identification - (Spectral Bisection and Keningham 
+  Lin Algorithm)</li>
+  <li>08.02.07 - Community Identification - (Wu-Hubermann algorithm)</li>
+  <li>12.02.07 - Community Identification - (Michel Girvan and Radichchi 
+  ALgorithm)</li>
+  <li>13.02.07 - <a href="2007/scribe/pajek.pdf">Pajek (AM)</a></li>
+  <li>15.02.07 - <a href="2007/scribe/community.pdf">Community Identification&nbsp;</a> <font color="#ff0000"><b>(Scribe for 
+  community identification) - 1</b> </font>
+
+
+  </li>
+  <li>26.02.07 - Random Graphs</li>
+  <li>27.02.07 - Models of network &#8211; Random graph, E-R graph</li>
+  <li>01.03.07 - <a href="2007/scribe/RandomGraph.pdf">Construction of Random graph (etc)</a> <b><font color="#ff0000">
+  (Scribe on random Graphs - 13)</font></b></li>
+  <li>05.03.07 - Methods (Algorithms) of construction of Random graphs. 
+  Introduction to Generating function and Go(x) and moments.</li>
+  <li>06.03.07 - Generating Functions - Degree sequence</li>
+  <li>08.03.07 - Generating Functions - Distribution of second neighbors</li>
+  <li>12.03.07 - Generating Functions - Special degree distribution</li>
+  <li>13.03.07 - Generating Functions - Component Size</li>
+  <li>15.03.07 - Pajek<b> (</b>AM)<b> <font color="#ff0000">(Scribe on Pajek - 
+  11)</font></b></li>
+  <li>19.03.07 - Generating Function - Component Size</li>
+  <li>20.03.07 - <a href="2007/scribe/GF.pdf">Generating Function - Component Size, Evolution Model</a>
+  <font color="#ff0000"><b>(Scribe on Generating Functions - 9)</b></font></li>
+  <li>
+  23/03/07 - Evolution of networks, Preferential 
+  attachment, Random attachment
+  </li><li>
+  26/03/07 - Growth of networks, Emergence of power law. 
+  Price model, derivation of degree distribution using beta and gamma function 
+  in discrete growth model.
+  </li><li> 27/03/07 - Sub-linear, 
+  Linear, Super-linear1, Super-linear growth.
+
+
+  </li>
+  <li> 02/04/07 - Small World Network
+
+
+  </li>
+  <li> 03/04/07 - Connected Caveman Problem</li>
+  <li> 05/04/07 - Watts Model, Newman Model, Klienberg Model etc.
+  <font color="#ff0000"><b>(Scribe on power-law and Small world - 14)</b></font></li>
+  <li> 08.04.07 - <a href="2007/scribe/SIR.ps">Epidemics - SIR Model</a></li>
+  <li> 09.04.07 - <a href="2007/scribe/SIS.ps">Epidemics - SIS Model</a></li>
+  <li> 10.04.07 - Epidemics</li>
+  <li> 16.04.07 - Epidemics in powerlaw network</li>
+  <li> 17.04.07 - <a href="2007/scribe/search.ps">Search in Network</a><b><font color="#ff0000"> (Scribe on 
+  Epidemics and search - 8)</font></b><br>
+<br>
+
+
+  </li>
+</ol>
+-->
+<h2><a name="Assignment">Assignments </a></h2>
+<p>&nbsp;</p>
+<h2><a name="Project">Term Projects</a></h2>
+
+</body></html>

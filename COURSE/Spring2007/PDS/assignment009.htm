@@ -1,0 +1,1121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<!-- saved from url=(0072)http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Spring2007/pds/main.html --><title>CS 11001 Programming and Data Structure</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Microsoft FrontPage 5.0" name="GENERATOR">
+<link rel="File-List" href="Assignment009_files/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head><body alink="#ff9999" bgcolor="#000000" link="#ffff00" text="#ffffcc" vlink="#ddcc55">
+<center><br>
+</center>
+<hr>
+
+<h3><font size="5">Assignment 9 : Structure and Linked Lists&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date : 26<sup>th </sup>&nbsp;March, 07</h3>
+<hr>
+
+<a name="Lecture">
+
+</a><p><font size="6">Tutorial Outlines</font>:</p>
+<ul>
+  <li><font size="5">Structure</font></li>
+  <li><font size="5">Array of Structures through Pointers</font></li>
+  <li><font size="5">Self Referential Structure: Linked Lists</font></li>
+</ul>
+<p><a name="Lecture"><font size="5">Tutorial&nbsp; 9A:</font></a></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<font color="#FF9999">Illustrative 
+Example of a C program of how to declare a structure, initialization and </font> </font>
+<font color="#FF9999"></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; accessing its 
+element:</font></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 0.5in;">
+
+<font size="5">Solution:</font></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 0.5in;">
+
+<font size="5">#include &lt;stdio.h&gt;</font></p>
+
+<blockquote>
+<p class="MsoNormal" style="text-align: justify; text-indent: 0.5in;">
+
+<font size="5"><br>
+void main()<br>
+{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+typedef
+struct &nbsp;&nbsp;&nbsp; //<font color="#00FF00">Definition of a structure</font><br>
+{<br>
+int no;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+char acc_name[15];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ 
+&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="5"><br>
+float balance;</font><font size="5"><br>
+} account;<br>
+<br>
+account a1,a2;&nbsp; // <font color="#00FF00">Structure Declaration</font><br>
+account a3={467,&quot;sameer&quot;,2456}; // <font color="#00FF00">Structure can be 
+initialized like that</font><br>
+<br>
+printf(&quot;\n Enter account number, names and balance :\n&quot;);<br>
+scanf(&quot;%d%s%f&quot;,&amp;a1.no,a1.acc_name,&amp;a1.balance);<br>
+printf(&quot;\n Enter account number, names and balance :\n&quot;);<br>
+scanf(&quot;%d%s%f&quot;,&amp;a2.no,a2.acc_name,&amp;a2.balance);<br>
+<br>
+printf(&quot;A/C No.=%d\tName = %s\tBalance = %f\n&quot;,a1.no,a1.acc_name,a1.balance);<br>
+printf(&quot;A/C No.=%d\tName = %s\tBalance = %f\n&quot;,a2.no,a2.acc_name,a2.balance);<br>
+printf(&quot;A/C No.=%d\tName = %s\tBalance = %f\n&quot;,a3.no,a3.acc_name,a3.balance);
+<br>
+}</font></p>
+
+</blockquote>
+
+<a name="Lecture">
+
+
+<hr noshade="noshade" size="2">
+
+<p><font size="5">Assign. 9A:</font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 0.5in;">
+<font size="5" color="#FF9999">Write a C program for addition of two complex numbers using 
+structure.</font></p>
+</a>
+<p class="MsoNormal" style="text-align: justify; text-indent: 0.5in;">
+<font size="5">Test Run:</font></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 0.5in;">
+<font color="#FFFF00"><font size="5">Input&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Output </font></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 0.5in;">
+<font size="5">2+3i, 5+2i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+7+5i</font></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 0.5in;">
+</font><font size="5"><font color="#FFFF00">4+7i, 7+8i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+11+15i&nbsp; </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></p>
+
+<a name="Lecture">
+</a>
+
+<hr noshade="noshade" size="2">
+
+<p>
+<a name="Lecture"><font size="5">Tutorial 9B (Array of structure as pointer):</font></a></p>
+<p><font size="5"><a name="Lecture">&nbsp;<font color="#FF9999">Illustrative 
+example of how to pass array of structures as pointers to a function</font></a><font color="#FF9999">.</font></font><font color="#FF9999"></p>
+
+<p><font size="5">Write a C function to display an array of structure. </font>
+</font></p>
+
+<p><a name="Lecture"><font size="5"><b>Solution: </b></font></a></p>
+
+<p>&nbsp;</p>
+<blockquote>
+
+<p><font size="5">#include &lt;stdio.h&gt;<b><br>
+</b>#include &lt;malloc.h&gt;<b><br>
+<br>
+</b>typedef
+struct<b>&nbsp; </b> <font color="#00FF00">//Definition of a structure</font><b><br>
+</b>{<br>
+int no;<br>
+float balance;<br>
+} account;<b><br>
+<br>
+</b>void disp(account *acc_ptr, int n);<br>
+void main()<br>
+{<br>
+int i,n;<br>
+account *acc_ptr;<font color="#00FF00">//Pointer to the structure used as 
+array</font><br>
+<br>
+printf(&quot;Enter the number of records :&quot;);<br>
+scanf(&quot;%d&quot;,&amp;n);<b><br>
+<br>
+</b>acc_ptr=malloc(n*sizeof(account));<font color="#00FF00">// Dynamic memory 
+allocation</font><br>
+<br>
+for (i=0;i&lt;n;i++)<br>
+{<br>
+printf(&quot;\nEnter the %d number Record (A/C No. and Balance):\n&quot;,i);<br>
+scanf(&quot;%d%f&quot;,&amp;acc_ptr[i].no,&amp;acc_ptr[i].balance);<font color="#00FF00">//Storing 
+the array of</font> <font color="#00FF00">//structure</font> <br>
+}<br>
+disp(acc_ptr,n);<font color="#00FF00">//Passing the pointer to structure to a 
+function</font><br>
+}<b><br>
+<br>
+</b>void disp(account *acc_ptr, int n)<b><br>
+</b>{<br>
+int i;<br>
+<br>
+printf(&quot;\nThe records are: \n\n&quot;);<br>
+for (i=0;i&lt;n;i++)<br>
+printf(&quot;%d\t%f\n\n&quot;,(acc_ptr+i)-&gt;no,(acc_ptr+i)-&gt;balance);<b> </b> <font color="#00FF00">
+//Accessing&nbsp;&nbsp; </font></font><font color="#00FF00"></p>
+
+<p></font><font size="5"><font color="#00FF00"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> 
+//data from array of structure</font> <b> <br>
+</b>}</font></p>
+</blockquote>
+<hr noshade="noshade" size="2">
+
+<a name="Lecture"><font size="5">
+
+<hr noshade="noshade" size="2">
+
+</font>
+
+</a><p><a name="Lecture"><font size="5">Assignment 4B:</font></a></p>
+<p><font size="5"><a name="Lecture">&nbsp;&nbsp;&nbsp; <font color="#FF9999">Write a C 
+function to sort the array of structure</font></a><font color="#FF9999"> with 
+respect to</font></font></p>
+<p><font size="5" color="#FF9999">&nbsp;&nbsp;&nbsp; a)&nbsp;&nbsp;&nbsp; marks</font></p>
+<p><font size="5" color="#FF9999">&nbsp;&nbsp;&nbsp; b)&nbsp;&nbsp;&nbsp; d.o.b.</font></p>
+<p><font size="5" color="#FF9999">&nbsp;&nbsp;&nbsp; c)&nbsp;&nbsp;&nbsp; name 
+(in lexical order)</font></p>
+<p><font size="5" color="#FF9999">&nbsp;&nbsp;&nbsp; d)&nbsp;&nbsp;&nbsp; roll 
+no.</font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<span style="font-family: Courier;"><a name="Lecture"><font size="5">Hint: You 
+can use the following structure</font></a></span></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">struct student</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">{</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp; int Roll_no;</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp; struct dob</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp; {</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+int day;</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+int month;</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+int year;</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp; };</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp; char 
+name[20];</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">&nbsp;&nbsp;&nbsp; int marks;</span></font></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify; text-indent: -45pt; margin-left: 81pt;">
+<font size="5"><span style="font-family: Courier">};</span></font></p>
+
+
+
+<a name="Lecture">
+<hr noshade="noshade" size="2">
+
+</a>
+<font size="5">
+
+<a name="Lecture">
+
+</a></font><hr noshade="noshade" size="2">
+
+<p>
+<a name="Lecture"><font size="5">Tutorial 9C (Self Referential Structure: Lined 
+Lists)</font></a><font size="5"><a name="Lecture">:</a></font></p>
+<p><font color="#FF9999"><font size="5"><a name="Lecture">Write a C program for 
+implementing a linked list with functions as append, display and&nbsp; count</a>.</font></p>
+<p><font size="5">append : It appends a value as the last element of the 
+list.</font></p>
+<p><font size="5">display : It shows the elements of the linked list.</font></p>
+<p><font size="5">count: It counts the number of elements presents in the linked 
+list.</font></font></p>
+<p>&nbsp;</p>
+<p><font size="5">Solution:</font></p>
+<blockquote>
+  <p><font size="5">#include &lt;stdio.h&gt;<br>
+  #include &lt;malloc.h&gt;<br>
+  <br>
+  struct node&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#00FF00">
+  //Definition of a self referential structure</font><br>
+  {<br>
+  int d;<br>
+  struct node *link;&nbsp; <font color="#00FF00">//Note that </font>
+  <font color="#FF0000">link</font><font color="#00FF00"> is pointer to the same 
+  structure (self reference) </font><br>
+  };<br>
+  <br>
+  void append(struct node **q, int n);<br>
+  void display(struct node *q);<br>
+  int count(struct node *q);<br>
+  <br>
+  void main()<br>
+  {<br>
+  struct node *ptr; <font color="#00FF00">&nbsp;&nbsp;&nbsp;&nbsp; //</font><font color="#FF0000">ptr</font><font color="#00FF00"> 
+  is a pointer to the structure</font><br>
+  int n,i,data;<br>
+  ptr=NULL; <font color="#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  //empty linked list</font><br>
+  <br>
+  printf(&quot;\nEnter the number of elements you want to append to the list :\n&quot;);<br>
+  scanf(&quot;%d&quot;,&amp;n);<br>
+  <br>
+  for (i=0;i&lt;n;i++) //<font color="#00FF00">Reading</font><br>
+  {<br>
+  printf(&quot;\nEnter the elements to be appended :\n&quot;);<br>
+  scanf(&quot;%d&quot;,&amp;data);<br>
+  append(&amp;ptr,data);<br>
+  }<br>
+  <br>
+  display(ptr);<br>
+  printf(&quot;\n\nNo. of elements in the Linked List = %d\n\n&quot;,count(ptr));<br>
+  }<br>
+  <br>
+  void append(struct node **q, int n) </font></p>
+  <p><font size="5" color="#00FF00">// Note that </font>
+  <font size="5" color="#FF0000">q</font><font size="5" color="#00FF00"> is 
+  pointer to the pointer to the structure</font></p>
+  <p><font size="5">{<br>
+  struct node *t;<br>
+  <br>
+  t=*q;<br>
+  <br>
+  if (*q==NULL) <font color="#00FF00">//Create the first node when the list is 
+  empty</font><br>
+  {<br>
+  *q=malloc(sizeof(struct node));<br>
+  t=*q;<br>
+  }<br>
+  else<br>
+  {<br>
+  while (t-&gt;link!=NULL) <font color="#00FF00">//go to last node</font><br>
+  t=t-&gt;link;<br>
+  t-&gt;link=malloc(sizeof(struct node)); <font color="#00FF00">//dynamic memory 
+  allocation of a node</font><br>
+  t=t-&gt;link;<br>
+  }<br>
+  t-&gt;d=n;<br>
+  t-&gt;link=NULL;<br>
+  }<br>
+  <br>
+  void display(struct node *q)<br>
+  {<br>
+  printf(&quot;\n\nThe elements of the Linked List :\n\n&quot;);<br>
+  <br>
+  while (q!=NULL) <font color="#00FF00">//traverse the entire linked list</font><br>
+  {<br>
+  printf(&quot;%d\t&quot;,q-&gt;d);<br>
+  q=q-&gt;link;<br>
+  }<br>
+  }<br>
+  <br>
+  int count(struct node *q)<br>
+  {<br>
+  int count=0;<br>
+  <br>
+  while (q!=NULL) <font color="#00FF00">//traverse the entire linked list</font><br>
+  {<br>
+  count++;<br>
+  q=q-&gt;link;<br>
+  }<br>
+  return count; <br>
+  }</font></p>
+</blockquote>
+
+<hr noshade="noshade" size="2">
+
+<hr noshade="noshade" size="2">
+
+
+<p><font size="5">Assign 4C: Extend the program in Tutorial 9C to implement the 
+following functions:</font></p>
+
+
+<p><font size="5">a)&nbsp;&nbsp;&nbsp; addbeg: Add a new node at the beginning 
+of the list</font></p>
+
+
+<p><font size="5">b)&nbsp;&nbsp;&nbsp; addafter: Insert a new node after the i<sup>th</sup> 
+node from the root</font></p>
+
+
+<p><font size="5">c)&nbsp;&nbsp;&nbsp; delete:&nbsp;&nbsp; Delete a node which 
+holds a specific value </font></p>
+
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hints: First search 
+the spec</font><!--[if gte vml 1]><v:line id="_x0000_s1038"
+ style='position:absolute;left:0;text-align:left;top:0;z-index:2' from="298.5pt,4832.25pt"
+ to="351pt,4832.25pt" coordsize="21600,21600" strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:397px;top:6437px;width:73px;height:12px'><img width=73
+height=12 src="Assignment009_files/image001.gif" v:shapes="_x0000_s1038"></span><![endif]><font size="5">ified 
+node and delete it.</font><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1039" type="#_x0000_t202" style='position:absolute;
+ left:417.75pt;top:4818.75pt;width:15pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:556px;top:6424px;width:26px;height:41px'><img width=26
+height=41 src="Assignment009_files/image002.gif" alt="Text Box: " v:shapes="_x0000_s1039"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1040" type="#_x0000_t202" style='position:absolute;left:575.25pt;
+ top:4815pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">88</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:766px;top:6419px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image003.gif" alt="Text Box: 88&#13;&#10;"
+v:shapes="_x0000_s1040"></span><![endif]></p>
+
+
+
+<p><!--[if gte vml 1]><v:line id="_x0000_s1037"
+ style='position:absolute;left:0;text-align:left;top:0;z-index:2' from="159.75pt,4830.75pt"
+ to="213pt,4830.75pt" coordsize="21600,21600" strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:212px;top:6435px;width:74px;height:12px'><img width=74
+height=12 src="Assignment009_files/image004.gif" v:shapes="_x0000_s1037"></span><![endif]></p>
+
+
+
+<p><!--[if gte vml 1]><v:line
+ id="_x0000_s1042" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:1' from="486.75pt,4832.25pt" to="519pt,4832.25pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke dashstyle="1 1"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:648px;top:6442px;width:45px;height:2px'><img width=45
+height=2 src="Assignment009_files/image005.gif" v:shapes="_x0000_s1042"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1041" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="432.75pt,4831.5pt" to="485.25pt,4831.5pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:576px;top:6436px;width:73px;height:12px'><img width=73
+height=12 src="Assignment009_files/image001.gif" v:shapes="_x0000_s1041"></span><![endif]></p>
+
+
+
+<p><!--[if gte vml 1]><v:shape
+ id="_x0000_s1031" type="#_x0000_t202" style='position:absolute;left:75.75pt;
+ top:4818pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">32</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:100px;top:6423px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image006.gif" alt="Text Box: 32&#13;&#10;"
+v:shapes="_x0000_s1031"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1032"
+ type="#_x0000_t202" style='position:absolute;left:2in;top:4818pt;width:16.5pt;
+ height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:191px;top:6423px;width:28px;height:41px'><img width=28
+height=41 src="Assignment009_files/image007.gif" alt="Text Box: " v:shapes="_x0000_s1032"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1033" type="#_x0000_t202" style='position:absolute;left:643.5pt;
+ top:4815pt;width:15pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:857px;top:6419px;width:26px;height:41px'><img width=26
+height=41 src="Assignment009_files/image002.gif" alt="Text Box: " v:shapes="_x0000_s1033"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1034" type="#_x0000_t202" style='position:absolute;left:349.5pt;
+ top:4818.75pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">78</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:465px;top:6424px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image008.gif" alt="Text Box: 78&#13;&#10;"
+v:shapes="_x0000_s1034"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1035"
+ type="#_x0000_t202" style='position:absolute;left:281.25pt;top:4818.75pt;
+ width:17.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:374px;top:6424px;width:29px;height:41px'><img width=29
+height=41 src="Assignment009_files/image009.gif" alt="Text Box: " v:shapes="_x0000_s1035"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1036" type="#_x0000_t202" style='position:absolute;left:213pt;
+ top:4818.75pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">67</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:283px;top:6424px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image010.gif" alt="Text Box: 67&#13;&#10;"
+v:shapes="_x0000_s1036"></span><![endif]></p>
+
+
+
+<p><!--[if gte vml 1]><v:line id="_x0000_s1043"
+ style='position:absolute;left:0;text-align:left;top:0;z-index:2' from="522.75pt,4833pt"
+ to="575.25pt,4833pt" coordsize="21600,21600" strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:696px;top:6438px;width:73px;height:12px'><img width=73
+height=12 src="Assignment009_files/image001.gif" v:shapes="_x0000_s1043"></span><![endif]></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="5" color="#FFFF00">&nbsp;addbeg (node with data=78)</font></p>
+<p>&nbsp;</p>
+<p><!--[if gte vml 1]><v:line
+ id="_x0000_s1056" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="387pt,4936.5pt" to="442.5pt,4936.5pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:515px;top:6576px;width:77px;height:12px'><img width=77
+height=12 src="Assignment009_files/image011.gif" v:shapes="_x0000_s1056"></span><![endif]></p>
+<p>&nbsp;</p>
+<p><!--[if gte vml 1]><v:line
+ id="_x0000_s1058" style='position:absolute;left:0;text-align:left;top:0;
+ flip:y;z-index:3' from="577.5pt,4936.5pt" to="590.25pt,4937.25pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:769px;top:6576px;width:20px;height:12px'><img width=20
+height=12 src="Assignment009_files/image012.gif" v:shapes="_x0000_s1058"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1057" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="524.25pt,4936.5pt" to="576.75pt,4936.5pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke dashstyle="1 1"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:698px;top:6581px;width:72px;height:2px'><img width=72
+height=2 src="Assignment009_files/image013.gif" v:shapes="_x0000_s1057"></span><![endif]></p>
+<p><!--[if gte vml 1]><v:line
+ id="_x0000_s1055" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="248.25pt,4938.75pt" to="303.75pt,4938.75pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:330px;top:6579px;width:77px;height:12px'><img width=77
+height=12 src="Assignment009_files/image011.gif" v:shapes="_x0000_s1055"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1054" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="127.5pt,4938.75pt" to="163.5pt,4938.75pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:169px;top:6579px;width:51px;height:12px'><img width=51
+height=12 src="Assignment009_files/image014.gif" v:shapes="_x0000_s1054"></span><![endif]></p>
+<p><!--[if gte vml 1]><v:shape
+ id="_x0000_s1052" type="#_x0000_t202" style='position:absolute;left:42.75pt;
+ top:4926pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">78</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:56px;top:6567px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image008.gif" alt="Text Box: 78&#13;&#10;"
+v:shapes="_x0000_s1052"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1053"
+ type="#_x0000_t202" style='position:absolute;left:111pt;top:4926pt;width:16.5pt;
+ height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:147px;top:6567px;width:28px;height:41px'><img width=28
+height=41 src="Assignment009_files/image007.gif" alt="Text Box: " v:shapes="_x0000_s1053"></span><![endif]></p>
+<p><!--[if gte vml 1]><v:shape
+ id="_x0000_s1044" type="#_x0000_t202" style='position:absolute;left:509.25pt;
+ top:4922.25pt;width:15pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:678px;top:6562px;width:26px;height:41px'><img width=26
+height=41 src="Assignment009_files/image002.gif" alt="Text Box: " v:shapes="_x0000_s1044"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1045" type="#_x0000_t202" style='position:absolute;left:591pt;
+ top:4920.75pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">88</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:787px;top:6560px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image003.gif" alt="Text Box: 88&#13;&#10;"
+v:shapes="_x0000_s1045"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1046"
+ type="#_x0000_t202" style='position:absolute;left:162.75pt;top:4925.25pt;
+ width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">32</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:216px;top:6566px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image006.gif" alt="Text Box: 32&#13;&#10;"
+v:shapes="_x0000_s1046"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1047"
+ type="#_x0000_t202" style='position:absolute;left:231pt;top:4925.25pt;width:16.5pt;
+ height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:307px;top:6566px;width:28px;height:41px'><img width=28
+height=41 src="Assignment009_files/image007.gif" alt="Text Box: " v:shapes="_x0000_s1047"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1048" type="#_x0000_t202" style='position:absolute;left:659.25pt;
+ top:4920.75pt;width:15pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:878px;top:6560px;width:26px;height:41px'><img width=26
+height=41 src="Assignment009_files/image002.gif" alt="Text Box: " v:shapes="_x0000_s1048"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1049" type="#_x0000_t202" style='position:absolute;left:441.75pt;
+ top:4922.25pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">78</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:588px;top:6562px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image008.gif" alt="Text Box: 78&#13;&#10;"
+v:shapes="_x0000_s1049"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1050"
+ type="#_x0000_t202" style='position:absolute;left:370.5pt;top:4924.5pt;
+ width:17.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:493px;top:6565px;width:29px;height:41px'><img width=29
+height=41 src="Assignment009_files/image009.gif" alt="Text Box: " v:shapes="_x0000_s1050"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1051" type="#_x0000_t202" style='position:absolute;left:303pt;
+ top:4924.5pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">67</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:403px;top:6565px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image010.gif" alt="Text Box: 67&#13;&#10;"
+v:shapes="_x0000_s1051"></span><![endif]></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="5" color="#FFFF00">&nbsp;addafter (2<sup>nd</sup> node)</font><!--[if gte vml 1]><v:line id="_x0000_s1086"
+ style='position:absolute;left:0;text-align:left;top:0;z-index:2' from="387pt,5178pt"
+ to="442.5pt,5178pt" coordsize="21600,21600" strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:515px;top:6898px;width:77px;height:12px'><img width=77
+height=12 src="Assignment009_files/image011.gif" v:shapes="_x0000_s1086"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1087" style='position:absolute;left:0;text-align:left;top:0;
+ flip:y;z-index:3' from="579.75pt,5178.75pt" to="592.5pt,5179.5pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:772px;top:6899px;width:20px;height:12px'><img width=20
+height=12 src="Assignment009_files/image012.gif" v:shapes="_x0000_s1087"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1088" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="525.75pt,5178.75pt" to="578.25pt,5178.75pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke dashstyle="1 1"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:700px;top:6904px;width:72px;height:2px'><img width=72
+height=2 src="Assignment009_files/image013.gif" v:shapes="_x0000_s1088"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1089" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="240.75pt,5174.25pt" to="300.75pt,5174.25pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:320px;top:6893px;width:83px;height:12px'><img width=83
+height=12 src="Assignment009_files/image015.gif" v:shapes="_x0000_s1089"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1090" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="120pt,5170.5pt" to="156pt,5170.5pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:159px;top:6888px;width:51px;height:12px'><img width=51
+height=12 src="Assignment009_files/image014.gif" v:shapes="_x0000_s1090"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1091" type="#_x0000_t202" style='position:absolute;left:38.25pt;
+ top:5160.75pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">78</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:50px;top:6880px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image008.gif" alt="Text Box: 78&#13;&#10;"
+v:shapes="_x0000_s1091"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1092"
+ type="#_x0000_t202" style='position:absolute;left:105.75pt;top:5160.75pt;
+ width:16.5pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:140px;top:6880px;width:28px;height:41px'><img width=28
+height=41 src="Assignment009_files/image007.gif" alt="Text Box: " v:shapes="_x0000_s1092"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1093" type="#_x0000_t202" style='position:absolute;left:510.75pt;
+ top:5166.75pt;width:15pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:680px;top:6888px;width:26px;height:41px'><img width=26
+height=41 src="Assignment009_files/image002.gif" alt="Text Box: " v:shapes="_x0000_s1093"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1094" type="#_x0000_t202" style='position:absolute;left:591.75pt;
+ top:5164.5pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">88</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:788px;top:6885px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image003.gif" alt="Text Box: 88&#13;&#10;"
+v:shapes="_x0000_s1094"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1095"
+ type="#_x0000_t202" style='position:absolute;left:156.75pt;top:5160.75pt;
+ width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">26</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:208px;top:6880px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image016.gif" alt="Text Box: 26&#13;&#10;"
+v:shapes="_x0000_s1095"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1096"
+ type="#_x0000_t202" style='position:absolute;left:225pt;top:5160.75pt;width:16.5pt;
+ height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:299px;top:6880px;width:28px;height:41px'><img width=28
+height=41 src="Assignment009_files/image007.gif" alt="Text Box: " v:shapes="_x0000_s1096"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1097" type="#_x0000_t202" style='position:absolute;left:660pt;
+ top:5164.5pt;width:15pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:879px;top:6885px;width:26px;height:41px'><img width=26
+height=41 src="Assignment009_files/image002.gif" alt="Text Box: " v:shapes="_x0000_s1097"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1098" type="#_x0000_t202" style='position:absolute;left:442.5pt;
+ top:5166.75pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">78</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:589px;top:6888px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image008.gif" alt="Text Box: 78&#13;&#10;"
+v:shapes="_x0000_s1098"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1099"
+ type="#_x0000_t202" style='position:absolute;left:369pt;top:5165.25pt;width:17.25pt;
+ height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:491px;top:6886px;width:29px;height:41px'><img width=29
+height=41 src="Assignment009_files/image009.gif" alt="Text Box: " v:shapes="_x0000_s1099"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1100" type="#_x0000_t202" style='position:absolute;left:300.75pt;
+ top:5165.25pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">67</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:400px;top:6886px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image010.gif" alt="Text Box: 67&#13;&#10;"
+v:shapes="_x0000_s1100"></span><![endif]></p>
+<p><!--[if gte vml 1]><v:line id="_x0000_s1081"
+ style='position:absolute;left:0;text-align:left;top:0;z-index:3' from="240.75pt,5117.25pt"
+ to="252.75pt,5118pt" coordsize="21600,21600" strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:320px;top:6818px;width:19px;height:12px'><img width=19
+height=12 src="Assignment009_files/image017.gif" v:shapes="_x0000_s1081"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1080" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="240.75pt,5061.75pt" to="240.75pt,5117.25pt" coordsize="21600,21600"
+ strokecolor="red"/><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:absolute;z-index:2;left:320px;top:6748px;width:2px;height:76px'><img
+width=2 height=76 src="Assignment009_files/image018.gif" v:shapes="_x0000_s1080"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1062" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="396.75pt,5048.25pt" to="452.25pt,5048.25pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:528px;top:6725px;width:77px;height:12px'><img width=77
+height=12 src="Assignment009_files/image011.gif" v:shapes="_x0000_s1062"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1063" style='position:absolute;left:0;text-align:left;top:0;
+ flip:y;z-index:3' from="589.5pt,5048.25pt" to="602.25pt,5049pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:785px;top:6725px;width:20px;height:12px'><img width=20
+height=12 src="Assignment009_files/image012.gif" v:shapes="_x0000_s1063"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1064" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="537pt,5048.25pt" to="589.5pt,5048.25pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke dashstyle="1 1"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:715px;top:6730px;width:72px;height:2px'><img width=72
+height=2 src="Assignment009_files/image013.gif" v:shapes="_x0000_s1064"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1066" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="129pt,5050.5pt" to="165pt,5050.5pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:171px;top:6728px;width:51px;height:12px'><img width=51
+height=12 src="Assignment009_files/image014.gif" v:shapes="_x0000_s1066"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1067" type="#_x0000_t202" style='position:absolute;left:44.25pt;
+ top:5037pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">78</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:58px;top:6715px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image008.gif" alt="Text Box: 78&#13;&#10;"
+v:shapes="_x0000_s1067"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1068"
+ type="#_x0000_t202" style='position:absolute;left:112.5pt;top:5037pt;width:16.5pt;
+ height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:149px;top:6715px;width:28px;height:41px'><img width=28
+height=41 src="Assignment009_files/image007.gif" alt="Text Box: " v:shapes="_x0000_s1068"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1069" type="#_x0000_t202" style='position:absolute;left:520.5pt;
+ top:5035.5pt;width:15pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:693px;top:6713px;width:26px;height:41px'><img width=26
+height=41 src="Assignment009_files/image002.gif" alt="Text Box: " v:shapes="_x0000_s1069"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1070" type="#_x0000_t202" style='position:absolute;left:602.25pt;
+ top:5035.5pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">88</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:802px;top:6713px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image003.gif" alt="Text Box: 88&#13;&#10;"
+v:shapes="_x0000_s1070"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1071"
+ type="#_x0000_t202" style='position:absolute;left:165.75pt;top:5035.5pt;
+ width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">32</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:220px;top:6713px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image006.gif" alt="Text Box: 32&#13;&#10;"
+v:shapes="_x0000_s1071"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1072"
+ type="#_x0000_t202" style='position:absolute;left:233.25pt;top:5035.5pt;
+ width:16.5pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:310px;top:6713px;width:28px;height:41px'><img width=28
+height=41 src="Assignment009_files/image007.gif" alt="Text Box: " v:shapes="_x0000_s1072"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1073" type="#_x0000_t202" style='position:absolute;left:670.5pt;
+ top:5035.5pt;width:15pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:893px;top:6713px;width:26px;height:41px'><img width=26
+height=41 src="Assignment009_files/image002.gif" alt="Text Box: " v:shapes="_x0000_s1073"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1074" type="#_x0000_t202" style='position:absolute;left:453pt;
+ top:5035.5pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">78</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:603px;top:6713px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image008.gif" alt="Text Box: 78&#13;&#10;"
+v:shapes="_x0000_s1074"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1075"
+ type="#_x0000_t202" style='position:absolute;left:378pt;top:5034.75pt;width:17.25pt;
+ height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:503px;top:6712px;width:29px;height:41px'><img width=29
+height=41 src="Assignment009_files/image009.gif" alt="Text Box: " v:shapes="_x0000_s1075"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1076" type="#_x0000_t202" style='position:absolute;left:310.5pt;
+ top:5034.75pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">67</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:413px;top:6712px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image010.gif" alt="Text Box: 67&#13;&#10;"
+v:shapes="_x0000_s1076"></span><![endif]></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><!--[if gte vml 1]><v:shape id="_x0000_s1077"
+ type="#_x0000_t202" style='position:absolute;left:318.75pt;top:5106.75pt;
+ width:17.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:424px;top:6808px;width:29px;height:41px'><img width=29
+height=41 src="Assignment009_files/image009.gif" alt="Text Box: " v:shapes="_x0000_s1077"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1078" type="#_x0000_t202" style='position:absolute;left:252pt;
+ top:5106.75pt;width:68.25pt;height:26.25pt;z-index:1'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#000000">26</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:335px;top:6808px;width:97px;height:41px'><img width=97
+height=41 src="Assignment009_files/image016.gif" alt="Text Box: 26&#13;&#10;"
+v:shapes="_x0000_s1078"></span><![endif]></p>
+<p><!--[if gte vml 1]><v:line id="_x0000_s1083"
+ style='position:absolute;left:0;text-align:left;top:0;flip:y;z-index:3'
+ from="349.5pt,5061pt" to="349.5pt,5118.75pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:460px;top:6746px;width:12px;height:80px'><img width=12
+height=80 src="Assignment009_files/image019.gif" v:shapes="_x0000_s1083"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1082" style='position:absolute;left:0;text-align:left;top:0;
+ flip:y;z-index:2' from="336pt,5118.75pt" to="349.5pt,5119.5pt" coordsize="21600,21600"
+ strokecolor="red"/><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:absolute;z-index:2;left:447px;top:6824px;width:20px;height:3px'><img
+width=20 height=3 src="Assignment009_files/image020.gif" v:shapes="_x0000_s1082"></span><![endif]></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="5" color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; delete 
+(node where data=32)</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><!--[if gte vml 1]><v:line
+ id="_x0000_s1102" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:1' from="392.25pt,5078.25pt" to="392.25pt,5156.25pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:517px;top:6770px;width:12px;height:107px'><img
+width=12 height=107 src="Assignment009_files/image021.gif" v:shapes="_x0000_s1102"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1101" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:1' from="281.25pt,4953pt" to="281.25pt,5038.5pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:369px;top:6603px;width:12px;height:117px'><img
+width=12 height=117 src="Assignment009_files/image022.gif" v:shapes="_x0000_s1101"></span><![endif]></p>
+<p>&nbsp;</p>
+<p><!--[if gte vml 1]><v:line
+ id="_x0000_s1059" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:1' from="315pt,4854.75pt" to="315pt,4909.5pt" coordsize="21600,21600"
+ strokecolor="red">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:414px;top:6472px;width:12px;height:76px'><img width=12
+height=76 src="Assignment009_files/image023.gif" v:shapes="_x0000_s1059"></span><![endif]></p>
+
+
+
+</body></html>

@@ -1,0 +1,1520 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List
+href="CS%2011001%20Programming%20and%20Data%20Structure%20Assignment%20Number%207_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="CS%2011001%20Programming%20and%20Data%20Structure%20Assignment%20Number%207_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>CS 11001 Programming and Data Structure</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>dayakar</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Dhiman Saha</o:LastAuthor>
+  <o:Revision>32</o:Revision>
+  <o:TotalTime>62</o:TotalTime>
+  <o:Created>2007-03-01T09:49:00Z</o:Created>
+  <o:LastSaved>2007-03-01T13:43:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>597</o:Words>
+  <o:Characters>3403</o:Characters>
+  <o:Company>cse,iitkgp</o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3993</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=dataStoreItem
+href="CS%2011001%20Programming%20and%20Data%20Structure%20Assignment%20Number%207_files/item0006.xml"
+target="CS%2011001%20Programming%20and%20Data%20Structure%20Assignment%20Number%207_files/props0007.xml">
+<link rel=themeData
+href="CS%2011001%20Programming%20and%20Data%20Structure%20Assignment%20Number%207_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="CS%2011001%20Programming%20and%20Data%20Structure%20Assignment%20Number%207_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073741899 0 0 159 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610611985 1073750091 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FFFFCC;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#FFFFCC;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:#DDCC55;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FFFFCC;}
+kbd
+	{mso-style-unhide:no;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{mso-style-unhide:no;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FFFFCC;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#FFFFCC;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:197478254;
+	mso-list-type:hybrid;
+	mso-list-template-ids:620130646 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:127.65pt;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:862597396;
+	mso-list-type:hybrid;
+	mso-list-template-ids:721180616 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1373380642;
+	mso-list-type:hybrid;
+	mso-list-template-ids:495235580 632840144 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	mso-ansi-font-size:18.0pt;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="49154"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=black lang=EN-US link=yellow vlink="#DDCC55" style='tab-interval:
+.5in'>
+
+<div class=Section1>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<h3 align=center style='text-align:center'><span style='font-size:20.0pt;
+mso-fareast-font-family:"Times New Roman"'>Assignment 7:<span
+style='mso-spacerun:yes'>  </span>Functions&nbsp;<span style='mso-tab-count:
+7'>                                              </span>Dated : 5<sup>th </sup>&nbsp;March
+2007<o:p></o:p></span></h3>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><a
+name=Lecture><span style='font-size:18.0pt'>Tutorial&nbsp;7A: Introduction<o:p></o:p></span></a></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-tab-count:2'>                    </span>Write a C program to compute
+the length of a string using functions.<o:p></o:p></span></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'>#include&lt;<span
+class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><b style='mso-bidi-font-weight:
+normal'><span style='font-size:15.0pt;font-family:"Courier New"'>void</span></b></span></span><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'> main()<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span style='mso-spacerun:yes'>    </span><span class=SpellE><span
+class=GramE>int</span></span><span class=GramE><span style='mso-spacerun:yes'> 
+</span>n</span>;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span style='mso-spacerun:yes'>    </span><span class=GramE>char</span>
+string[50];<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span style='mso-spacerun:yes'>    </span><span class=SpellE><span
+class=GramE>printf</span></span><span class=GramE>(</span>&quot;Enter the
+String.:&quot;);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span style='mso-spacerun:yes'>    </span><span class=SpellE><span
+class=GramE>scanf</span></span><span class=GramE>(</span>&quot;%[^\n]<span
+class=SpellE>s&quot;,string</span>);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>         </span>/* call the function */<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span style='mso-spacerun:yes'>    </span>n = <span class=SpellE>string_<span
+class=GramE>length</span></span><span class=GramE>(</span>string);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span style='mso-spacerun:yes'>    </span><span class=SpellE><span
+class=GramE>printf</span></span><span class=GramE>(</span>&quot;Length of
+string = %d\n&quot;, n);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span>}<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'>/* definition of local
+function <span class=SpellE>string_length</span> */<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><b
+style='mso-bidi-font-weight:normal'><span style='font-size:15.0pt;font-family:
+"Courier New"'>int</span></b></span></span></span><span style='mso-bookmark:
+Lecture'><b style='mso-bidi-font-weight:normal'><span style='font-size:15.0pt;
+font-family:"Courier New"'> <span class=SpellE>string_length</span> (char
+string[])<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span>/* local variable in this function<span
+style='mso-spacerun:yes'>   </span>*/<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span class=SpellE><span class=GramE>int</span></span> n;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span class=GramE>for(</span>n=0;string[n]!='\0';n++);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span><span class=GramE>return</span> n;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:2.0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>    </span>}<o:p></o:p></span></b></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Input: This is the
+first tutorial on functions.<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Output: 40<o:p></o:p></span></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Assign. 7A: <o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-tab-count:1'>          </span></span></span><span style='mso-bookmark:
+Lecture'><span style='font-size:16.0pt'>Write a C program using functions to do
+the following on a given string: <o:p></o:p></span></span></p>
+
+<p style='margin-left:2.25in;text-indent:-.25in;mso-list:l1 level1 lfo5;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:16.0pt'><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.0pt'>Display the input
+string in uppercase <o:p></o:p></span></span></p>
+
+<p style='margin-left:2.25in;text-indent:-.25in;mso-list:l1 level1 lfo5;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:16.0pt'><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.0pt'>Compute the length
+of the string(with spaces)<o:p></o:p></span></span></p>
+
+<p style='margin-left:2.25in;text-indent:-.25in;mso-list:l1 level1 lfo5;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:16.0pt'><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.0pt'>Compute the length
+of the string(without spaces)<o:p></o:p></span></span></p>
+
+<p style='margin-left:2.25in;text-indent:-.25in;mso-list:l1 level1 lfo5;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:16.0pt'><span
+style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:16.0pt'>Compute the word
+count of the string<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'><span
+style='mso-tab-count:1'>            </span>Represent each as a different
+function.<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>Note: If the
+expression </span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt;font-family:"Courier New"'>&quot;<span class=GramE>%[</span>^\n]s&quot;
+</span></span><span style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>does
+not work on your terminal then you can use “gets(&lt;string variable&gt;)”.<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:#8DB3E2'>Input<span
+style='mso-tab-count:4'>                                </span>:</span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-spacerun:yes'>  </span>This is the first assignment on functions<o:p></o:p></span></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:#8DB3E2'>Output</span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><o:p></o:p></span></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:#8DB3E2'>Uppercase<span
+style='mso-tab-count:3'>                        </span>:<span
+style='mso-spacerun:yes'>  </span></span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:18.0pt;text-transform:uppercase'>This is the first assignment
+on functions</span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:18.0pt;color:#8DB3E2;text-transform:uppercase'><o:p></o:p></span></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:18.0pt;
+color:#8DB3E2'>Length(</span></span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:18.0pt;color:#8DB3E2'>with spaces)<span style='mso-tab-count:
+1'>        </span>:</span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:18.0pt'><span style='mso-spacerun:yes'>  </span>41<o:p></o:p></span></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:18.0pt;
+color:#8DB3E2'>Length(</span></span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:18.0pt;color:#8DB3E2'>without spaces)<span style='mso-tab-count:
+1'>   </span>:</span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:18.0pt'><span style='mso-spacerun:yes'>  </span>35<span
+style='mso-spacerun:yes'>                </span><o:p></o:p></span></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:#8DB3E2'>Word
+Count<span style='mso-spacerun:yes'>       </span><span style='mso-tab-count:
+2'>              </span>:</span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:18.0pt'> 7<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><o:p>&nbsp;</o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='color:windowtext'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Tutorial 7B:
+Recursion<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-tab-count:2'>                    </span>Write a C program to compute
+the value of a given integer raised to a given positive power using a recursive
+function.<o:p></o:p></span></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'>#include&lt;<span
+class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><b style='mso-bidi-font-weight:
+normal'><span style='font-size:15.0pt;font-family:"Courier New"'>void</span></b></span></span><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'> main()<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=SpellE><span class=GramE>int</span></span> <span
+class=SpellE>a,b,c</span>;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=SpellE><span class=GramE>printf</span></span><span
+class=GramE>(</span>&quot;\n Enter the numbers :&quot;);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=SpellE><span class=GramE>scanf</span></span><span
+class=GramE>(</span>&quot;%d %d&quot; ,&amp;<span class=SpellE>a,&amp;b</span>);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=GramE>if(</span>b&lt;0)<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>          </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>          </span><span class=SpellE><span class=GramE>printf</span></span><span
+class=GramE>(</span>&quot;Sorry only positive powers are allowed.&quot;);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>          </span><span class=GramE>exit(</span>0);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>          </span>}<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span>c=<span class=GramE>power(</span><span class=SpellE>a,b</span>);
+//A Function Call//<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=SpellE><span class=GramE>printf</span></span><span
+class=GramE>(</span>&quot;\n The value of %d raised to the power %d is %<span
+class=SpellE>d&quot;,a,b,c</span>);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span>}<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><b
+style='mso-bidi-font-weight:normal'><span style='font-size:15.0pt;font-family:
+"Courier New"'>int</span></b></span></span></span><span style='mso-bookmark:
+Lecture'><b style='mso-bidi-font-weight:normal'><span style='font-size:15.0pt;
+font-family:"Courier New"'> power(<span class=SpellE>int</span> <span
+class=SpellE>a,int</span> b)<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=SpellE><span class=GramE>int</span></span> result=1;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=GramE>if(</span>b==0)<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>          </span><span class=GramE>return</span> result;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=GramE>else</span><o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>          </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>          </span><span class=GramE>result=</span>a*power(a,--b);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>          </span>}<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:91.6pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>     </span><span class=GramE>return</span> result;<o:p></o:p></span></b></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt'><span style='mso-tab-count:3'>                                     </span>}<o:p></o:p></span></b></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:214.75pt;background:yellow;border-collapse:collapse;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>INPUT<o:p></o:p></span></span></p>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>a=-5,b=-8</span></span><span
+  style='mso-bookmark:Lecture'><span style='color:#8DB3E2'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>OUTPUT<o:p></o:p></span></span></p>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>Invalid</span></span><span
+  style='mso-bookmark:Lecture'><span style='color:#8DB3E2'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>a=2,b=8</span></span><span
+  style='mso-bookmark:Lecture'><span style='color:#8DB3E2'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>256 </span></span><span
+  style='mso-bookmark:Lecture'><span style='color:#8DB3E2'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>a=-3,b=3<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>-27<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'><span
+  style='mso-bookmark:Lecture'></span></td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'><span style='mso-bookmark:Lecture'></span></td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='color:windowtext'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Assignment 7B: <o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-tab-count:2'>                    </span>Write a C program to find
+the factorial of a positive integer using both non-recursive &amp; recursive
+functions.<o:p></o:p></span></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:214.75pt;background:yellow;border-collapse:collapse;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>INPUT<o:p></o:p></span></span></p>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>4</span></span><span style='mso-bookmark:
+  Lecture'><span style='color:#8DB3E2'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>OUTPUT<o:p></o:p></span></span></p>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>24</span></span><span
+  style='mso-bookmark:Lecture'><span style='color:#8DB3E2'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>8</span></span><span style='mso-bookmark:
+  Lecture'><span style='color:#8DB3E2'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>40320</span></span><span
+  style='mso-bookmark:Lecture'><span style='color:#8DB3E2'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>-5<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>Invalid<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>20<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:#8DB3E2'>2432902008176640000<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'><span
+  style='mso-bookmark:Lecture'></span></td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'><span style='mso-bookmark:Lecture'></span></td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Tutorial 7C:
+Pattern Generation<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-tab-count:1'>          </span>Write a C program to generate the
+following pattern.<o:p></o:p></span></span></p>
+
+<p style='margin-left:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>9<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>88<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>777<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>55555<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>444444 <o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>3333333<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>22222222<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>111111111<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>0000000000<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>111111111<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>22222222<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>3333333<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>444444<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>55555<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>6666<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>777<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>88<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:1.0in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'>9<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:5.5in'><span style='mso-bookmark:Lecture'><span
+style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'>#include&lt;<span
+class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><b style='mso-bidi-font-weight:
+normal'><span style='font-size:15.0pt;font-family:"Courier New"'>void</span></b></span></span><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'> main()<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span><span class=SpellE><span class=GramE>int</span></span> <span
+class=SpellE>i</span>;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span><span class=SpellE><span class=GramE>int</span></span> <span
+class=SpellE>pattern_generator</span>(<span class=SpellE>int</span> var1,int
+var2);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span><span class=GramE>for(</span><span class=SpellE>i</span>=9;i&gt;=0;i--)<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span style='mso-spacerun:yes'> </span><span class=SpellE>pattern_<span
+class=GramE>generator</span></span><span class=GramE>(</span><span
+class=SpellE>i,i</span>);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span style='mso-spacerun:yes'> </span><span class=SpellE><span
+class=GramE>printf</span></span><span class=GramE>(</span>&quot;\n&quot;);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span style='mso-spacerun:yes'> </span>}<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span><span class=GramE>for(</span><span class=SpellE>i</span>=1;i&lt;=9;i++)<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span style='mso-spacerun:yes'> </span><span class=SpellE>pattern_<span
+class=GramE>generator</span></span><span class=GramE>(</span><span
+class=SpellE>i,i</span>);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span style='mso-spacerun:yes'> </span><span class=SpellE><span
+class=GramE>printf</span></span><span class=GramE>(</span>&quot;\n&quot;);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span style='mso-spacerun:yes'> </span>}<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span>}<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><b
+style='mso-bidi-font-weight:normal'><span style='font-size:15.0pt;font-family:
+"Courier New"'>int</span></b></span></span></span><span style='mso-bookmark:
+Lecture'><b style='mso-bidi-font-weight:normal'><span style='font-size:15.0pt;
+font-family:"Courier New"'> <span class=SpellE>pattern_generator</span>(<span
+class=SpellE>int</span> var1,int var2)<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span><span class=GramE>if(</span>var1&gt;9)<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span class=GramE>return</span> 0;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span><span style='mso-spacerun:yes'> </span><span class=GramE>else</span><o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span>{<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span class=SpellE>pattern_<span class=GramE>generator</span></span><span
+class=GramE>(</span>var1+1,var2);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span><span class=SpellE><span class=GramE>printf</span></span><span
+class=GramE>(</span>&quot;%d&quot;,var2);<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>        </span>}<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span><span style='mso-spacerun:yes'> </span><span class=GramE>return</span>
+0;<o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:15.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>   </span><span style='mso-spacerun:yes'> </span>}<o:p></o:p></span></b></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><span style='mso-spacerun:yes'>      </span></span><o:p></o:p></b></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b style='mso-bidi-font-weight:normal'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</b></span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Assign 7C: <o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-tab-count:2'>                    </span>Write a C program using recursive
+functions to print the following pattern. The function once called should print
+a single line of the given pattern. (Maintain a macro named SIZE so the pattern
+can be scaled up or down in size).<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>*<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>***<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>*****<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>*******<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>*********<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>*******<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>*****<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>***<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><span style='font-size:16.0pt'>*<o:p></o:p></span></span></p>
+
+<p class=MsoNoSpacing align=center style='text-align:center'><span
+style='mso-bookmark:Lecture'><o:p>&nbsp;</o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:windowtext'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:windowtext'>
+
+<hr size=2 width="100%" noshade style='color:#ACA899' align=center>
+
+</span></span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Assign. 7D: Banking
+System<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Write a C program
+using functions to implement the following banking system.<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:18.0pt'>The program should take input details of at least two
+consumers (like Name, password, account number, initial balance.)</span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt'><o:p></o:p></span></span></p>
+
+<p style='margin-left:1.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt'><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:18.0pt'>Any consumer should be able to make the following transactions:
+Deposit, Withdraw, Balance enquiry, Money transfer, provided the password is
+correct. <span style='mso-spacerun:yes'>    </span>Each of these operations
+should be implemented as a separate function.</span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt'><o:p></o:p></span></span></p>
+
+<p style='margin-left:1.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt'><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:18.0pt'>All sorts of error checking like insufficient balance,
+wrong password, and wrong account number must be notified.</span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt'><o:p></o:p></span></span></p>
+
+<p style='margin-left:1.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt'><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:18.0pt'>The whole setup can be presented to the user in the
+form of a menu. The user should able to choose from the set of options what he
+needs to do.</span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:14.0pt'><o:p></o:p></span></span></p>
+
+<p style='margin-left:1.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><![if !supportLists]><span style='font-size:18.0pt;
+mso-bidi-font-size:14.0pt'><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:18.0pt'>The program should loop unless user wants to exit.</span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt'><o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<span style='mso-bookmark:Lecture'></span>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:18.0pt'>Hint: the functions can be of the form:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:18.0pt'><span style='mso-tab-count:2'>                    </span><span
+class=SpellE>new_<span class=GramE>account</span></span><span class=GramE>(</span>);<span
+style='mso-tab-count:1'>     </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:18.0pt'><span style='mso-tab-count:2'>                    </span><span
+class=SpellE>balance_<span class=GramE>enquiry</span></span><span class=GramE>(</span>argument
+<span class=SpellE>account_number</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:18.0pt'><span style='mso-tab-count:2'>                    </span><span
+class=GramE>deposit(</span>argument <span class=SpellE>account_number</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:18.0pt'><span style='mso-tab-count:2'>                    </span><span
+class=GramE>withdraw(</span>argument <span class=SpellE>account_number</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:18.0pt'><span style='mso-tab-count:2'>                    </span><span
+class=SpellE>money_<span class=GramE>transfer</span></span><span class=GramE>(</span>argument
+<span class=SpellE>source_account_number</span> destination <span class=SpellE>account_number</span>);<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0072)http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Spring2007/pds/main.html -->
+<HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"><HEAD><TITLE>CS 60078 Complex Networks Course</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<link rel="File-List" href="Assignment003_files/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</HEAD>
+<BODY text=#ffffcc vLink=#ddcc55 aLink=#ff9999 link=#ffff00 bgColor=#000000>
+<CENTER><BR><BR>
+<H1><FONT size=+2>CS 11001 Programming and Data Structure</FONT></H1>
+<H3>(Spring Semester 2007)</H3><B>Lab</B><BR><B>Niloy Ganguly (NG)</B> <A 
+href="mailto:niloy@cse.iitkgp.ernet.in">niloy@cse.iitkgp.ernet.in</A><BR><BR><B>Teaching 
+Assistant</B>
+<P><B>Arijit Sur, Dhiman Saha, Tanmoy Dey, Tirthankar Dasgupta, Chaitnya K. K., 
+Piseke Dayakar, Gaurav Garg </B></P></CENTER>
+<HR>
+
+<H3><font size="5">Tutorial 3 : <span style="font-weight: 400">Iterative Looping </span>(<span style="font-weight: 400">WHILE 
+and FOR Loop</span>)&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;</H3>
+<HR>
+<A name=Essentials>
+<p><font size="5">Fundamental of WHILE and FOR loop:</font></p>
+</A>
+<p><font size="5">Control Flow in the WHILE Loop:</font></p>
+<p>&nbsp;</p>
+<p><font size="5">step1:&nbsp;&nbsp;&nbsp; initialization of loop counter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+i=1;&nbsp;&nbsp;&nbsp;&nbsp; //<i>Outside of Loop</i></font></p>
+<p><font size="5">step2:&nbsp;&nbsp;&nbsp; condition for entering loop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+while (<i>condition</i>)</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //<i>body of the 
+loop</i></font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+................&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></p>
+<p><font size="5">&nbsp;step3:&nbsp;&nbsp;&nbsp; body of the loop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+....................</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+i = i + 1; (step 4)</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+}&nbsp;&nbsp; //<i>End of WHILE loop</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></p>
+<p><!--[if gte vml 1]><v:line id="_x0000_s1033"
+ style='position:absolute;left:0;text-align:left;top:0;flip:x;z-index:3'
+ from="262.5pt,604.5pt" to="299.25pt,604.5pt" strokecolor="yellow"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout;position:absolute;z-index:3;left:349px;top:805px;
+width:51px;height:2px'><img width=51 height=2
+src="Assignment003_files/image001.gif" v:shapes="_x0000_s1033"></span><![endif]><font size="5">step4:&nbsp;&nbsp;&nbsp; 
+increment (decrement) loop counter (generally in the body of the loop)</font></p>
+<p><!--[if gte vml 1]><v:line
+ id="_x0000_s1032" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:2' from="261.75pt,465.75pt" to="263.25pt,604.5pt" strokecolor="yellow"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout;position:absolute;z-index:2;left:348px;top:620px;
+width:4px;height:187px'><img width=4 height=187
+src="Assignment003_files/image002.gif" v:shapes="_x0000_s1032"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1031" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:1' from="261.75pt,465pt" to="305.25pt,465.75pt" strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:348px;top:615px;width:61px;height:12px'><img width=61
+height=12 src="Assignment003_files/image003.gif" v:shapes="_x0000_s1031"></span><![endif]><font size="5">Illustrative 
+Example: </font></p>
+<p><font size="5"><u>Print first n consecutive integer numbers using WHILE loop.</u></font></p>
+<p>&nbsp;</p>
+<p><font size="5">#include &lt;stdio.h&gt;<br>
+<br>
+void main()<br>
+{<br>
+&nbsp;&nbsp; int n,i;<br>
+&nbsp;&nbsp; printf(&quot;Enter value of n :\n&quot;);<br>
+&nbsp;&nbsp; scanf(&quot;%d&quot;,&amp;n);<br>
+<br>
+&nbsp;&nbsp; i=1; //Initialization while loop counter<br>
+&nbsp;&nbsp; while (i&lt;n) //condition to enter the loop<br>
+&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\n%d\n&quot;,i);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i=i+1; // Increment of loop counter<br>
+&nbsp;&nbsp; }<br>
+}</font></p>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<P><font size="5">Control Flow in the FOR Loop:</font></P>
+</A>
+
+<P><font size="5">for (initialization; condition; increment/decrement)</font></P>
+
+<P><font size="5">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></P>
+
+<P><!--[if gte vml 1]><v:line
+ id="_x0000_s1044" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:3' from="531pt,1229.25pt" to="531.75pt,1269.75pt" strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:703px;top:1638px;width:12px;height:57px'><img width=12
+height=57 src="Assignment003_files/image004.gif" v:shapes="_x0000_s1044"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1043" style='position:absolute;left:0;text-align:left;top:0;
+ z-index:3' from="376.5pt,1215pt" to="419.25pt,1215pt" strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:501px;top:1614px;width:60px;height:12px'><img width=60
+height=12 src="Assignment003_files/image005.gif" v:shapes="_x0000_s1043"></span><![endif]><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1039" type="#_x0000_t202" style='position:absolute;
+ left:290.25pt;top:1198.5pt;width:86.25pt;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font color="#FF0000" size="4">Initialization</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:386px;top:1597px;width:121px;height:46px'><img
+width=121 height=46 src="Assignment003_files/image006.gif"
+alt="Text Box: Initialization&#13;&#10;" v:shapes="_x0000_s1039"></span><![endif]><font size="5">&nbsp;&nbsp;&nbsp;&nbsp; 
+.................................&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></P>
+
+<P><!--[if gte vml 1]><v:line
+ id="_x0000_s1045" style='position:absolute;left:0;text-align:left;top:0;
+ flip:x;z-index:3' from="455.25pt,1283.25pt" to="493.5pt,1283.25pt"
+ strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:605px;top:1705px;width:54px;height:12px'><img width=54
+height=12 src="Assignment003_files/image007.gif" v:shapes="_x0000_s1045"></span><![endif]><font size="5">&nbsp;&nbsp;&nbsp; 
+// Body of the loop</font><!--[if gte vml 1]><v:shape
+ id="_x0000_s1040" type="#_x0000_t202" style='position:absolute;left:417.75pt;
+ top:1199.25pt;width:145.5pt;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font size="4" color="#FF0000">Condition checking</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:556px;top:1598px;width:200px;height:46px'><img
+width=200 height=46 src="Assignment003_files/image008.gif"
+alt="Text Box: Condition checking&#13;&#10;" v:shapes="_x0000_s1040"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1041" type="#_x0000_t202" style='position:absolute;left:492.75pt;
+ top:1269pt;width:111pt;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+    <td align="center"><font size="4" color="#FF0000">Body of the loop</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:656px;top:1691px;width:154px;height:46px'><img
+width=154 height=46 src="Assignment003_files/image009.gif"
+alt="Text Box: Body of the loop&#13;&#10;" v:shapes="_x0000_s1041"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1042" type="#_x0000_t202" style='position:absolute;left:384.75pt;
+ top:1270.5pt;width:1in;height:30pt;z-index:2'>
+ <v:textbox>
+<table cellspacing="0" cellpadding="0" width="141" height="100%">
+  <tr>
+    <td align="center" width="141">
+    <p align="left"><font size="4" color="#FF0000">Increment</font></td>
+  </tr>
+</table>
+ </v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;left:512px;top:1693px;width:102px;height:46px'><img
+width=102 height=46 src="Assignment003_files/image010.gif"
+alt="Text Box: Increment&#13;&#10;" v:shapes="_x0000_s1042"></span><![endif]></P>
+
+<P><font size="5">&nbsp;&nbsp;&nbsp; ....................................</font></P>
+
+<P><!--[if gte vml 1]><v:line
+ id="_x0000_s1046" style='position:absolute;left:0;text-align:left;top:0;
+ flip:y;z-index:3' from="438.75pt,1228.5pt" to="438.75pt,1271.25pt"
+ strokecolor="yellow">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:579px;top:1636px;width:12px;height:60px'><img width=12
+height=60 src="Assignment003_files/image011.gif" v:shapes="_x0000_s1046"></span><![endif]><font size="5">}</font></P>
+
+<P><font size="5">Illustrative Example:&nbsp;&nbsp;
+</font></P>
+
+<P><font size="5"><u>Print first n consecutive integer numbers using FOR loop</u></font></P>
+
+<P><font size="5">#include &lt;stdio.h&gt;<br>
+<br>
+void main()<br>
+{<br>
+&nbsp;&nbsp;&nbsp; int n, i;<br>
+&nbsp;&nbsp;&nbsp; printf(&quot;Enter value of n :\n&quot;);<br>
+&nbsp;&nbsp;&nbsp; scanf(&quot;%d&quot;,&amp;n);<br>
+<br>
+&nbsp;&nbsp;&nbsp; for (i=1;i&lt;=n;i++)<br>
+&nbsp;&nbsp; { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\n%d\n&quot;,i);<br>
+&nbsp;&nbsp; }<br>
+}</font></P>
+
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+<P><font size="5">Tutorial Example:</font></P>
+</A><FONT size=5>
+<A name=Assign1>
+<P>1.&nbsp;&nbsp;&nbsp; Convert a given binary number into equivalent decimal 
+number and vice versa.</P>
+<P>// Use &quot;cc -lm &lt;programname.c&gt;&quot; for compilation </P>
+</A>
+<P>// This part is for converting binary to decimal.<A name=Assign1><br>
+<br>
+#include &lt;stdio.h&gt;<br>
+#include &lt;math.h&gt;<br>
+<br>
+void main()<br>
+{<br>
+&nbsp;&nbsp; long int bin_num;<br>
+&nbsp;&nbsp; int sum,pos;<br>
+&nbsp;&nbsp; printf(&quot;Enter a binary number (maximum 8 digits) :&quot;);<br>
+&nbsp;&nbsp; scanf(&quot;%ld&quot;,&amp;bin_num);<br>
+<br>
+&nbsp;&nbsp; sum=0;<br>
+&nbsp;&nbsp; pos=0;<br>
+&nbsp;&nbsp; while ((bin_num/10) &gt; 0)<br>
+&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp; sum=sum+(bin_num%10)*pow(2,pos);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; pos=pos+1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; bin_num=bin_num/10;<br>
+&nbsp; }<br>
+&nbsp; sum=sum+bin_num*pow(2,pos);<br>
+&nbsp; printf(&quot;The Decimal equivalent is = %d\n&quot;,sum);<br>
+}</A></P>
+<P>// This part is for converting decimal to binary.<A name=Assign1><br>
+<br>
+#include &lt;stdio.h&gt;<br>
+#include &lt;math.h&gt;<br>
+<br>
+void main()<br>
+{</A></P>
+<P>&nbsp;&nbsp; int dec_num;<br>
+&nbsp;&nbsp; int pos;<br>
+&nbsp;&nbsp; long int sum;<br>
+&nbsp;&nbsp; printf(&quot;Enter a Decimal number (maximum 512) :&quot;);<br>
+&nbsp;&nbsp; scanf(&quot;%d&quot;,&amp;dec_num);<br>
+<br>
+&nbsp;&nbsp; sum=0;<br>
+&nbsp;&nbsp; pos=0;<br>
+&nbsp;&nbsp; while ((dec_num/2) &gt; 0)<br>
+&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum=sum+(dec_num%2)*(long int)pow(10,pos);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pos=pos+1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; dec_num=dec_num/2;<br>
+&nbsp; }<br>
+&nbsp; sum=sum+dec_num*(long int)pow(10,pos);<br>
+&nbsp; printf(&quot;The Binary equivalent is = %d\n&quot;,sum);<br>
+}</P>
+<P>2.&nbsp;&nbsp;&nbsp; Print all the triod numbers between 100 and 1000.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition: Triod Number: A number is a 
+triod number if sum of cubic of their digits are&nbsp; </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+equal to the number.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+For example: 153 is a triod number if&nbsp; 1<sup>3 </sup>+ 5<sup>3 </sup>+ 3<sup>3
+</sup>= 153. </P>
+<P>
+<A name=Assign1>
+#include &lt;stdio.h&gt;<br>
+#include &lt;math.h&gt;<br>
+<br>
+void main()<br>
+{</A></P>
+<P>&nbsp;&nbsp; int sum,i,num;<br>
+<br>
+&nbsp;&nbsp; for (i=100;i&lt;1000;i++)<br>
+&nbsp; {<br>
+&nbsp;&nbsp;&nbsp; sum=0;<br>
+&nbsp;&nbsp;&nbsp; num=i;<br>
+&nbsp;&nbsp; while ((num/10) &gt; 0)<br>
+&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum=sum+(int)pow((num%10),3);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; num=num/10; <br>
+&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; sum=sum+(int)pow(num,3);<br>
+&nbsp;&nbsp; if (sum==i)<br>
+&nbsp;&nbsp; printf(&quot;\n%d\n&quot;,i);<br>
+}</P>
+<P>Sample Output: </P>
+<P>153</P>
+<P>370</P>
+<P>371</P>
+<P>407</P>
+</FONT>
+<FONT size=4>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A></FONT>
+<FONT size=5>
+<P>Assignment 3:</P>
+<FONT size=4>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A></FONT>
+<P>a) Input a number (IP_num) and its base(IP_base). Input another base (OP_base) 
+value. Convert the number to the second base. </P>
+<P>For example: Input IP_num=184, IP_base=10, OP_base=8 </P>
+<P>Oput put will be = 270 (in base 8).</P>
+<P>Hint: First converts the number (IP_num) from (IP_base) to the decimal (10) 
+then convert into OP_base.</P>
+<P><u>Test Run:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I/P (s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+O/P (s)</u></P>
+<P>i) IP_num=184, IP_base=10, Op_base=8&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+270&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </P>
+<P>ii)IP_num=1000, IP_base=2, Op_base=8&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+20</P>
+<P>iii)IP_num=126, IP_base=6, Op_base=3&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp; 
+2000</P>
+<P>iv)IP_num=12121, IP_base=3, Op_base=7&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp; 304</P>
+<FONT size=4>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A></FONT>
+<P>b) i)&nbsp;&nbsp;&nbsp; Print the sum of digits of a given positive decimal 
+number (ip_NUM). </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For example: 
+ip_NUM=5348, O/P would be (5+3+4+8) = 20. </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp; <b>Test Run:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I/P (s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+O/P (s)</b></P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+3456&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+18</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+27</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iv)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</P>
+<FONT size=4>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A></FONT>
+<P>&nbsp; ii)&nbsp;&nbsp; Print the sunny number of a given positive decimal 
+number (ip_NUM). </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition: Sunny Number : 
+Sunny number is a single digit number which can be</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; obtained by repetitive 
+summation of digits of a decimal number.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For example, for 5348, sum 
+of digit=&nbsp; (5+3+4+8) = 20,&nbsp;&nbsp; sunny (5348)=2+0=2</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; again,&nbsp; for 3989, 
+9+9+8+3=29;&nbsp;&nbsp; 2+9=11;&nbsp;&nbsp;&nbsp; 1+1=2,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+sunny(3989) = 2</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sunny(5)=5, sunny(53)=8 etc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </P>
+<P><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Test Run:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I/P (s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+O/P (s)</b></P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2456&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+8</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+9</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+iii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iv)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</P>
+<FONT size=4>
+<A 
+name=Lecture>
+<HR noShade SIZE=2>
+
+</A></FONT>
+</FONT>
+
+</BODY></HTML>

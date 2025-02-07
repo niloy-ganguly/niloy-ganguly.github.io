@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="tutorial_files/filelist.xml">
+<title>CS 60078 Complex Networks Course</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Prof. Niloy Ganguly</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Prof. Niloy Ganguly</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2007-01-11T14:39:00Z</o:Created>
+  <o:LastSaved>2007-01-11T14:39:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>537</o:Words>
+  <o:Characters>3062</o:Characters>
+  <o:Company>Computer Science &amp; Engineering</o:Company>
+  <o:Lines>25</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3592</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-alt:\BC14\D0D5;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	color:#FFFFCC;}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	color:#FFFFCC;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:#FFFFCC;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#FFFFCC;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#DDCC55;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	color:#FFFFCC;}
+pre
+	{margin-top:0in;
+	margin-bottom:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Batang;
+	color:#FFFFCC;}
+tt
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:Batang;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:7828073;
+	mso-list-template-ids:-329744238;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:374474026;
+	mso-list-template-ids:-1411223626;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1181506972;
+	mso-list-template-ids:-102628892;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1596864056;
+	mso-list-template-ids:1695812798;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=black lang=EN-US link=yellow vlink="#DDCC55" style='tab-interval:
+.5in' alink="#ff9999">
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center;mso-pagination:none'><span lang=EN
+style='font-size:14.0pt;mso-ansi-language:EN'>Tutorial &#8211; 2 </span><span
+lang=EN style='font-size:14.0pt;mso-ansi-language:EN;font-weight:normal;
+mso-bidi-font-weight:bold'>(15.01.2007)</span><span lang=EN style='font-size:
+14.0pt;mso-ansi-language:EN'><o:p></o:p></span></h2>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:12.0pt;
+mso-ansi-language:EN'>Program 1.&nbsp;&nbsp;&nbsp; Write a C program that
+accepts three numbers and prints the largest one</span><span lang=EN
+style='font-size:14.0pt;mso-ansi-language:EN'>.<o:p></o:p></span></h2>
+
+<p class=MsoNormal style='mso-pagination:none'><b style='mso-bidi-font-weight:
+normal'><span lang=EN style='mso-ansi-language:EN'>Open emacs editor :<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>$ emacs program1.c &amp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><b style='mso-bidi-font-weight:
+normal'><span lang=EN style='mso-ansi-language:EN'>Type program1.c :<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>/*************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>* <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span><span style='mso-tab-count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Section
+: 2 <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>* M/c No. : 11, <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Roll
+No. : 06AE3011, <span style='mso-spacerun:yes'>&nbsp;&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>* <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Name
+: G S VIMAL,&nbsp; <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>* <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Assignment
+No. : 01, <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>*<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>&nbsp;&nbsp;&nbsp;<span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description : Program
+to print
+largest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+from three real number<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>*
+<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>***************************************************/ &nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal>#include&lt;stdio.h&gt;</p>
+
+<p class=MsoNormal><span class=GramE>int</span> main()</p>
+
+<p class=MsoNormal>{</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>float</span> a,b,c;</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>printf(</span>&quot;\nEnter three real number's :\n&quot;);</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>scanf(</span>&quot;%f%f%f&quot;,&amp;a,&amp;b,&amp;c);</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp; </span></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>if(</span>a&gt;=b)</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>if(</span>a&gt;=c)<span style='mso-spacerun:yes'>&nbsp;
+</span>printf(&quot;\n%f is largest\n&quot;,a);</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>else<span style='mso-spacerun:yes'>&nbsp; </span>printf</span>(&quot;\n%f
+is largest\n&quot;,c);</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>else<span style='mso-spacerun:yes'>&nbsp; </span>if</span>(b&gt;=c)<span
+style='mso-spacerun:yes'>&nbsp; </span>printf(&quot;%f is largest\n&quot;,b);</p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>else</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;
+</span>printf(&quot;%f is largest\n&quot;,c);</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>return</span> 0;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Compile <span
+class=GramE>program1.c<span style='mso-spacerun:yes'>&nbsp; </span>:</span><o:p></o:p></b></p>
+
+<p class=MsoNormal>$ cc program1.c</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Run <span
+class=GramE>program1.c<span style='mso-spacerun:yes'>&nbsp; </span>:</span><o:p></o:p></b></p>
+
+<p class=MsoNormal><span class=GramE>$ ./</span>a.out<o:p></o:p></p>
+
+<p class=MsoNormal>Enter three real <span class=GramE>number's :</span></p>
+
+<p class=MsoNormal>1.3</p>
+
+<p class=MsoNormal>55.67</p>
+
+<p class=MsoNormal>55.33</p>
+
+<p class=MsoNormal>55.669998 is largest</p>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:14.0pt;
+mso-ansi-language:EN'>Program 2.&nbsp;&nbsp; </span><span lang=EN
+style='font-size:14.0pt;mso-ansi-language:EN;font-weight:normal'>Write<span
+style='mso-spacerun:yes'>&nbsp; </span>a C program to evaluate the following
+functions<o:p></o:p></span></h2>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:14.0pt;
+mso-ansi-language:EN;font-weight:normal'><o:p>&nbsp;</o:p></span></h2>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:14.0pt;
+mso-ansi-language:EN;font-weight:normal'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>x<sup>2</sup> + 9<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>if
+x &lt; 0<o:p></o:p></span></h2>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:14.0pt;
+mso-ansi-language:EN;font-weight:normal'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp; </span>f(x) =<span
+style='mso-spacerun:yes'>&nbsp; </span>x<sup>4</sup> + 3x<sup>2</sup> + 7<span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>if 0 </span><span
+lang=EN style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-ansi-language:EN;mso-char-type:
+symbol;mso-symbol-font-family:Symbol;font-weight:normal'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&pound;</span></span><span
+lang=EN style='font-size:14.0pt;mso-ansi-language:EN;font-weight:normal'> x </span><span
+lang=EN style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-ansi-language:EN;mso-char-type:
+symbol;mso-symbol-font-family:Symbol;font-weight:normal'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&lt;</span></span><span
+lang=EN style='font-size:14.0pt;mso-ansi-language:EN;font-weight:normal'> 20<o:p></o:p></span></h2>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:14.0pt;
+mso-ansi-language:EN;font-weight:normal'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>12x + 7<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>otherwise<o:p></o:p></span></h2>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:14.0pt;
+mso-ansi-language:EN;font-weight:normal'><o:p>&nbsp;</o:p></span></h2>
+
+<p class=MsoNormal style='mso-pagination:none'><b style='mso-bidi-font-weight:
+normal'><span lang=EN style='mso-ansi-language:EN'>Open emacs editor :<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>$ emacs program2.c &amp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><b style='mso-bidi-font-weight:
+normal'><span lang=EN style='mso-ansi-language:EN'>Type program2.c :<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>/*************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>* <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span><span style='mso-tab-count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Section
+: 2 <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>* M/c No. : 11, <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Roll
+No. : 06AE3011, <span style='mso-spacerun:yes'>&nbsp;&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>* <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Name
+: G S VIMAL,&nbsp; <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>* <span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Assignment
+No. : 02, <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>*<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>&nbsp;&nbsp;&nbsp;<span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description : Program
+to compute the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style='mso-spacerun:yes'>&nbsp;</span>value of a given function<span
+style='mso-spacerun:yes'>&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>*
+<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>***************************************************/ &nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>#include&lt;stdio.h&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>int main()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp; </span>float x, fx, temp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp; </span>printf(&quot;\nEnter the value
+of x : &quot;);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp; </span>scanf(&quot;%f&quot;,&amp;x);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp; </span>if(x&lt;0.0)<span
+style='mso-spacerun:yes'>&nbsp; </span>fx = x * x + 9.0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp; </span>else<span
+style='mso-spacerun:yes'>&nbsp; </span>if(x&lt;20.0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>temp = x * x;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>fx = temp * (temp + 3.0)+ 7.0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>else<span style='mso-spacerun:yes'>&nbsp; </span>fx = 12.0 * x + 7.0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp; </span>printf(&quot;\n f(%f) =
+%f\n&quot;,x,fx);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><span style='mso-spacerun:yes'>&nbsp; </span>return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none'><span lang=EN style='mso-ansi-language:
+EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Compile <span
+class=GramE>program2.c<span style='mso-spacerun:yes'>&nbsp; </span>:</span><o:p></o:p></b></p>
+
+<p class=MsoNormal>$ cc program1.c</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Run <span
+class=GramE>program2.c<span style='mso-spacerun:yes'>&nbsp; </span>:</span><o:p></o:p></b></p>
+
+<p class=MsoNormal><span class=GramE>$ ./</span>a.out<o:p></o:p></p>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:12.0pt;
+mso-ansi-language:EN;font-weight:normal;mso-bidi-font-weight:bold'>Enter the
+value of x : -1.0<o:p></o:p></span></h2>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:12.0pt;
+mso-ansi-language:EN;font-weight:normal;mso-bidi-font-weight:bold'><span
+style='mso-spacerun:yes'>&nbsp;</span>f(-1.000000) = 10.000000<o:p></o:p></span></h2>
+
+<p class=MsoNormal><span class=GramE>$ ./</span>a.out<o:p></o:p></p>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:12.0pt;
+mso-ansi-language:EN;font-weight:normal;mso-bidi-font-weight:bold'>Enter the
+value of x : 0.0<o:p></o:p></span></h2>
+
+<h2 style='mso-pagination:none'><span lang=EN style='font-size:12.0pt;
+mso-ansi-language:EN;font-weight:normal;mso-bidi-font-weight:bold'><span
+style='mso-spacerun:yes'>&nbsp;</span>f(0.000000) = 7.000000<o:p></o:p></span></h2>
+
+<p class=MsoNormal><span class=GramE>$ ./</span>a.out<o:p></o:p></p>
+
+<p class=MsoNormal>Enter the value of <span class=GramE>x :</span> 20.0</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp;</span><span
+class=GramE>f(</span>20.000000) = 247.000000</p>
+
+<p class=MsoNormal><span class=GramE>$ ./</span>a.out<o:p></o:p></p>
+
+<p class=MsoNormal>Enter the value of <span class=GramE>x :</span> -0.99</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp;</span><span
+class=GramE>f(</span>-0.990000) = 9.980100</p>
+
+<p class=MsoNormal><span class=GramE>$ ./</span>a.out</p>
+
+<p class=MsoNormal>Enter the value of <span class=GramE>x :</span> 0.99</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp;</span><span
+class=GramE>f(</span>0.990000) = 10.900896</p>
+
+<p class=MsoNormal><span class=GramE>$ ./</span>a.out</p>
+
+<p class=MsoNormal>Enter the value of <span class=GramE>x :</span> 19.99</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp;</span><span
+class=GramE>f(</span>19.990000) = 160886.031250</p>
+
+<p class=MsoNormal><span class=GramE>$ ./</span>a.out<o:p></o:p></p>
+
+<p class=MsoNormal>Enter the value of <span class=GramE>x :</span> 20.001</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>&nbsp;</span><span
+class=GramE>f(</span>20.000999) = 247.011993</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='margin-bottom:14.0pt;text-align:center;
+mso-pagination:none'><b><span lang=EN style='font-size:14.0pt;mso-ansi-language:
+EN'>LAB ASSIGNMENT (15.01.2007)</span></b><span lang=EN style='mso-ansi-language:
+EN'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;mso-pagination:none'><b><i><span
+lang=EN style='mso-ansi-language:EN'>Assignment 1.</span></i></b><span lang=EN
+style='mso-ansi-language:EN'><span style='mso-spacerun:yes'>&nbsp;&nbsp;
+</span><b>Write a C program that accept distance (in cm.) as integer and print
+it in kilometer, meter and centimeter.</b><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;mso-pagination:none'><span
+lang=EN style='mso-ansi-language:EN'>Example :<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;mso-pagination:none'><span
+lang=EN style='mso-ansi-language:EN'><span
+style='mso-spacerun:yes'>&nbsp;</span>Input :<span
+style='mso-spacerun:yes'>&nbsp;&nbsp; </span>distance = 254780<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;mso-pagination:none'><span
+lang=EN style='mso-ansi-language:EN'>Output : 2 kilometer, 547 meter and 80
+centimeter.<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;mso-pagination:none'><b><i><span
+lang=EN style='mso-ansi-language:EN'>Assignment 2.</span></i></b><span lang=EN
+style='mso-ansi-language:EN'><span style='mso-spacerun:yes'>&nbsp;&nbsp;
+</span>a)<span style='mso-spacerun:yes'>&nbsp; </span><b>Write a C program to
+evaluate the income tax of a person.</b><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;text-indent:.5in;mso-pagination:
+none'><span lang=EN style='mso-ansi-language:EN'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b><i>Input</i></b>:<span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Income of a person
+(type unsigned int).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;text-indent:.5in;mso-pagination:
+none'><span lang=EN style='mso-ansi-language:EN'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b><i>Output</i></b>:<span style='mso-spacerun:yes'>&nbsp; </span>Income
+Tax to be paid (also of type unsigned int).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;text-indent:.5in;mso-pagination:
+none'><span lang=EN style='mso-ansi-language:EN'>Let I be the income and T be
+the tax on total income.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;text-indent:.5in;mso-pagination:
+none'><span lang=EN style='mso-ansi-language:EN'>1.<span
+style='mso-spacerun:yes'>&nbsp; </span>If I &lt;= Rs. 1,00, 000, T is zero.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;text-indent:.5in;mso-pagination:
+none'><span lang=EN style='mso-ansi-language:EN'>2.<span
+style='mso-spacerun:yes'>&nbsp; </span>If Rs. 1, 00, 001 &lt;=<span
+style='mso-spacerun:yes'>&nbsp; </span>I<span style='mso-spacerun:yes'>&nbsp;
+</span>&lt;= Rs. 1,50,000, T is 10% of (I &#8211; 1,00, 000).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;text-indent:.5in;mso-pagination:
+none'><span lang=EN style='mso-ansi-language:EN'>3.<span
+style='mso-spacerun:yes'>&nbsp; </span>If Rs. 1, 50, 001<span
+style='mso-spacerun:yes'>&nbsp; </span>&lt;= I &lt;= Rs. 2, 50, 000, T is 20%
+of (I &#8211; 1, 50, 000) plus Rs. 5000.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;text-indent:.5in;mso-pagination:
+none'><span lang=EN style='mso-ansi-language:EN'>4.<span
+style='mso-spacerun:yes'>&nbsp; </span>If Rs. 2, 50, 001 &lt;= I, T is 30% of
+(I &#8211; 2, 50, 000) plus Rs. 25000.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.0pt;
+margin-left:.25in;text-indent:.5in;mso-pagination:none'><span lang=EN
+style='mso-ansi-language:EN'>b)<span style='mso-spacerun:yes'>&nbsp;&nbsp;
+</span><b>Add in the above programme 2% of the tax on total income (T), as
+education cess to get<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>the
+final income tax.</b>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.0pt;
+margin-left:.25in;text-indent:.5in;mso-pagination:none'><span lang=EN
+style='mso-ansi-language:EN'>Report output for the following four data
+(income).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.0pt;
+margin-left:1.0in;text-indent:.5in;mso-pagination:none'><span lang=EN
+style='mso-ansi-language:EN'>Income (Rs.)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.0pt;
+margin-left:1.0in;text-indent:.5in;mso-pagination:none'><span lang=EN
+style='mso-ansi-language:EN'>75,000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.0pt;
+margin-left:1.0in;text-indent:.5in;mso-pagination:none'><span lang=EN
+style='mso-ansi-language:EN'>1,30,000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.0pt;
+margin-left:1.0in;text-indent:.5in;mso-pagination:none'><span lang=EN
+style='mso-ansi-language:EN'>2,20,000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.0pt;
+margin-left:1.0in;text-indent:.5in;mso-pagination:none'><span lang=EN
+style='mso-ansi-language:EN'>3,40,000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.0pt;mso-pagination:none'><span
+lang=EN style='mso-ansi-language:EN'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

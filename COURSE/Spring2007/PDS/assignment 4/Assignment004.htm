@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"><head><!-- saved from url=(0072)http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Spring2007/pds/main.html --><title>CS 11001 Programming and Data Structure</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Microsoft FrontPage 5.0" name="GENERATOR">
+</head><body alink="#ff9999" bgcolor="#000000" link="#ffff00" text="#ffffcc" vlink="#ddcc55">
+<center><br>
+</center>
+<hr>
+
+<h3><font size="5">Assignment 4 : Loop Control Structure Continued...&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Date : 29<sup>th </sup>&nbsp;Jan, 07</h3>
+<hr>
+
+<a name="Lecture">
+
+<p><font size="5">Tutorial&nbsp; 4A:</font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in">
+<font size="5">Write a C program to check whether 3 given line&nbsp; intersect each 
+other at the same point.</font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in">
+</a>
+<font size="5">Solution:</font></p>
+
+<a name="Lecture">
+
+<font size="4">
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <p>int main(){</p>
+        <p>int x0,y0,x1,y1; //Variables used to store Coordinates of line 1</p>
+        <p>int p0,q0,p1,q1; //Variable used to store Coordinates of line 2</p>
+        <p>int u0,v0,u1,v1; //Variable used to store Coordinates of line 3</p>
+        <p>int xi,yi; //Stores the point of intersection between line 1 and 2</p>
+        </font><font SIZE="2">
+        <p></p>
+        </font><font size="4">
+        <p>int m1,m2,m3;// stores slope of line 1 2 and 3</p>
+        <p>int m4; // stores slope of the new line </p>
+        </font><font SIZE="2">
+        <p>&nbsp;</p>
+        <font size="4">
+        <p>int c1,c2; // y=m*x+c</p>
+        <p>printf(&quot;enter x,y coordinate for line 1\n&quot;);</p>
+        <p>scanf(&quot;%d%d%d%d&quot;,&amp;x0,&amp;y0,&amp;x1,&amp;y1);</p>
+        </font>
+        <p></p>
+        <font size="4">
+        <p>printf(&quot;enter x,y coordinate for line&nbsp; 2\n&quot;);</p>
+        <p>scanf(&quot;%d%d%d%d&quot;,&amp;p0,&amp;q0,&amp;p1,&amp;q1);</p>
+        </font>
+        <p></p>
+        <font size="4">
+        <p>printf(&quot;enter x,y coordinate for line&nbsp; 3\n&quot;);</p>
+        <p>scanf(&quot;%d%d%d%d&quot;,&amp;u0,&amp;v0,&amp;u1,&amp;v1);</p>
+        </font>
+        <p></p>
+        <font size="4">
+        <p>// calculate slope of line 1, 2 &amp; 3</p>
+        <p>if((x1-x0)==0) </p>
+        <p>m1=NaN;</p>
+        <p>else</p>
+        <p>m1=(y1-y0)/(x1-x0); //slope of line 1</p>
+        <p>if((p1-p0)==0)</p>
+        <p>m2=NaN;</p>
+        <p>else</p>
+        <p>m2=(q1-q0)/(p1-p0); //slope of line 2</p>
+        <p>if((u1-u0)==0)</p>
+        <p>m3=NaN;</p>
+        <p>else</p>
+        <p>m3=(v1-v0)/(u1-u0); //slope of line 3</p>
+        <p>// Slope calculation ends here</p>
+        <p>c1=y0-m1*x0; </p>
+        <p>c2=p1-m2*p0; </p>
+        <p>//calculate the point of intersection</p>
+        <p>if(m1==m2)</p>
+        <p>{</p>
+        <p>printf(&quot;Line segments are parallel, So cannot Intersect at same 
+        point&quot;);</p>
+        <p>return 0;</p>
+        <p>}</p>
+        <p>else{</p>
+        <p>xi=-(c1-c2)/(m1-m2);</p>
+        <p>yi=c1+m1*xi;</p>
+        <p>}</p>
+        </font>
+        <p></p>
+        <font size="4">
+        <p>//point of intersection calculation ends here</p>
+        </font>
+        <p></p>
+        <font size="4">
+        <p>m4=(yi-v0)/(xi-u0); //calculate slope of the line segment (u0,v0) and 
+        (xi,yi)</p>
+        </font>
+        <p></p>
+        <font size="4">
+        <p>//if m4==m3 then the three lines intersect at the same point</p>
+        <p>if(m3==m4)</p>
+        <p>printf(&quot;\nThe Three Line intersect at the same point\n&quot;);</p>
+        <p>else</p>
+        <p>printf(&quot;The Three Line does not intersect at the same point\n&quot;);</p>
+        </font>
+        <p></p>
+        <p></p>
+        <font size="4">
+        <p>}</p>
+        <p>/*Try with inputs like</p>
+        </font>
+        <p></p>
+        <font size="4">
+        <p>a)(0,0),(4,4)</p>
+        <p>(0,2),(0,-2)</p>
+        <p>(-2,2),(2,-2)</p>
+        <p>b)(-1,-2),(4,5)</p>
+        <p>(-2,2),(-2,-2)</p>
+        <p>(0,2),(0,-2)</p>
+        <p>*/</p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+</font></font>
+
+<hr noshade="noshade" size="2">
+
+<p><font size="5">Assign. 4A:</font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in">
+<font size="5">Write a C program to check whether 3 given points are collinear.
+</font></p>
+</a>
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in">
+<font size="5">Example:</font></p>
+
+<a name="Lecture">
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: medium none #FFFF00; background: yellow" bordercolorlight="#FFFF00" bordercolordark="#FFFF00">
+  <tr>
+    <td width="295" valign="top" style="width: 221.4pt; border: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+    <p class="MsoNormal" align="center" style="text-align: center">
+    <font color="#FFFF00" size="5">INPUT</font></td>
+    <td width="295" valign="top" style="width: 221.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+    <p class="MsoNormal" align="center" style="text-align: center">
+    <font color="#FFFF00" size="5">OUTPUT</font></td>
+  </tr>
+  <tr>
+    <td width="295" valign="top" style="width: 221.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+    <p class="MsoNormal" style="text-align: center">
+    <font color="#FFFF00" size="5">(0,0) , (1,1) , (2,2)</font></td>
+    <td width="295" valign="top" style="width: 221.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+    <p class="MsoNormal" style="text-align: center">
+    <font color="#FFFF00" size="5">Collinear </font></td>
+  </tr>
+  <tr>
+    <td width="295" valign="top" style="width: 221.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+    <p class="MsoNormal" style="text-align: center">
+    <font color="#FFFF00" size="5">(0,0) , (2,2), (3,0)</font></td>
+    <td width="295" valign="top" style="width: 221.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+    <p class="MsoNormal" style="text-align: center">
+    <font color="#FFFF00" size="5">Noncollinear</font></td>
+  </tr>
+</table>
+
+<hr noshade="noshade" size="2">
+
+<p>
+<font size="5">Tutorial 4B:</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp; Write a C program to check whether a 
+given integer number is </font><b><font size="5">prime.</font></b></p>
+
+<p><font size="5"><b>Solution: </b></font></p>
+<font SIZE="5">
+<blockquote>
+  <blockquote>
+    <p>main()</p>
+    <p>{</p>
+    <p>int a,c=0,i,n;</p>
+    <p>printf(&quot;enter the number to be checked&quot;);</p>
+    <p>scanf(&quot;%d&quot;,&amp;n);</p>
+    <p>for(i=2;i&lt;=sqrt(n);i++)</p>
+    <p>{</p>
+    <blockquote>
+      <p>a=n%i;</p>
+      <p>if(a==0)</p>
+      <blockquote>
+        <p>c=c+1;</p>
+      </blockquote>
+    </blockquote>
+    <p>}</p>
+    <p>if (c&gt;=1)</p>
+    <blockquote>
+      <p>printf(&quot;the given number is not prime&quot;);</p>
+    </blockquote>
+    <p>else</p>
+    <blockquote>
+      <p>printf(&quot;the given number is prime&quot;);</p>
+    </blockquote>
+    <p>}</p>
+  </blockquote>
+</blockquote>
+</font>
+<hr noshade="noshade" size="2">
+
+<font size="5">
+
+<hr noshade="noshade" size="2">
+
+</font>
+
+<p><font size="5">Assignment 4B:</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp; Write a C program to check whether two 
+given integer numbers are </font><b><font size="5">relatively prime.</font></b></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: -45.0pt; margin-left: 81.0pt">
+<span style="font-family: Courier"><font size="5">Hint: Two integer numbers (a,b) 
+are relatively prime if gcd(a,b)=1</font></span></p>
+
+</a>
+
+<a name="Lecture">
+<hr noshade="noshade" size="2">
+
+</a>
+<font size="5">
+
+<a name="Lecture">
+
+<hr noshade="noshade" size="2">
+
+<p>Assign. 4C:</p>
+<p>Write a C program that reads three integers Day, Month and Year and outputs 
+date of the next day. For example :</p>
+<div align="center">
+  <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: medium none #FFFF00; background: yellow" bordercolorlight="#FFFF00" bordercolordark="#FFFF00">
+    <tr>
+      <td width="295" valign="top" style="width: 221.4pt; border: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+      <p class="MsoNormal" align="center" style="text-align: left">
+      <font color="#FFFF00" size="5">INPUT</font></td>
+      <td width="295" valign="top" style="width: 221.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+      <p class="MsoNormal" align="center" style="text-align: left">
+      <font color="#FFFF00" size="5">OUTPUT</font></td>
+    </tr>
+    <tr>
+      <td width="295" valign="top" style="width: 221.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+      <p class="MsoNormal" style="text-align: justify">
+      <font color="#FFFF00" size="5">28 2 2006</font></td>
+      <td width="295" valign="top" style="width: 221.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+      <p class="MsoNormal" style="text-align: justify">
+      <font color="#FFFF00" size="5">&nbsp;1/3/2006 </font></td>
+    </tr>
+    <tr>
+      <td width="295" valign="top" style="width: 221.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+      <p class="MsoNormal" style="text-align: justify">
+      <font color="#FFFF00" size="5">28 2 2004</font></td>
+      <td width="295" valign="top" style="width: 221.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+      <p class="MsoNormal" style="text-align: justify">
+      <font color="#FFFF00" size="5">29/2/2004 </font></td>
+    </tr>
+    <tr>
+      <td width="295" valign="top" style="width: 221.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+      <p class="MsoNormal" style="text-align: justify">
+      <font color="#FFFF00" size="5">31 12 2006</font></td>
+      <td width="295" valign="top" style="width: 221.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in" bgcolor="#000000">
+      <p class="MsoNormal" style="text-align: justify">
+      <font color="#FFFF00" size="5">1/1/2007</font></td>
+    </tr>
+  </table>
+</div>
+
+<hr noshade="noshade" size="2">
+
+<hr noshade="noshade" size="2">
+
+</a>
+<p>Assign 4D:</p>
+<p class="MsoNormal" style="text-align: justify"><b>Problem 4:</b></p>
+<p class="MsoNormal" style="text-autospace: none">A rational number, p/q , where 
+p, q are non-negative integers and q != 0, may be expressed as a continued 
+fraction. Following is an example for 61/27 .</p>
+<p class="MsoNormal" style="text-autospace: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<img border="0" src="equn1.gif" width="212" height="145">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: none">This may be represented in a 
+compact form as (2,3,1,6)</p>
+<p class="MsoNormal" style="text-autospace: none">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: none">Write a C program to read the 
+numerator and the denominator (q!= 0) of a rational number (both non-negative) 
+and print it as a continued fraction in compact form. You may use the following 
+algorithm.&nbsp; </p>
+<p class="MsoNormal" style="text-autospace: none">Do not use any array.</p>
+<p class="MsoNormal" style="text-autospace: none">Do the following at each steps 
+in a loop :</p>
+<blockquote>
+<p class="MsoNormal" style="text-autospace: none">(a) Find the quotient and the 
+remainder of (numerator ÷ denominator).</p>
+<p class="MsoNormal" style="text-autospace: none">(b) Print the quotient as an 
+element of the continued fraction.</p>
+<p class="MsoNormal" style="text-autospace: none">(c) Calculate the new 
+numerator and the new denominator.</p>
+</blockquote>
+<p>Until Remainder becomes Zero.</p>
+<p>Example:</p>
+<p><img border="0" src="Assign2.gif" width="675" height="146"></p>
+<p>&nbsp;</p>
+<font size="4">
+<a name="Lecture">
+</a></font><hr noshade="noshade" size="2">
+
+</font>
+
+</body></html>

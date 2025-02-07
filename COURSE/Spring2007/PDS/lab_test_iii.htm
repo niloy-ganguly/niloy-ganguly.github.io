@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0074)http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Spring2007/PDS/pds/pds.htm -->
+<HTML><HEAD><TITLE>LAB TEST 1</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+<META content=FrontPage.Editor.Document name=ProgId></HEAD>
+<BODY text=#ffffcc bgColor=#000000 onload="startTime()">
+
+<O:P>
+<P class=MsoNormal align=center><SPAN style="FONT-WEIGHT: normal"><FONT 
+size=6>PDS LAB Test III</FONT></SPAN><SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 16pt"> &nbsp;</SPAN></P>
+<P class=MsoNormal align=center>
+<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 16pt"> (09.04.2007) </SPAN></P>
+<P class=MsoNormal align=center><SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 16pt">(Section : 2)</SPAN></P>
+<P class=MsoNormal align=center><font size="6">Submission deadline time: 3 p.m.</font></P>
+<P class=MsoNormal align=center>
+System Time : <div align=center  id="txt"></div>
+</P>
+</O:P>
+<P class=MsoNormal><B><FONT color=#ff0000 size=5>For students with <U>odd </U>PC 
+numbers</FONT></B></P>
+<P class=MsoNormal align=left><SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 16pt">1.Write a program using stack to 
+evaluate a given postfix expression.&nbsp;&nbsp;&nbsp; </SPAN><FONT color=#ff0000>
+<SPAN 
+style="FONT-WEIGHT: normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>
+<SPAN 
+style="FONT-WEIGHT: 700">[MARKS : 8]</SPAN></FONT><I><SPAN 
+style="FONT-SIZE: 16pt; font-weight:700"></O:P> </SPAN></I></P>
+<P class=MsoNormal align=left><span style="font-size: 16pt">Postfix notation is 
+a mathematical notation wherein every operator follows all of its operands</span></P>
+<P class=MsoNormal align=left><span style="font-size: 16pt">In postfix notation 
+the operators follow their operands; for instance, to add three and four one 
+would write &quot;3 4 +&quot; rather than &quot;3 + 4&quot;. If there are multiple operations, the 
+operator is given immediately after its second operand; so the expression 
+written &quot;3 &#8722; 4 + 5&quot; in conventional infix notation would be written &quot;3 4 &#8722; 5 +&quot;
+</span></P>
+<P class=MsoNormal align=left><span style="font-size: 16pt">Implement the stack 
+using linked lists.</span></P>
+<blockquote>
+	<blockquote>
+		<P class=MsoNormal align=left>
+		<span style="font-weight: normal; font-size: 18pt">&nbsp;&nbsp;</span><font color="#00FFFF"><span style="font-size: 16pt">Input 
+: 3 4 +</span></font></P>
+		<P class=MsoNormal align=left><font color="#00FFFF">
+		<span style="font-size: 16pt">&nbsp; Output : 7</span></font></P>
+		<P class=MsoNormal align=left>
+		<span style="font-weight: normal; font-size: 18pt">&nbsp;</span><font color="#00FFFF"><span style="font-size: 16pt">Input 
+: </span></font><span style="font-size: 16pt"><font color="#00FFFF">5 8 * 7 &#8722;</font></span></P>
+		<P class=MsoNormal align=left><font color="#00FFFF">
+		<span style="font-size: 16pt">&nbsp;Output : 33</span></font></P>
+		<P class=MsoNormal align=left><font color="#00FFFF">
+		<span style="font-size: 16pt">Input : 4 8 2 / - 9 + 7 3 + / </span></font></P>
+		<P class=MsoNormal align=left><font color="#00FFFF">
+		<span style="font-size: 16pt">&nbsp;Output : 0.9</span></font></P>
+		<P class=MsoNormal align=left><font color="#00FFFF">
+		<span style="font-size: 16pt">Input : 9 1 2 4 * + 7 - /</span></font></P>
+		<P class=MsoNormal align=left><font color="#00FFFF">
+		<span style="font-size: 16pt">Output : 4.5</span></font></P>
+		<P class=MsoNormal align=left>&nbsp;</P>
+	</blockquote>
+</blockquote>
+<O:P>
+<P class=MsoNormal><SPAN style="FONT-WEIGHT: normal; FONT-SIZE: 16pt">2. Write a 
+program using structure to implement a software timer</SPAN><O:P><span style="font-size: 16pt">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></O:P>
+<O:P>
+<O:P><SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN style="FONT-WEIGHT: 700">
+<FONT 
+color=#ff0000>[MARKS :12]</FONT></SPAN></O:P><SPAN 
+style="FONT-WEIGHT: 700; FONT-SIZE: 16pt"> &nbsp;</SPAN></O:P><O:P></P>
+<P class=MsoNormal><SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 16pt">&nbsp;&nbsp;&nbsp;</SPAN><span style="font-weight: normal; font-size: 16pt">Use 
+the following structure &amp; the following functions</span></P>
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<blockquote>
+					<P class=MsoNormal>
+					<span style="font-weight: normal; font-size: 16pt">struct 
+					sw_timer {<br>
+					int hours;<br>
+					int minutes;<br>
+					int seconds;<br>
+					} ;</span></P>
+					<P class=MsoNormal>
+					<span style="font-weight: normal; font-size: 16pt"><br>
+					void display(struct sw_timer *t); //Displays the timer<br>
+					void update(struct sw_timer *t); //Updates the timer<br>
+					void delay(void);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					//Introduces delay between updations</span></P>
+				</blockquote>
+			</blockquote>
+			<P class=MsoNormal><span style="font-size: 16pt">Hint : The delay 
+			function essentially consists of a loop whose exit condition value 
+			is&nbsp; very high. The whole program will run in an infinite loop.</span></P>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</O:P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Output: 00:00:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></P>
+<O:P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+00:00:01</span></font></P>
+<O:P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+00:00:02</span></font></P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(continuing)</span></font></P>
+<O:P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+00:00:58</span></font></O:P><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></P>
+<O:P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+00:00:59</span></font></P>
+<O:P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+00:01:00</span></font></P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&amp; so on...</span></font></P></O:P></O:P></O:P></O:P>
+<P class=MsoNormal>&nbsp;</P>
+<P class=MsoNormal><B><FONT color=#ff0000 size=5>For students with 
+<U>even</U>&nbsp; PC numbers</FONT></B></P>
+<P class=MsoNormal><SPAN style="FONT-WEIGHT: normal; FONT-SIZE: 18pt"><BR 
+clear=all> </SPAN></O:P><font size="5">1. Write a 
+program that to implement a </font>
+<span style="font-size: 18pt; font-weight: normal">search( ) function that 
+determines whether a specified n</span><font size="5">ame is in a given list.</font></P>
+<P class=MsoNormal><SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 18pt"> The function prototype is&nbsp; as 
+follows -&nbsp; int search(char *p[], char *name); 
+</SPAN><SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 18pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN><SPAN style="FONT-WEIGHT: 700"><FONT color=#ff0000>[MARKS : 8]</FONT></SPAN></P>
+<P class=MsoNormal><SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 18pt">&nbsp;&nbsp;The first, p, is an 
+array of char * pointers that point to strings containing names. The second, 
+name, is a pointer to a string that points to the name being sought.</SPAN></P>
+<P class=MsoNormal>&nbsp;&nbsp;&nbsp;<span style="font-weight: normal; font-size: 18pt">&nbsp;&nbsp;&nbsp;</span><font color="#00FFFF"><span style="font-size: 16pt">Input 
+: </span></font></P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+List of names : Ram, Shyam, Seeta, Geeta</span></font></P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;
+</span></font><span style="font-weight: normal; font-size: 18pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp; 
+Search item: Shyam</span></font></P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Output: Search string found at position 2 in list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Search item: Mogambo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></font></P>
+<P class=MsoNormal><font color="#00FFFF"><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp; 
+Output: Search string not found. </span></font>
+<SPAN style="FONT-WEIGHT: normal"><FONT 
+color=#ff0000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-WEIGHT: normal; FONT-SIZE: 16pt">2. Write a 
+program using stack that checks whether the parenthesisation of&nbsp; a given 
+expression is </SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-WEIGHT: normal; FONT-SIZE: 16pt">correct or not.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>
+<SPAN style="FONT-WEIGHT: 700"><FONT color=#ff0000>[MARKS : 12]</FONT></SPAN></P>
+<P class=MsoNormal><span style="font-weight: normal; font-size: 16pt">Implement 
+the stack using linked lists.</span></P>
+<p class="MsoNormal"><span style="font-size: 16pt">The following rules hold in 
+case of </span><span style="FONT-WEIGHT: normal; FONT-SIZE: 16pt">
+parenthesisation checking:</span></p>
+<p class="MsoNormal"><span style="font-size: 16pt">(The corresponding illegal 
+expressions are also cited)</span></p>
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<blockquote>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">Opening 
+						bracket should correspond to closing bracket</span></P>
+						</li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;
+						((a+d)*[c-d] is illegal</span></P>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">Opening 
+						bracket should not immediately precede an operator</span></P>
+						</li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;&nbsp;&nbsp;
+						(*(a+d)) is illegal</span></P>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">Expression should not end with an operator</span></P>
+						</li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;&nbsp;&nbsp; (a-d)* is illegal</span></P>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">Closing 
+						bracket should not immediately follow an operator&nbsp;
+						</span></P></li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;&nbsp;&nbsp;
+						(c/d)-(a*b)+) is illegal</span></P>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">Operators should not immediately precede or follow one 
+						another</span></P></li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;&nbsp; (a+*d) is illegal</span></P>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">A 
+						closing bracket can be immediately followed by only a 
+						closing bracket or an operator but not by an opening 
+						bracket.</span></P></li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;&nbsp;&nbsp;
+						(a+b)(c*d) is illegal</span></P>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">Operand 
+						should not immediately precede an opening bracket or 
+						follow a closing bracket</span></P></li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;&nbsp; {a(c+d)} or [(a*b)d] is illegal</span></P>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">While 
+						encountering multiple types of brackets make sure that 
+						you check the following condition: The last type of 
+						opening bracket must close before any other type of 
+						bracket closes.</span></P></li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;&nbsp;&nbsp; {(a*d}) is illegal</span></P>
+					<ul>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">
+						Expression should not end with an opening bracket</span></P>
+						</li>
+					</ul>
+					<P class=MsoNormal><span style="font-size: 16pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					e.g&nbsp;&nbsp;&nbsp; {(a*d)}]+(c/d)-[ is illegal</span></P>
+					<P class=MsoNormal><span style="font-size: 16pt">Examples of 
+					legal expressions:</span></P>
+					<ol>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">
+						[(a+b)*{(c/d)+e*f}]</span></P></li>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">d+s</span></P>
+						</li>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">(a+b*c-d)/(a-b*c+d)</span></P>
+						</li>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">[{(s+d)}]</span></P>
+						</li>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">{a+b*([a-d-f-g-h]/[s*d])}</span></P>
+						</li>
+						<li>
+						<P class=MsoNormal><span style="font-size: 16pt">
+						[{(b*b)-(t*a*c)}/{w*a*a}]</span></P>
+						</li>
+					</ol>
+				</blockquote>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+
+</BODY></HTML>

@@ -1,0 +1,1191 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="pds_lab_12_2_07_files/filelist.xml">
+<link rel=Edit-Time-Data href="pds_lab_12_2_07_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>CS 11001 Programming and Data Structure</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>dayakar</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>dayakar</o:LastAuthor>
+  <o:Revision>107</o:Revision>
+  <o:TotalTime>525</o:TotalTime>
+  <o:Created>2007-02-06T07:51:00Z</o:Created>
+  <o:LastSaved>2007-02-11T03:22:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>704</o:Words>
+  <o:Characters>4013</o:Characters>
+  <o:Company>cse,iitkgp</o:Company>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4708</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FFFFCC;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#FFFFCC;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#DDCC55;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FFFFCC;}
+kbd
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!-- saved from url=(0072)http://www.facweb.iitkgp.ernet.in/~niloy/COURSE/Spring2007/pds/main.html --><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="11266"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=black lang=EN-US link=yellow vlink="#DDCC55" style='tab-interval:
+.5in' alink="#ff9999">
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<h3><span style='font-size:18.0pt'>Assignment 5: String
+Handling&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='mso-spacerun:yes'>                       </span>&nbsp; <span
+class=GramE>Date :</span> 12<sup>th </sup>&nbsp;Feb, 07</h3>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;text-indent:.5in'><span style='font-size:18.0pt'><span
+style='mso-spacerun:yes'>                  </span>Do not use any standard string
+handling functions.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><a name=Lecture><span style='font-size:20.0pt;mso-bidi-font-size:
+18.0pt'>Introduction:<o:p></o:p></span></a></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='mso-bookmark:Lecture'><span style='font-size:
+20.0pt;mso-bidi-font-size:18.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='mso-bookmark:Lecture'><span style='font-size:
+18.0pt'>Arrays:</span></span></p>
+
+<p><span style='mso-bookmark:Lecture'><span style='font-size:14.0pt'>An array
+is a variable that holds multiple values of the same type. Arrays can be
+created from any of the C data types like <span class=SpellE>int</span>, float,
+char<span class=GramE>,...</span> The contents of an array can be accessed by
+its index value. In C, an array index starts from zero. The elements of the
+array occupy adjacent locations in memory. <o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:Lecture'><span style='font-size:
+14.0pt'>The syntax for declaring an array <span class=GramE>is :</span> <o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt'><span
+style='mso-tab-count:3'>                                     </span><span
+class=GramE>type</span> name[size];<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:Lecture'><span style='font-size:
+18.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:Lecture'><span style='font-size:
+18.0pt'>Character Arrays:<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:Lecture'><span style='font-size:
+14.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='mso-bookmark:Lecture'><span style='font-size:
+14.0pt;mso-bidi-font-size:12.0pt'><span style='mso-spacerun:yes'> </span>An
+array of characters should always terminated by the special null character
+&#8216;\0&#8217;. For example a <i>string constant,</i> such as </span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt'>&quot;SPRING&quot; </span></span><span style='mso-bookmark:Lecture'><span
+style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>is an array of characters.
+It is represented internally by the ASCII characters as <o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='mso-bookmark:Lecture'><span style='font-size:
+14.0pt;mso-bidi-font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                         </span><span
+class=GramE>&#8216;S&#8217;, &#8216;P&#8217;, &#8216;R&#8217;, &#8216;I&#8217;,
+&#8216;N&#8217;, &#8216;G&#8217;, &#8216;\0&#8217;.</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:22.0pt;mso-bidi-font-size:
+18.0pt'><o:p></o:p></span></span></p>
+
+<pre><span style='mso-bookmark:Lecture'><span style='font-size:12.0pt;
+font-family:"Times New Roman";color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";color:#FFFFCC'>A small example depicting the declaration of arrays is shown below.</span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:12.0pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p></o:p></span></span></pre><pre><span style='mso-bookmark:
+Lecture'><span style='font-size:12.0pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='mso-tab-count:1'>               </span><span
+style='mso-spacerun:yes'>  </span><span style='mso-tab-count:2'>                             </span><span
+style='mso-spacerun:yes'>    </span>#</span><span style='mso-bookmark:Lecture'><span
+style='font-size:13.5pt'>include&lt;<span class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<pre><span style='mso-bookmark:Lecture'><span style='font-size:13.5pt;
+font-family:"Times New Roman";color:#FFFFCC'><span style='mso-spacerun:yes'>                            </span><span
+style='mso-tab-count:1'>         </span><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>int</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>main</span> (void) {<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>i</span>=0;<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>  </span><span style='mso-tab-count:
+4'>                                               </span><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>                                                         </span><o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> x[4],y[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};// declaring an integer array<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><a name=char><span style='font-size:13.5pt;
+font-family:"Times New Roman";color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span></span></a><span
+class=GramE><span style='mso-bookmark:char'><span style='font-size:13.5pt;
+font-family:"Times New Roman";color:#FFFFCC'>char</span></span></span></span><span
+style='mso-bookmark:Lecture'><span style='mso-bookmark:char'><span
+style='font-size:13.5pt;font-family:"Times New Roman";color:#FFFFCC'> Letter='x';<o:p></o:p></span></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='mso-bookmark:char'><span
+style='font-size:13.5pt;font-family:"Times New Roman";color:#FFFFCC'><span
+style='mso-tab-count:1'>            </span><o:p></o:p></span></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='mso-bookmark:char'><span
+style='font-size:13.5pt;font-family:"Times New Roman";color:#FFFFCC'><span
+style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span>char Letters[10] = {'c','h','a','r','a','c','t','e','r','\0'}; //declaration of a character array<o:p></o:p></span></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='mso-bookmark:char'><span
+style='font-size:13.5pt;font-family:"Times New Roman";color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='mso-bookmark:char'><span
+style='font-size:13.5pt;font-family:"Times New Roman";color:#FFFFCC'><span
+style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><span
+class=GramE>char</span> Text[10]=&quot;character&quot;; // alternative way of declaring a character array<o:p></o:p></span></span></span></pre><span
+style='mso-bookmark:char'></span><pre><span style='mso-bookmark:Lecture'><span
+style='font-size:13.5pt;font-family:"Times New Roman";color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><span
+class=GramE>for(</span><span class=SpellE>i</span>=0;i&lt;4;i++) <o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>   </span>{<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>scanf</span></span><span class=GramE>(</span>&#8220;%<span
+class=SpellE>d&#8221;,&amp;x</span>[<span class=SpellE>i</span>]);<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>   </span>}<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><span
+class=GramE>for(</span><span class=SpellE>i</span>=0;i&lt;4;i++)<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>   </span>{<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&quot;\n The value of x[%d] is %<span
+class=SpellE>d&quot;,i</span>, x[<span class=SpellE>i</span>]);<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>   </span>}<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&quot;\n The value of y[0] is %d&quot;, y[0]);<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&quot;\n The value of y[9] is %d&quot;, y[9]);<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&#8220;\n The string Letters is %s and the string Text is %s &#8221;, <span
+class=SpellE>Letters,Text</span>);<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-tab-count:4'>                                                 </span>}<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'>INPUT:<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>             </span>0,1,2,3.<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'>OUTPUT:<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>             </span>The value of <span
+class=GramE>x[</span>0] is 0<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>             </span>The value of <span
+class=GramE>x[</span>1] is 1<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>             </span>The value of <span
+class=GramE>x[</span>2] is 2<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>             </span>The value of <span
+class=GramE>x[</span>3] is 3<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>             </span>The value of <span
+class=GramE>y[</span>0] is 1<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>             </span>The value of <span
+class=GramE>y[</span>9] is 10<o:p></o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><o:p>&nbsp;</o:p></span></span></pre><pre><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt;font-family:"Times New Roman";
+color:#FFFFCC'><span style='mso-spacerun:yes'>             </span>The string Letters is character and the string Text is character<o:p></o:p></span></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='color:windowtext'>
+
+<hr size=2 width="100%" align=center>
+
+</span></span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Tutorial&nbsp;5A:</span></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Write a C program
+to find the length of a given string.</span></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Solution:</span></span></p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>#include&lt;<span
+class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>#define MAXLEN 100</span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>int</span></span></span></span><span style='mso-bookmark:
+Lecture'><span class=GramE><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>  </span>main</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>(){</span></span></p>
+
+<p style='margin-left:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>int</span></span></span></span><span style='mso-bookmark:
+Lecture'><span style='font-size:13.5pt'> <span class=SpellE>i,length</span>; <o:p></o:p></span></span></p>
+
+<p style='margin-left:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>char</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'> <span
+class=SpellE>str</span>[MAXLEN];<o:p></o:p></span></span></p>
+
+<p style='tab-stops:.5in 45.0pt'><span style='mso-bookmark:Lecture'><span
+style='font-size:13.5pt'><span style='mso-spacerun:yes'>           </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&#8220;Enter
+the input String.:&#8221;);<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>           </span><span class=SpellE><span
+class=GramE>scanf</span></span><span class=GramE>(</span>&#8220;%[^\n]<span
+class=SpellE>s&#8221;,str</span>);<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>           </span><span class=GramE>for(</span><span
+class=SpellE>i</span>=0,length=0;str[<span class=SpellE>i</span>]!=&#8217;\0&#8217;;i++)<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>                 </span><span class=GramE>length</span>++;<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>           </span><span class=SpellE><span
+class=GramE>printf</span></span><span class=GramE>(</span>&#8220;length of
+given String is %<span class=SpellE>d&#8221;,length</span>);<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>           </span>}<o:p></o:p></span></span></p>
+
+</blockquote>
+
+</blockquote>
+
+</blockquote>
+
+</blockquote>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Example:</span><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:yellow;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'
+ bordercolordark="#ffff00" bordercolorlight="#ffff00">
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>INPUT</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>OUTPUT</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Hello World</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>11</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>!1234$</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>6<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Assign. 5A:</span></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Write a C program
+to check whether given strings are identical or not. </span></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:yellow;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>INPUTS</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>OUTPUT</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Computer, Computer</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Equal </span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Programming, <span class=SpellE>Programing</span></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Not equal<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Tutorial 5B:</span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>&nbsp;&nbsp;&nbsp;
+Write a C program to concatenate two strings.<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b><span style='font-size:18.0pt'>Solution: <o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>#include&lt;<span
+class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>#define MAXLEN 100</span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>int</span></span></span></span><span style='mso-bookmark:
+Lecture'><span style='font-size:13.5pt'> main(){</span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>int</span></span></span></span><span style='mso-bookmark:
+Lecture'><span style='font-size:13.5pt'> <span class=SpellE>i,c</span>; <o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>char</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>
+str1[MAXLEN],str2[MAXLEN],str3[MAXLEN];<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>printf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;Enter the
+first input String.:&#8221;);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>scanf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;%[^\n]s&#8221;,str1);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>printf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;Enter the
+second input String.:&#8221;);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>scanf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;%[^\n]s&#8221;,str2);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>for(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'> <span
+class=SpellE>i</span> = 0 , c = 0 ; str1[<span class=SpellE>i</span>]!=&#8217;\0&#8217;
+; <span class=SpellE>i</span>++ )<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>     </span>{<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>      </span>str3[c] = <span class=GramE>str1[</span><span
+class=SpellE>i</span>];<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>      </span><span class=GramE>c</span>++;<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>     </span>}<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>for(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'> <span
+class=SpellE>i</span> = 0 ; str2[<span class=SpellE>i</span>]!=&#8217;\0&#8217;
+; <span class=SpellE>i</span>++ )<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>     </span>{<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>      </span>str3[c] = <span class=GramE>str2[</span><span
+class=SpellE>i</span>];<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>      </span><span class=GramE>c</span>++;<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>     </span>}<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>str3[c<span
+class=GramE>]=</span>&#8217;\0&#8217;;<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>           </span><span style='mso-tab-count:3'>                          </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&#8220;Concatenated
+String is :%s&#8221;,str3);<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>                                           </span>}<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Example:</span><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:yellow;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'
+ bordercolordark="#ffff00" bordercolorlight="#ffff00">
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>INPUTS</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>OUTPUT</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Compute, r</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Computer </span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  class=SpellE><span style='font-size:18.0pt;color:yellow'>Prog</span></span></span><span
+  style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:yellow'><span
+  style='mso-spacerun:yes'>  </span>ram, <span class=SpellE>ming</span></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  class=SpellE><span style='font-size:18.0pt;color:yellow'>Prog</span></span></span><span
+  style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:yellow'><span
+  style='mso-spacerun:yes'>  </span>ramming<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Assignment 5B:<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-spacerun:yes'>    </span>Write a C program to extract a particular
+portion of a string. The positions (starting and ending) of extraction will be
+given as inputs.<o:p></o:p></span></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:yellow;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>INPUTS</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>OUTPUT</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Computer, 3, 5</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  class=SpellE><span style='font-size:18.0pt;color:yellow'>mpu</span></span></span><span
+  style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:yellow'> </span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Programming, 1, 21</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Invalid input<o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Tutorial 5C:</span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>&nbsp;&nbsp;&nbsp;
+Write a C program to replace a particular character in a string with a given
+character.<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b><span style='font-size:18.0pt'>Solution: <o:p></o:p></span></b></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>#include&lt;<span
+class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>#include&lt;<span
+class=SpellE>stdlib.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>#define MAXLEN 100</span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>int</span></span></span></span><span style='mso-bookmark:
+Lecture'><span style='font-size:13.5pt'> main(){</span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>int</span></span></span></span><span style='mso-bookmark:
+Lecture'><span style='font-size:13.5pt'> <span class=SpellE>i</span>; <o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>char</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'> <span
+class=SpellE>c,d,str</span>[MAXLEN];<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>printf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;Enter the
+first input String.:&#8221;);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>scanf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;%[^\n]<span
+class=SpellE>s&#8221;,str</span>);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>printf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;Enter the
+character to be replaced.:&#8221;);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>scanf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;%<span
+class=SpellE>c&#8221;,&amp;c</span>);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>printf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;Enter the
+character with which to be replaced.:&#8221;);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>flushall</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=SpellE><span class=GramE><span
+style='font-size:13.5pt'>scanf</span></span></span></span><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'>&#8220;%<span
+class=SpellE>c&#8221;,&amp;d</span>);<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span class=GramE><span style='font-size:13.5pt'>for(</span></span></span><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'> <span
+class=SpellE>i</span> = 0<span style='mso-spacerun:yes'>  </span>; <span
+class=SpellE>str</span>[<span class=SpellE>i</span>]!=&#8217;\0&#8217; ; <span
+class=SpellE>i</span>++ )<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>     </span>{<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>      </span><span class=GramE>if(</span> <span
+class=SpellE>str</span>[<span class=SpellE>i</span>] == c)<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>      </span><span class=SpellE><span class=GramE>str</span></span><span
+class=GramE>[</span><span class=SpellE>i</span>] = d;<o:p></o:p></span></span></p>
+
+<p style='margin-left:1.5in;text-indent:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>      </span>}<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>           </span><span style='mso-tab-count:3'>                          </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&#8220;Resultant
+String is :%<span class=SpellE>s&#8221;,str</span>);<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:13.5pt'><span
+style='mso-spacerun:yes'>                                           </span>}</span></span><span
+style='mso-bookmark:Lecture'><b><span style='font-size:18.0pt'><span
+style='mso-tab-count:1'>   </span><o:p></o:p></span></b></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:yellow;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>INPUTS</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>OUTPUT</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Cartoon, o, a </span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  class=SpellE><span style='font-size:18.0pt;color:yellow'>Cartaan</span></span></span><span
+  style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:yellow'> </span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Programming, g, k </span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  class=SpellE><span style='font-size:18.0pt;color:yellow'>Prokrammink</span></span></span><span
+  style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:yellow'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:windowtext'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Assign 5C:<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'><span
+style='mso-spacerun:yes'>      </span>Write a C program to remove a particular
+character in a string.<o:p></o:p></span></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:yellow;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>INPUTS</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>OUTPUT</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Computer, p</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  class=SpellE><span style='font-size:18.0pt;color:yellow'>Comuter</span></span></span><span
+  style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:yellow'> </span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  style='font-size:18.0pt;color:yellow'>Programming, m</span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+  auto;text-align:center'><span style='mso-bookmark:Lecture'><span
+  class=SpellE><span style='font-size:18.0pt;color:yellow'>Prograing</span></span></span><span
+  style='mso-bookmark:Lecture'><span style='font-size:18.0pt;color:yellow'><o:p></o:p></span></span></p>
+  </td>
+  <span style='mso-bookmark:Lecture'></span>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></div>
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>
+
+<hr size=2 width="100%" noshade color="#aca899" align=center>
+
+</span></span></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Assign. 5D:<o:p></o:p></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>&nbsp;&nbsp;&nbsp;
+Write a C program to check whether a given word is palindrome or not<b>.<o:p></o:p></b></span></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><b><span style='font-size:18.0pt'><span
+style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'>  </span></span></b></span><span
+style='mso-bookmark:Lecture'><span style='font-size:18.0pt'>Ex: MALAYALAM,
+ANNA, AMANAPLANACANALPANAMA&#8230;</span></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:81.0pt;text-align:justify;text-indent:-45.0pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Lecture'><span style='font-size:14.0pt'>Hint: A word is
+said to be palindrome if it reads the same backward or forward. <o:p></o:p></span></span></p>
+
+<span style='mso-bookmark:Lecture'></span>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
